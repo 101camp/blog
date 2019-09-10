@@ -5,7 +5,7 @@
   
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <title>SS4: 在Pyenv中从3.6.5升级至3.7.3时僵局 &mdash; Blogging 蟒营™ 博客</title>
+    <title>SS6: 在判断死角里日常喷血 &mdash; Blogging 蟒营™ 博客</title>
 
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
@@ -31,148 +31,150 @@
       <div class="bodywrapper">
         <div class="body" role="main">
           
-            <h1 id="ss4-pyenv365373">SS4: 在Pyenv中从3.6.5升级至3.7.3时僵局<a class="headerlink" href="#ss4-pyenv365373" title="Permanent link">¶</a></h1>
+            <h1 id="ss6">SS6: 在判断死角里日常喷血<a class="headerlink" href="#ss6" title="Permanent link">¶</a></h1>
 <blockquote>
-<p>101camp1py 190409 触发</p>
+<p>101camp2py 190816 触发</p>
 </blockquote>
 <h2 id="_1">苦也:<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <blockquote>
-<p>为什么用代码总是获得意外的数据?</p>
+<p>问题并没意识到...</p>
 </blockquote>
-<p>进行ch0的第一个开发任务安装python3.7.3时遇到问题:</p>
 <ul>
-<li>已经安装python3.6.5版本,</li>
-<li>执行 brew upgrade python3 时,</li>
-<li>提示 python3 尚未安装,</li>
-<li>但在执行python3 --version 时是能查到版本的</li>
+<li>思路出现错误, 在编程时误把 list 数据当成 dict 数据.</li>
+<li>痛点在于 Python “过于智能”,直接把整个 list 转化为 str 类型, - 报错信息没完理解,导致对自己的判断 坚信不疑.</li>
 </ul>
-<p>::</p>
-<pre><code>$ brew upgrade python3
-Updating Homebrew...
-Error: python3 not installed
-
-$ python3 --version
-Python 3.6.5
-</code></pre>
-<p>请问我该如何操作,我的思路是---</p>
+<h3 id="_2">背景<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>环境</p>
+</blockquote>
 <ul>
-<li>是否是Homebrew在GFW内速度感人,所以需要让终端也翻墙再操作. </li>
-<li>是否能不霸王硬上弓,使用版本控制方法,比如pyenv或者virtualenv来搞?</li>
-<li>我猜测第1个思路应该是不对的,第二个应该是OK的. </li>
+<li>Windows 10</li>
+<li>Python 3.x</li>
 </ul>
-<h2 id="_2">触发:<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<blockquote>
-<p>是也乎,(￣▽￣)</p>
-</blockquote>
-<p>高兴你的高兴</p>
+<p>101camp2py ch3 周任务获取 commit-comment 数据时,遭遇报错.</p>
+<p>于是尝试在错误代码中间插入 print 函数打印存疑变量或对象.</p>
+<p>下图中左侧是插入 print 函数后代码,右图则是执行代码后控制台输出,箭头由被打印变量、对象指向打印结果.报错 “TypeError: string indices must be integers” 被误认为是需要处理 “[ ]” 这种意外字符.</p>
+<p><img alt="ch3list2str" src="https://ipic.zoomquiet.top/2019-08-18-ch3list2str.png" /></p>
+<h3 id="_3">问题<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
 <ul>
-<li>作为 17+年 Python 用户, 也深深感 Python 运行时环境是个灵巧又任性的大坑</li>
-<li>作为初学者, 竟然这么快就独立解决了, 实在太惊人了...</li>
-<li>也恭喜激发本周最后一个 SM(隐藏任务):<ul>
-<li>结合自己的体验</li>
-<li>试发表一则 Issue:<ul>
-<li>[SM] Python 运行时环境管理小雾</li>
+<li>When? 精确发生时间点 ~见背景</li>
+<li>Where? 在什么场景中,什么数据上下文?…<ul>
+<li>ch3 任务中，提取 commit-comment 数据时遇到报错</li>
+<li>插入 print 函数打印 debug</li>
+<li>报错 TypeError: string indices must be integers</li>
+<li>不同 commit 对应不同的 URL, 拼接字符串的时候发现字符串带符号 “[ ]”</li>
+</ul>
+</li>
+<li>What?  想完成什么目标? 操作序列, 指令, 终端输出?…<ul>
+<li>字符串分割，提取「[content]」字符串中的 content.</li>
+<li>如：<ul>
+<li>[‘df934cf2bccf28f06c30a7c3b4049ded914e4be7’]  </li>
+<li>-&gt;  </li>
+<li>df934cf2bccf28f06c30a7c3b4049ded914e4be7</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>用自己的理解给大家分享<ul>
-<li>什么是 Python?</li>
-<li>什么是 Python 运行时?</li>
-<li>什么是 系统 Python 环境?</li>
-<li>什么是 用户 Python 环境?</li>
-<li>在你的桌面系统中, 有多少种 Python 运行环境可以部署?</li>
-<li>用哪种来管理最省必? 为什么?</li>
-<li>为什么 Python 有这么多运行时环境关系?</li>
+<li>Why? 如何理解的?<ul>
+<li>误以为字符串自带符号 「[ ]」 ，想要去除这个符号</li>
 </ul>
 </li>
-<li>对于初学者, 最重要的 Pyton 多版本环境控制概念是什么?</li>
-<li>给出最小 Python 运行时管理工具/概念检查单?<ul>
-<li>如何检验当前有什么 Python 版本/环境?</li>
-<li>当前代码运行时调用的是哪个?</li>
-<li>如何切换?</li>
-<li>...</li>
+<li>How? 进行了什么尝试<ul>
+<li>根据字符串的下标切片.</li>
 </ul>
 </li>
-<li>以及查阅过哪些资料? 哪些最推荐?</li>
 </ul>
-<h2 id="_3">嗯哼?<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<h3 id="_4">现场解惑还原<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
 <blockquote>
-<p>我去,这个仿佛是不可能完成的任务啊,完全没概念. </p>
+<p>本对话, 从提问之后的解答开始——</p>
 </blockquote>
-<p>助教来嗯哼:</p>
-<ul>
-<li>大妈的问题一般都比较完备, 虽然乍一看吓尿指数也很高.</li>
-<li>冷静下来, 看一道题解决一道. 你没问题的.</li>
-<li>不过这么快就跑通了虚拟环境, 已经非常非常非常有灵性了.</li>
-<li>But! 这里留个线索... 其实你并没有完全的跑通虚拟环境 嗷!<ul>
-<li>pyenv versions这个命令你已经懂了.</li>
-<li>需要实际的了解, 如何切换到自己想要的环境.</li>
-<li>并且要明白, 为什么需要切换?</li>
-</ul>
-</li>
-<li>以上的思考方向, 可以帮助你了解大妈的提问.</li>
-</ul>
-<h2 id="_4">解决的解决:<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
-<blockquote>
-<p>问题已解决!思路如下---</p>
-</blockquote>
-<p>我选择第二条路,使用 pyenv 来实现安装 python3.7.3,所以我执行了如下命令:</p>
-<pre><code>    $ brew install pyenv
-    $ echo 'eval &quot;$(pyenv init -)&quot;' &gt;&gt; ~/.zshrc
-    $ echo 'eval &quot;$(pyenv virtualenv-init -)&quot;' &gt;&gt; ~/.zshrc
-    $ source ~/.zshrc
+<pre><code>「 ZoomQuiet 大妈: 想多了 --&gt; 列表就一个元素~取出来就好 」
+- - - - - - - - - - - - - - -
+「 m**i: 可是我之前就是没有切片，然后url有错误 」
+- - - - - - - - - - - - - - -
+「 m**i: @ZoomQuiet 大妈  」
+- - - - - - - - - - - - - - -
+「 m**i: ASCII码里
+[ = 5D 
+] = 5B 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: 那不叫切片……
+提取而已… 」
+- - - - - - - - - - - - - - -
+「 m**i: 那我这个方法有错误了？ 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: 所以…请求前…
+先把拼好的 url 打印出来…复制到浏览器可用 --&gt; 再代入运行 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: @m**i 那我这个方法有错误了？
+ &lt;-- 是也乎 ╮(╯▽╰)╭
+
+方法没错思路反了 」
+- - - - - - - - - - - - - - -
+「 m**i: 不呢，没有[ ]的url是正确的 」
+- - - - - - - - - - - - - - -
+「 m**i: 但是我从json里面拿出来，不知为何就带了[ ] 」
+- - - - - - - - - - - - - - -
+「 m**i: 噢，我懂了 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: @m**i 但是我从json里面拿出来，不知为何就带了[ ]
+ &lt;-- 是也乎 ╮(╯▽╰)╭
+
+你没拿出来吧
+直接列表就当结果了 」
+- - - - - - - - - - - - - - -
+「 m**i: 天啦，我知道了，对的，那个是列表，只有一项的列表 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: 但 python 智能的转成了 str 」
+- - - - - - - - - - - - - - -
+「 m**i: 但是我当成str了 」
+- - - - - - - - - - - - - - -
+「 m**i: 对，我输了type也告诉我是str 」
+- - - - - - - - - - - - - - -
+「 m**i: 真血案 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: 是也乎 ╮(╯▽╰)╭
+
+这是笨办法第五课的练习 」
+- - - - - - - - - - - - - - -
+「 m**i: 好的，笨办法没刷[捂脸] 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: @m**i 真血案
+ &lt;-- 是也乎 ╮(╯▽╰)╭
+
+通透 --&gt; 将 QA 变成血案回顾吧…
+
+这是常见问题…
+都怪 python 太智能了…
+其它语言根本不准运行的 」
+- - - - - - - - - - - - - - -
+「 m**i: hhh，所以说，python代码全靠程序员自觉遵守规则了 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: 是也乎 ╮(╯▽╰)╭
+
+Yes and not....
+
+关键是看乍用~ 」
+- - - - - - - - - - - - - - -
+「 m**i: 🆗了！谢谢您嘞 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: 这类智能特性…没有时很累~有了又容易出问题…
+所以 --&gt; 
+C'est la vie (´-ι_-｀)
+ 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: 为人民服务 ●ｖ●嗯~ 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: 等你的血案故事会~ 」
+- - - - - - - - - - - - - - -
+「 m**i: 好的，血案制造机☞ 」
+- - - - - - - - - - - - - - -
+「 ZoomQuiet 大妈: 是也乎 ╮(╯▽╰)╭
+
+ &lt;-- 你们才是
+俺是血瀑布模型 」
+- - - - - - - - - - - - - - -
 </code></pre>
-
-<p>但是在进行最后一行命令source ~/.zshrc时,提示错误为:</p>
-<pre><code>    pyenv: no such command `virtualenv-init'
-</code></pre>
-
-<p>在google上查阅后发现是pyenv-virtualenv没有安装,所以需要执行如下命令:</p>
-<pre><code>    $ brew upgrade --HEAD pyenv-virtualenv
-</code></pre>
-
-<p>先用上面这个命令更新一下,如果提示没有安装就换下面这个命令</p>
-<pre><code>    $ brew install --HEAD pyenv-virtualenv
-</code></pre>
-
-<p>之后再进行source ~/.zshrc顺利完成. pyenv安装好后,接下来就是使用它来安装最新python 3.7.3,所以执行下列命令</p>
-<pre><code>    $ pyenv install 3.7.3
-</code></pre>
-
-<p>,发现3.7.3的安装包在国外,下载十分缓慢,至少等待了30分钟(我洗了个澡),我决定让终端也能翻墙,去墙外下载. 
-我使用的是socks5代理,所以终端翻墙较为复杂,先下载最新版本的 Shadowsocks-NG,配置好服务器后,之后在终端执行:</p>
-<pre><code>     $ export http_proxy=http://127.0.0.1:1087
-     $ export https_proxy=http://127.0.0.1:1087
-</code></pre>
-
-<p>然后继续使用pyenv来下载python 3.7.3,又遇到了问题:</p>
-<pre><code>    $ pyenv install 3.7.3
-    BUILD FAILED (OS X 10.14.2 using python-build 20180424)
-    Inspect or clean up the working tree at /var/folders/gf/_4hphmvs5lnfz7_sg4l1d3y00000gn/T/python-build.20190410094358.7234
-    Results logged to /var/folders/gf/_4hphmvs5lnfz7_sg4l1d3y00000gn/T/python-build.20190410094358.7234.log
-    ...
-</code></pre>
-
-<p>查阅后,需要进行如下配置,(It works for me but I don't know why)</p>
-<pre><code>    $ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
-</code></pre>
-
-<p>具体内容来源为</p>
-<blockquote>
-<p>macOS Mojave Pyenv install multi-version build failed solution</p>
-<p>http://www.blog.howechen.com/macos-mojave-pyenv-install-multi-version-build-failed-solution/</p>
-</blockquote>
-<p>操作之后,再执行如下命令,完成!</p>
-<pre><code>
-    $ pyenv install 3.7.3
-    $ pyenv versions
-    * system (set by /Users/Cheyer/.pyenv/version)
-      3.7.3
-
-</code></pre>
-
-<p>到此,就完成配置了!</p>
 <h2 id="_5">是也乎:<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
 <p>这就是蟒营哪, 正如隔壁队长说的:</p>
 <blockquote>
@@ -192,6 +194,11 @@ Python 3.6.5
 <pre><code>guru101camp@googlegroups.com
 </code></pre>
 <h2 id="pps">PPS:<a class="headerlink" href="#pps" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>免费知识星球,随时加入, 感受蟒营之怼力...</p>
+</blockquote>
+<p><img alt="知识星球" src="https://ipic.zoomquiet.top/2019-08-09-190809camp101.jpeg" /></p>
+<h2 id="pps_1">PPS:<a class="headerlink" href="#pps_1" title="Permanent link">¶</a></h2>
 <p>蟒营(101.camp): </p>
 <pre><code>伴你重新享受自学乐趣
 Reactivate Joy by Self-teach with You
@@ -206,10 +213,9 @@ Reactivate Joy by Self-teach with You
 </ul>
 </li>
 </ul>
+<hr />
 <blockquote>
-<blockquote>
-<p>NN 3740</p>
-</blockquote>
+<p>NN 3743</p>
 </blockquote>
             
 
@@ -339,20 +345,20 @@ Reactivate Joy by Self-teach with You
       <li><a href="#_1">苦也:</a></li>
       <ul>
     
-  </ul>
-    
-      <li><a href="#_2">触发:</a></li>
+      <li><a href="#_2">背景</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#_3">嗯哼?</a></li>
+      <li><a href="#_3">问题</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#_4">解决的解决:</a></li>
+      <li><a href="#_4">现场解惑还原</a></li>
       <ul>
+    
+  </ul>
     
   </ul>
     
@@ -371,6 +377,11 @@ Reactivate Joy by Self-teach with You
     
   </ul>
     
+      <li><a href="#pps_1">PPS:</a></li>
+      <ul>
+    
+  </ul>
+    
   </ul>
   
 
@@ -381,7 +392,7 @@ Reactivate Joy by Self-teach with You
       <!--
         <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
       -->
-        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/SS/SS4-block-pyenv373.md">edit➔GitHub</a></li>
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/SS/190818-auto-list2str.md">edit➔GitHub</a></li>
 
       
     </ul>
@@ -494,7 +505,7 @@ Reactivate Joy by Self-teach with You
 
   <!--
   MkDocs version      : 1.0.4
-  Docs Build Date UTC : 2019-09-10 09:34:53
+  Docs Build Date UTC : 2019-09-10 10:02:33
   -->
 </body>
 </html>
