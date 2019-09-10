@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>SS1: 为什么访问不了 gitlab? &mdash; Blogging蟒营™</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="ss1-gitlab">SS1: 为什么访问不了 gitlab?<a class="headerlink" href="#ss1-gitlab" title="Permanent link">¶</a></h1>
+<h2 id="_1">苦也:<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>我到现在都登录不上gitlab.com</p>
+</blockquote>
+<h2 id="_2">支招:<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<ul>
+<li>换个浏览器?</li>
+<li>换个网络?</li>
+</ul>
+<p>先检验明确是哪个环节上的问题? </p>
+<p>无论哪个系统~
+使用现代浏览器是个基本习惯~</p>
+<p>编程就是用编程令世界美好(chicken soup)</p>
+<p>避开从编程角度已知不美软件... 是最简单改良~ </p>
+<ul>
+<li>对比测试网络</li>
+<li>推荐用手机4G 网发布热点给电脑... 就知道是否网络有问题了</li>
+</ul>
+<h2 id="_3">深入:<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>我用手机热点联网了. 但还是登录不上.  </p>
+</blockquote>
+<p>是也乎,(￣▽￣)</p>
+<ul>
+<li>等等, 可访问和无法登录是两个问题了...</li>
+<li>gitlab 可访问<ul>
+<li>但是, 用通知邮件中的帐号口令无法登录</li>
+</ul>
+</li>
+<li>那可不是网络问题了</li>
+</ul>
+<blockquote>
+<p>这样也是困难. 估计是上网的太多了.  '</p>
+</blockquote>
+<p>@清: 排除网络四步大法 </p>
+<ul>
+<li>本地回环 </li>
+<li>本地ip </li>
+<li>网关 </li>
+<li>互联网</li>
+</ul>
+<p>是也乎,(￣▽￣)</p>
+<ul>
+<li>别乱猜, 编程过程就是要用证据来缩小真正问题范畴的过程...</li>
+<li>@清 这么专业的习惯?<ul>
+<li>及时给同学们分享一篇 win10环境中, 网络可用性自评手册?</li>
+</ul>
+</li>
+</ul>
+<p>以及, 所有同学...在报名要求中:</p>
+<ol>
+<li>有私人电脑</li>
+<li>有网络</li>
+<li>有可控时间</li>
+</ol>
+<p>私人电脑可不仅仅指硬件,
+还包含这电脑是你私人完全控制的,
+对其涉及资源, 至少是明白怎么回事儿, 
+可以自主排除问题, 恢复工作的...</p>
+<p>所以, 从蟒营开始,</p>
+<p>大家可能才真正将私人电脑的投资发挥出80%的效能来(chicken soup)</p>
+<h2 id="_4">激发:<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>哈哈. 谢谢. 我用火狐使用账号口令进入了.  '</p>
+</blockquote>
+<p>是也乎,(￣▽￣)</p>
+<p>问题解决, 但是, 问题根源并没有解决 =&gt; 触发隐藏任务:</p>
+<ul>
+<li>42小时以内</li>
+<li>创建 Issue: <ul>
+<li><code>[FAQ] 为什么任何时候不应该使用 微软发布的浏览器?</code></li>
+</ul>
+</li>
+<li>内容:<ul>
+<li>背景 -&gt; 你系统的基本环境</li>
+<li>现象 -&gt; 发生了什么</li>
+<li>探索 -&gt; 大家建议和检验过程/现象</li>
+<li>分析 -&gt; 为什么相同系统/网络中, 微软的浏览器不允许访问 gitlab ?</li>
+</ul>
+</li>
+<li>用自己的经验/资源/想象力...<ul>
+<li>尝试对比出 IE 浏览器和其它开源浏览器有什么不同,</li>
+<li>以及在中国境内为什么不应该在任何场景中使用 IE 浏览器?</li>
+</ul>
+</li>
+<li>进一步的, 为什么自己以往复合从来没有意识到这些问题?</li>
+<li>如何解决以后可能的相似问题? </li>
+</ul>
+<p>也欢迎有过血泪史的同学及时分享 IE 浏览器不得不说的黑历史</p>
+<p>这其实, 就是进入编程世界第一个反直觉的经验:</p>
+<ul>
+<li>一切以往习惯的软件/软件使用习惯/问题解决方式, <ul>
+<li>都可能只是有关广告灌输给我们的,</li>
+</ul>
+</li>
+<li>只有通过自己的理智, <ul>
+<li>用正确的信息探索路径,</li>
+<li>多角度对比检验,</li>
+<li>才可能形成自己的思考成果, </li>
+</ul>
+</li>
+<li>合理科学质疑一切网络中轻易搜索到的资料,<ul>
+<li>并设计实验来检验, </li>
+<li>才是互联网/移动互联网/物联网真正正确的使用姿势</li>
+</ul>
+</li>
+<li>是的, 互联网也并不是一劳永逸的咨询解决方案,<ul>
+<li>只是在制造海量问题的同时, </li>
+<li>也为问题的解决提供了海量可免费利用资源... </li>
+</ul>
+</li>
+</ul>
+<p>所以, 
+蟒营课程(101.camp) 就是针对无基础学习想有效获得靠谱编程体验而设计的,
+全程高度互动:</p>
+<ul>
+<li>针对每一位学员, 每一个具体真实行为, <ul>
+<li>进行就地嗯哼,</li>
+</ul>
+</li>
+<li>力图在每一个感性体验现场, <ul>
+<li>注入理性思考过程,</li>
+</ul>
+</li>
+<li>从而, 进一步形成习惯,完成编程思维的再激发.</li>
+</ul>
+<p>当前 蟒营 Python入门正式班(101camp2py) 第2期 正在报名:</p>
+<ul>
+<li>截止 190725 0842</li>
+<li>课程时间: 190728~190908</li>
+<li>报名入口: https://py.101.camp</li>
+</ul>
+            
+            <!--190910 init. comments-->
+            <script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <img class="logo" src="../../logo.png" title="Blogging蟒营™">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#_1">苦也:</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_2">支招:</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_3">深入:</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_4">激发:</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit on GitHub</a></li>
+      
+    </ul>
+  
+</nav>
+          
+            
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; 2019 蟒营™101camp
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2019-09-10 02:23:51
+  -->
+</body>
+</html>

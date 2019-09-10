@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>首次蟒营式冲击 &mdash; Blogging蟒营™</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="_1">首次蟒营式冲击<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>一次完整的心智训练</p>
+</blockquote>
+<h2 id="_2">是的<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>蟒营系列入门班基于大妈亲身经历, 可是都有什么经历呢?</p>
+</blockquote>
+<p>回想起来头一次完整的蟒营式学习体验, 应该在99年,
+刚刚毕业一年, 在常州一家通讯公司, 作网管;</p>
+<p>可那是家传统电讯服务公司, 帮各个企业内部小型程控交换机作维护的;</p>
+<p>是的, 那时, BB 机刚刚开始流行, 大哥大已经有了, 但是, 用的人几乎没有, 太贵;
+所以, 大一点儿的厂, 内部几个办公室/厂区/门房都有内部电话;
+那家公司就是作这种承载内部分机的微型电话网服务;</p>
+<p>不过, 老板很有远见, 认为以后一定是互联网的天下;
+虽然现在互联网还必须通过电讯网访问.</p>
+<p>所以, 招了俺唯一一名大学生进来当技术储备;
+可是, 也不能什么都不作哪, 就拿出仅有的一点儿实用技术, 
+帮忙内部几个办公室组网, 并架了打印服务器,
+以便大家不用跑来跑去打印; 等等, 别人看来高科技, 自己知道都是办公网络基本配置而已,
+都是 windows 95 内置功能罢了.</p>
+<p>于是, 有一天, 老板叫我去部署任务....</p>
+<h2 id="_3">任务<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>学习 C 网, 并帮助公司完成 B 级节点的架构.</p>
+</blockquote>
+<p>"嗯哼? 这是什么东西?" 拿着几页彩色宣传页, 内心是崩溃的;</p>
+<p>要知道, 20年前, 中国和国际互联网是通的, 但是, 并没有专用互联网线通,
+想访问网络, 首先得有固定电话, 然后得有 "猫" , 也就是 Modem (调制解调器),
+占用一路电话, 并将电脑数字信号变成普通电话线的模拟脉冲信号双向发送,
+从而通过对应网关访问到互联网;</p>
+<p>当时最高速度是 56k/秒;
+以及没有 百度/sina/shohu/... 今天日用互联网中心网站;
+当时最大的互联网公司是 Yahoo! , 通过全球志愿者共同编辑类似电话薄一样的互联网目录;
+来发现和访问越来越多的网站;</p>
+<p>所以, 成都有位神奇的教授, 自己独立发明了 "中国C网", 
+有点儿象后来的 P2P 网站,
+通过在全国各城市建立分级服务中心, 通过自己开发的 "C网" 系统,
+在普通电话线上建立自己的互联网;
+通过自动同步全国所有节点上网站, 达成内容更新;</p>
+<p>当然, 主要是各个厂商的广告, 而加入要收年费;
+而, 各地分级服务中心, 就要有管理员, 以及代收费;</p>
+<p>可以说是完全比照 "信息高速公路" 这一比喻构建的真实意义上的 "广告高速公路";</p>
+<p>以上都是后来参加成都的 "C网" 培训才知道的,
+可接到任务之时, 完全没有任何概念;</p>
+<p>怎么办?</p>
+<p>这可能是第一个正式技术任务, 完成不了, 一定呆不下去;
+回兰州, 可更加不可能有什么电脑相关的工作了...</p>
+<p>一时间, 千头万绪纷致踏来, 都不知道怎么走回座位的...</p>
+<h2 id="_4">折腾<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>怎么办? 凉办.</p>
+</blockquote>
+<p>先用了半天进行心理建设, 首先这任务, 这公司除了自己没其它人能干;</p>
+<p>"C网" 对世界上绝大多数人来说, 也都是全部的东西,
+那么, 就学吧;</p>
+<p>从佊有的宣传资料中, 找到一个关键词: "Visual Basic", 整个系统是基于 VB 构建的,
+那就从这入手呗;</p>
+<ul>
+<li>找书, 能借到的都借, 新华书店中有的, 申请经费买</li>
+<li>找资料, 午休, 周末, 公司不用电话时, 就拨号上网四处找</li>
+<li>找人问, 凡是有 VB 版块的 BBS 都注册了,各种问<ul>
+<li>ICQ 上, 查找能中文/英文会VB 的加好友, 也是各种问</li>
+<li>(是的, QQ 当年叫 OICQ, 学的就是这个 ICQ, 全球最知名最好用的聊天软件)</li>
+</ul>
+</li>
+<li>...</li>
+</ul>
+<p>只要是和 VB 粘边儿的都找来看, 看不懂也看...</p>
+<p>当然, 越看越蒙, 因为 VB 好歹也是通用脚本语言, 可以开发各种软件,
+但是, "C网" 到底是什么, 怎么用, 怎么也不知道哪.</p>
+<p>忐忑了半个月, 老板终于谈好条件,拿到了帐号, 以及操作文档;</p>
+<p>那就好办了:</p>
+<ul>
+<li>按照文档, 逐一配置,安装</li>
+<li>哪儿不通, 直接电话吼总部技术人员</li>
+<li>折腾了两天, 总算通了, 开始自动同步资料..</li>
+</ul>
+<p>然后,就是按照官方广告页中链接的各种资料:</p>
+<ul>
+<li>下载</li>
+<li>打印</li>
+<li>通读</li>
+<li>细看</li>
+<li>... 找其中的示例练习</li>
+</ul>
+<p>以上所有折腾, 都建立档案, 分门别类, 逐一记录:</p>
+<ul>
+<li>目标</li>
+<li>探索</li>
+<li>问题</li>
+<li>参考资料</li>
+<li>尝试</li>
+<li>解决</li>
+<li>思路</li>
+<li>总结</li>
+</ul>
+<h2 id="_5">豁然<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>持续折腾了一个月, 忽然明白过味儿来...</p>
+</blockquote>
+<ul>
+<li>系统是 VB 开发的</li>
+<li>但是, 传播的广告页/网站,只是纯 HTML 页面, 通过 VB 编写的界面用 IE 浏览而已</li>
+<li>所以, 所谓管理员要作的只有:<ul>
+<li>明确系统升级, 和正常自动运行</li>
+<li>编写广告网站, 协助发布信息</li>
+</ul>
+</li>
+<li>一切和 VB 并无关系, 毕竟, "C网" 核心资产就是自己, 不可能开放代码给各级管理员的</li>
+<li>而 HMTL , 熟哪...作为学校第一届计算机系学生, 校园网就是我们亲手构建的<ul>
+<li>都是手工用 notepad 一行行写出来的网页</li>
+</ul>
+</li>
+</ul>
+<p>后来, 公派去成都 "C网" 中心培训一周, 课程内容除了广告, 
+涉及技术的内容, 都没超出自己理解和准备的范畴, 也就顺利获得了优秀学员评定;</p>
+<p>回来正式掌管常州市 "C网" 中心站;
+当然, 在成都顺道游览了九寨沟, 仅仅用200元; 这事儿, 和蟒营关联不大先不说.</p>
+<h2 id="-style">蟒营-style<a class="headerlink" href="#-style" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>最初蟒营式学习体验是什么?</p>
+</blockquote>
+<ul>
+<li>先假定自己一定学的会</li>
+<li>然后,尽可能探索一切可以探索的</li>
+<li>在有具体任务后, 针对任务进行分解, 分步骤解决<ul>
+<li>有任何问题</li>
+<li>立即咨询有关部门</li>
+</ul>
+</li>
+<li>逐一技巧, 可能就是:<ul>
+<li>坚持作笔记</li>
+<li>以便随时明确自己不知道什么, 以及已经知道了什么</li>
+</ul>
+</li>
+</ul>
+<p>看起来非常非常普通的行为,
+在后来上海/北京/珠海各种公司, 各种技术岗位上, 
+都观察到, 无论什么职位的人, 都有类似习惯;</p>
+<p>就以为这才是行业从业人员的基本素质;</p>
+<p>没想到10年后, 自己也开始招聘, 并重新接触到在校大学生时, 才发现, 并不是这样的;
+金山有次从全国上万份简历中, 层层考试逃汰优中选优来的一批实习生, 
+但是,还没有实际编程能力的学生, 需要快速培训为能配合其它同事工作的工程师;</p>
+<p>其中想学 Python 的分配到我这儿,
+想起当年的任务导向体验, 就直觉性的设计了最初 PythoniCamp ~ 蟒营训练营;
+只提供任务和大量参考资料;
+直接开始软件工程协同开发;
+每周进行一次迭代版本公开演示, 每天进行站立会议, 当面逐一说明每天进展和问题;</p>
+<p>非常简单粗暴, 但是, 真的用8周, 就重新完成小组式自学训练,
+基于工程环境, 规范的追踪开始自然协同起来;</p>
+<pre><code>伴你重享受学习的乐趣
+    Reactivate Joy by Self-teach with You
+</code></pre>
+
+<h3 id="_6">价值<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>综合来说, 蟒营可以激发学员获得各种价值</p>
+</blockquote>
+<ul>
+<li>在职非 Python 程序员 &lt;-实用工程经验, 包含团队管理体验</li>
+<li>在校大二/三学生 &lt;-  完备软件经历, 无论是否专业相关, 都能独立用 Python 完成实用脚本开发</li>
+<li><code>真小白</code>无基础人士 &lt;- 切实编程自信, 真正理解什么是编程, 并熟悉 Python 技术生态,能基于工程思维来解析具体问题..</li>
+<li>以及所有学员能获得的:<ul>
+<li>高效问题讨论习惯</li>
+<li>实践自学社区协作</li>
+</ul>
+</li>
+</ul>
+<p>而这一切收获, 都在6周里即可完成.</p>
+<h3 id="_7">三期报名中<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<ul>
+<li>190919 截止</li>
+<li>190922 开课</li>
+<li>191003 结束</li>
+</ul>
+<h3 id="_8">费用<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>原价: 4200元</p>
+</blockquote>
+<ul>
+<li>中秋特价: 1542元/人</li>
+<li>优惠(先报名, 进入课程群后给助教出示对应证明资料):<ul>
+<li>复读: 6折</li>
+<li>学生: 88折</li>
+</ul>
+</li>
+</ul>
+            
+            <!--190910 init. comments-->
+            <script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <img class="logo" src="../../logo.png" title="Blogging蟒营™">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#_2">是的</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_3">任务</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_4">折腾</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">豁然</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#-style">蟒营-style</a></li>
+      <ul>
+    
+      <li><a href="#_6">价值</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_7">三期报名中</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_8">费用</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit on GitHub</a></li>
+      
+    </ul>
+  
+</nav>
+          
+            
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; 2019 蟒营™101camp
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2019-09-10 02:23:51
+  -->
+</body>
+</html>

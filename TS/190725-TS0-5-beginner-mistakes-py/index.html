@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>TS0: Python 初学者常见 5 种错误 &mdash; Blogging蟒营™</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="ts0-python-5">TS0: Python 初学者常见 5 种错误<a class="headerlink" href="#ts0-python-5" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>Tech Soup ~ 技术鳮汤 ;-)</p>
+</blockquote>
+<h2 id="lambda">不必要的 lambda<a class="headerlink" href="#lambda" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>并不是一定要函式编程才优雅</p>
+</blockquote>
+<pre><code>def request(self, method, **kwargs):
+    # ...
+    if method not in ("get", "post"):
+        req.get_method = lambda: method.upper()
+    # ...
+</code></pre>
+<p>比如上面这个例子中的 lambda: method.upper()</p>
+<p>其实, 说人话就好:</p>
+<pre><code>def request(self, method, **kwargs):
+    # ...
+    if method not in ("get", "post"):
+        req.get_method = method.upper
+    # ...
+</code></pre>
+<h2 id="notimplemented">异常 NotImplemented<a class="headerlink" href="#notimplemented" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>相近命名引发的误用</p>
+</blockquote>
+<pre><code>class SitesManager(object):
+    def get_image_tracking_code(self):
+        raise NotImplemented
+</code></pre>
+<p>而其实应该是:</p>
+<pre><code>class SitesManager(object):
+    def get_image_tracking_code(self):
+        raise NotImplementedError
+</code></pre>
+<ul>
+<li>NotImplemented 是一个常量, 一般用以二元计算;</li>
+<li>NotImplementedError 才是一个异常类, 配合 raise 来检验子类中是否完成对应函式的实现.</li>
+</ul>
+<h2 id="_1">可变默认参数<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>最常见的:</p>
+<pre><code>def add_item(new_item, items=[]):
+    items.append(new_item)
+</code></pre>
+<p>这样将出现不可预知的结果,
+推荐声明应该是:</p>
+<pre><code>def add_item(new_item, items=None):
+    if items is None:
+        items = []
+    items.append(new_item)
+</code></pre>
+<p>因为, 执行函式时, 默认参数会尝试运行,
+指定的值是类似 [] {} 等可变量,
+将可能被意外修改/使用.</p>
+<h2 id="assert">用 assert 语句作为保护条件<a class="headerlink" href="#assert" title="Permanent link">¶</a></h2>
+<p>比如:</p>
+<pre><code>assert re.match(VALID_ADDRESS_REGEXP, email) is not None
+</code></pre>
+<p>看起来, assert 是一种检查某些条件和执行失败的简便方法,
+但是, 注意:</p>
+<ul>
+<li>当使用 Python -O 优化形式运行脚本时</li>
+<li>解释器会从代码树中抛弃断言语句,</li>
+<li>导致类似代码根本不运行</li>
+<li>所以, 建议 assert 只用在测试代码中</li>
+</ul>
+<p>而, 正常的生产代码应该正常检验:</p>
+<pre><code>if not re.match(VALID_ADDRESS_REGEXP, email):
+    raise AssertionError
+</code></pre>
+<h2 id="isinstance-type">用 isinstance 替代 type<a class="headerlink" href="#isinstance-type" title="Permanent link">¶</a></h2>
+<pre><code>def which_number_type(num):
+    if isinstance(num, int):
+        print('Integer')
+    else:
+        raise TypeError('Not an integer')
+
+which_number_type(False)  # prints 'Integer', which is incorrect
+</code></pre>
+<p>虽然, isinstance() 和 type() 都有数据类型检验的能力,</p>
+<p>但是, 有个重要区别:</p>
+<ul>
+<li>isinstance 在解析对象时,能识别继承关系<ul>
+<li>而 type 不管这事儿</li>
+</ul>
+</li>
+<li>因为 bool 是 int 的子类<ul>
+<li>所以,上述代码, 将 False 意外识别为 数字</li>
+</ul>
+</li>
+</ul>
+<h2 id="ps">PS:<a class="headerlink" href="#ps" title="Permanent link">¶</a></h2>
+<p>事实上类似初学者常见问题列表, 有很多种...
+只是并不是真正初学场景中会撞到的,
+为什么?</p>
+<p>对初学的定义不同;</p>
+<p>在蟒营(101.camp) Python 入门班(py.101.camp),
+针对的是无基础学习者,
+想有效获得靠谱编程体验 -&gt; 即, 能自如探索 Python 生态, 
+识别靠谱方案, 并快速自行完成实验, 并入当前问题的解决代码中;</p>
+<p>全程高度互动:</p>
+<ul>
+<li>针对每一位学员, 每一个具体真实行为, <ul>
+<li>进行就地嗯哼,</li>
+</ul>
+</li>
+<li>力图在每一个感性体验现场, <ul>
+<li>注入理性思考过程,</li>
+</ul>
+</li>
+<li>从而, 进一步形成习惯,完成编程思维的再激发.</li>
+</ul>
+<p>当前 蟒营 Python入门正式班(101camp2py) 第2期 正在报名:</p>
+<ul>
+<li>截止 190725 0842 (最后不到 4.2小时)</li>
+<li>课程时间: 190728~190908</li>
+<li>报名入口: https://py.101.camp</li>
+</ul>
+<h2 id="pps">PPS:<a class="headerlink" href="#pps" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>当前课程对应公众号 蟒营101camp 暂定专栏有:</p>
+</blockquote>
+<ul>
+<li>DM 大妈嗯哼 ~ 文本快速呢喃点心境...</li>
+<li>NC 嗯哼蟒营 ~ 图文/图片有关课程信息</li>
+<li>SS 学员故事 ~ 各期课程中发生的真实"血案"</li>
+<li>TS 技术鳮汤 ~ 转载/原创自学技术/心法相关嗯哼</li>
+</ul>
+            
+            <!--190910 init. comments-->
+            <script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <img class="logo" src="../../logo.png" title="Blogging蟒营™">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#lambda">不必要的 lambda</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#notimplemented">异常 NotImplemented</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_1">可变默认参数</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#assert">用 assert 语句作为保护条件</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#isinstance-type">用 isinstance 替代 type</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#ps">PS:</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#pps">PPS:</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit on GitHub</a></li>
+      
+    </ul>
+  
+</nav>
+          
+            
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; 2019 蟒营™101camp
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2019-09-10 02:23:51
+  -->
+</body>
+</html>

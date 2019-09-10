@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>SS4: 在Pyenv中从3.6.5升级至3.7.3时僵局 &mdash; Blogging蟒营™</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="ss4-pyenv365373">SS4: 在Pyenv中从3.6.5升级至3.7.3时僵局<a class="headerlink" href="#ss4-pyenv365373" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>101camp1py 190409 触发</p>
+</blockquote>
+<h2 id="_1">苦也:<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>为什么用代码总是获得意外的数据?</p>
+</blockquote>
+<p>进行ch0的第一个开发任务安装python3.7.3时遇到问题:</p>
+<ul>
+<li>已经安装python3.6.5版本,</li>
+<li>执行 brew upgrade python3 时,</li>
+<li>提示 python3 尚未安装,</li>
+<li>但在执行python3 --version 时是能查到版本的</li>
+</ul>
+<p>::</p>
+<pre><code>$ brew upgrade python3
+Updating Homebrew...
+Error: python3 not installed
+
+$ python3 --version
+Python 3.6.5
+</code></pre>
+<p>请问我该如何操作,我的思路是---</p>
+<ul>
+<li>是否是Homebrew在GFW内速度感人,所以需要让终端也翻墙再操作. </li>
+<li>是否能不霸王硬上弓,使用版本控制方法,比如pyenv或者virtualenv来搞?</li>
+<li>我猜测第1个思路应该是不对的,第二个应该是OK的. </li>
+</ul>
+<h2 id="_2">触发:<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>是也乎,(￣▽￣)</p>
+</blockquote>
+<p>高兴你的高兴</p>
+<ul>
+<li>作为 17+年 Python 用户, 也深深感 Python 运行时环境是个灵巧又任性的大坑</li>
+<li>作为初学者, 竟然这么快就独立解决了, 实在太惊人了...</li>
+<li>也恭喜激发本周最后一个 SM(隐藏任务):<ul>
+<li>结合自己的体验</li>
+<li>试发表一则 Issue:<ul>
+<li>[SM] Python 运行时环境管理小雾</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>用自己的理解给大家分享<ul>
+<li>什么是 Python?</li>
+<li>什么是 Python 运行时?</li>
+<li>什么是 系统 Python 环境?</li>
+<li>什么是 用户 Python 环境?</li>
+<li>在你的桌面系统中, 有多少种 Python 运行环境可以部署?</li>
+<li>用哪种来管理最省必? 为什么?</li>
+<li>为什么 Python 有这么多运行时环境关系?</li>
+</ul>
+</li>
+<li>对于初学者, 最重要的 Pyton 多版本环境控制概念是什么?</li>
+<li>给出最小 Python 运行时管理工具/概念检查单?<ul>
+<li>如何检验当前有什么 Python 版本/环境?</li>
+<li>当前代码运行时调用的是哪个?</li>
+<li>如何切换?</li>
+<li>...</li>
+</ul>
+</li>
+<li>以及查阅过哪些资料? 哪些最推荐?</li>
+</ul>
+<h2 id="_3">嗯哼?<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>我去,这个仿佛是不可能完成的任务啊,完全没概念. </p>
+</blockquote>
+<p>助教来嗯哼:</p>
+<ul>
+<li>大妈的问题一般都比较完备, 虽然乍一看吓尿指数也很高.</li>
+<li>冷静下来, 看一道题解决一道. 你没问题的.</li>
+<li>不过这么快就跑通了虚拟环境, 已经非常非常非常有灵性了.</li>
+<li>But! 这里留个线索... 其实你并没有完全的跑通虚拟环境 嗷!<ul>
+<li>pyenv versions这个命令你已经懂了.</li>
+<li>需要实际的了解, 如何切换到自己想要的环境.</li>
+<li>并且要明白, 为什么需要切换?</li>
+</ul>
+</li>
+<li>以上的思考方向, 可以帮助你了解大妈的提问.</li>
+</ul>
+<h2 id="_4">解决的解决:<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>问题已解决!思路如下---</p>
+</blockquote>
+<p>我选择第二条路,使用 pyenv 来实现安装 python3.7.3,所以我执行了如下命令:</p>
+<pre><code>    $ brew install pyenv
+    $ echo 'eval &quot;$(pyenv init -)&quot;' &gt;&gt; ~/.zshrc
+    $ echo 'eval &quot;$(pyenv virtualenv-init -)&quot;' &gt;&gt; ~/.zshrc
+    $ source ~/.zshrc
+</code></pre>
+
+<p>但是在进行最后一行命令source ~/.zshrc时,提示错误为:</p>
+<pre><code>    pyenv: no such command `virtualenv-init'
+</code></pre>
+
+<p>在google上查阅后发现是pyenv-virtualenv没有安装,所以需要执行如下命令:</p>
+<pre><code>    $ brew upgrade --HEAD pyenv-virtualenv
+</code></pre>
+
+<p>先用上面这个命令更新一下,如果提示没有安装就换下面这个命令</p>
+<pre><code>    $ brew install --HEAD pyenv-virtualenv
+</code></pre>
+
+<p>之后再进行source ~/.zshrc顺利完成. pyenv安装好后,接下来就是使用它来安装最新python 3.7.3,所以执行下列命令</p>
+<pre><code>    $ pyenv install 3.7.3
+</code></pre>
+
+<p>,发现3.7.3的安装包在国外,下载十分缓慢,至少等待了30分钟(我洗了个澡),我决定让终端也能翻墙,去墙外下载. 
+我使用的是socks5代理,所以终端翻墙较为复杂,先下载最新版本的 Shadowsocks-NG,配置好服务器后,之后在终端执行:</p>
+<pre><code>     $ export http_proxy=http://127.0.0.1:1087
+     $ export https_proxy=http://127.0.0.1:1087
+</code></pre>
+
+<p>然后继续使用pyenv来下载python 3.7.3,又遇到了问题:</p>
+<pre><code>    $ pyenv install 3.7.3
+    BUILD FAILED (OS X 10.14.2 using python-build 20180424)
+    Inspect or clean up the working tree at /var/folders/gf/_4hphmvs5lnfz7_sg4l1d3y00000gn/T/python-build.20190410094358.7234
+    Results logged to /var/folders/gf/_4hphmvs5lnfz7_sg4l1d3y00000gn/T/python-build.20190410094358.7234.log
+    ...
+</code></pre>
+
+<p>查阅后,需要进行如下配置,(It works for me but I don't know why)</p>
+<pre><code>    $ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+</code></pre>
+
+<p>具体内容来源为</p>
+<blockquote>
+<p>macOS Mojave Pyenv install multi-version build failed solution</p>
+<p>http://www.blog.howechen.com/macos-mojave-pyenv-install-multi-version-build-failed-solution/</p>
+</blockquote>
+<p>操作之后,再执行如下命令,完成!</p>
+<pre><code>
+    $ pyenv install 3.7.3
+    $ pyenv versions
+    * system (set by /Users/Cheyer/.pyenv/version)
+      3.7.3
+
+</code></pre>
+
+<p>到此,就完成配置了!</p>
+<h2 id="_5">是也乎:<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<p>这就是蟒营哪, 正如隔壁队长说的:</p>
+<blockquote>
+<p>一个十分开放的课程,开放到他只给你一个框架,内容完全由自己来填写,任何形式任何方法都可以得到包容,也没有人说[哎呀这个应该这样做],他完全靠自己实际操作来触发一系列隐藏任务,而大妈则是"和蔼"的站在背后不时的看看你,指引你,帮助你把这个发现的问题狠狠的踩下去,推动你去弄个明白. </p>
+</blockquote>
+<h2 id="ps">PS:<a class="headerlink" href="#ps" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>当前课程对应公众号 蟒营101camp 暂定专栏有:</p>
+</blockquote>
+<ul>
+<li>DM 大妈嗯哼 ~ 文本快速呢喃点心境...</li>
+<li>NC 嗯哼蟒营 ~ 图文/图片有关课程信息</li>
+<li>SS 学员故事 ~ 各期课程中发生的真实"血案"</li>
+<li>TS 技术鳮汤 ~ 转载/原创自学技术/心法相关嗯哼</li>
+</ul>
+<p>欢迎投稿, 邮件给课程组就好:</p>
+<pre><code>guru101camp@googlegroups.com
+</code></pre>
+<h2 id="pps">PPS:<a class="headerlink" href="#pps" title="Permanent link">¶</a></h2>
+<p>蟒营(101.camp): </p>
+<pre><code>伴你重新享受自学乐趣
+Reactivate Joy by Self-teach with You
+</code></pre>
+<ul>
+<li>所以, 不仅仅是 Python ,</li>
+<li>马上将用蟒营形式发布写作课程,</li>
+<li>欢迎大家参与体验,</li>
+<li>用7+1周时间<ul>
+<li>重新获得写作的乐趣</li>
+<li>以及一组高效出品习惯</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>NN 3740</p>
+</blockquote>
+</blockquote>
+            
+            <!--190910 init. comments-->
+            <script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <img class="logo" src="../../logo.png" title="Blogging蟒营™">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#_1">苦也:</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_2">触发:</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_3">嗯哼?</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_4">解决的解决:</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">是也乎:</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#ps">PS:</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#pps">PPS:</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit on GitHub</a></li>
+      
+    </ul>
+  
+</nav>
+          
+            
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; 2019 蟒营™101camp
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2019-09-10 02:23:51
+  -->
+</body>
+</html>
