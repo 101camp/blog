@@ -268,7 +268,7 @@ def reidx(c, site):
             continue
         else:
             pp(root)
-            print(root.split('/'))
+            #print(root.split('/'))
             _sub = root.split('/')[-1]
             
             #pp(dirs)
@@ -287,7 +287,7 @@ def reidx(c, site):
                                     ,_sub
                                     , f)
                     if len(_fn[0])==6 and len(_fn)>2:
-                        print(_fn)
+                        #print(_fn)
                         if _fn[0] in _lasted:
                             _lasted[_fn[0]].append(_r2li)
                         else:
@@ -308,7 +308,7 @@ def reidx(c, site):
     for i in sorted(_lasted,reverse=True) : 
         if _top == 0: break
         _top -= 1
-        print(i, _lasted[i]) 
+        #print(i, _lasted[i]) 
         _update.append('\n'.join(_lasted[i]))
     
     #pp('\n'.join(_update))
