@@ -44,6 +44,10 @@
         <div class="body" role="main">
           {% block content %}
             {{ page.content }}
+            
+            <!--190910 init. comments-->
+            {% include "inc/utteranc_es.html" %}
+
             {% if page.is_homepage and theme.homepage_nav %}
               {% include "inc/homepage_nav.html" %}
             {% endif %}
