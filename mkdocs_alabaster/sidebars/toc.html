@@ -23,7 +23,11 @@
     <hr>
     <ul>
       {% for text, uri in theme.extra_nav_links.items() %}
+      <!--
         <li class="toctree-l1"><a href="{{ uri }}">{{ text }}</a></li>
+      -->
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/{{page.url[:-1]}}.md">{{ text }}</a></li>
+
       {% endfor %}
     </ul>
   {% endif %}
