@@ -173,7 +173,7 @@ def gh(c, site):
                     , hide=False, warn=True)
     #c.run('git pu', hide=False, warn=True)
 
-@task
+#@task
 def chktri(c):
     '''check trigger obj. set TRIGGER switch
     '''
@@ -211,6 +211,92 @@ def recover(c):
     print('TRIGGER obj. recover -> waiting human deploy again')
 
 
+def _injector(aim, drug):
+    '''inject drug into aim .md
+    ::.
+        <- here
+    .::
+    '''
+    _TS = '{}.{}'.format(time.strftime('%y%m%d %H%M %S')
+                 , str(time.time()).split('.')[1][:3] )
+    #print(aim,drug)
+    _exp = ''
+    _replace = 0
+    for l in open(aim):
+        #print(l)
+        if '::.' == l[:-1]:
+            print('start inject')
+            _replace = 1
+            _exp += l 
+        elif '.::' == l[:-1]:
+            _replace = 0
+            _exp += drug
+            print(drug)
+            _exp += '\n\n(auto index injected at %s) \n\n'% _TS
+            _exp += l 
+            print('end inject')
+        else:
+            if _replace:
+                pass
+            else:
+                _exp += l 
+            
+    #print(_exp)
+    open(aim,'w').write(_exp)
+    return None
+#@task
+def reidx(c, site):
+    '''re-build _index auto.
+    '''
+    #global TRIGGER
+    global _TRIP, _TOBJ
+
+    #cd(c, '%s/%s/%s'%(_DU19, PUB, _TRI))
+    _crt = '%s/%s'%(CAMPROOT, CSITES[site]['ori'])
+    _doc = '%s/docs'%_crt
+    #print(_doc)
+    for root, dirs, files in os.walk(_doc):
+        '''for d in dirs:
+            pp(d)
+        for f in files:
+            pp(f)
+        '''
+        if len(dirs) > 0:
+            #print('as startting...')
+            continue
+        else:
+            pp(root)
+            #pp(dirs)
+            _idx = []
+            for f in files:
+                if '_index' in f:
+                    pass
+                else:
+                    _md = "%s/%s"%(root,f)
+                    #print(_md)
+                    _itme = '- [{}]({})'.format(open(_md).readlines()[0][1:-1]
+                                    , f)
+                    #print(_itme)
+                    _idx.append(_itme)
+            #pp(files)
+            _aim = "%s/_index.md"%root
+            _injector(_aim, '\n'.join(_idx))
+        #print('\n\tanothers levels...\n')
+
+
+
+
+    
+    return None
+    #print(os.listdir(_path))
+    #print(type(os.listdir(_path)))
+    if _TOBJ in os.listdir(_path):
+        print('\n\tTRIGGERed by %s exist'% _TOBJ)
+        TRIGGER = 1
+    else:
+        print('\n\tTRIGGER obj. -> %s ~> NOT exist\n\t CANCEL build...'% _TOBJ)
+        TRIGGER = 0
+
 @task 
 def pub(c, site):
     '''$ inv pub [101|py] <- auto deploy new site version base multi-repo.
@@ -227,6 +313,7 @@ def pub(c, site):
     if TRIGGER:
         print('auto deplo NOW:')
         #return None
+        reidx(c, site)
         bu(c)
         recover(c)
 
