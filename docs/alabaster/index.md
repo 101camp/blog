@@ -1,12 +1,17 @@
-# Alabaster for MkDocs
+# theme:alabaster
+> MkDocs 's
 
-Original Alabaster is a visually (c)lean, responsive, configurable theme for the Sphinx documentation system. It began as a third-party theme, but as of Sphinx 1.3, Alabaster is an install-time dependency of Sphinx and is selected as the default theme, and is used in projects such as <http://paramiko.org/>, <http://fabfile.org/> or <http://pyinvoke.org/>.
+## 索引:
+> 随缘
 
-This is a port of Alabaster for the [MkDocs](http://www.mkdocs.org/) static site generator.
+::.
+
+- [ Developer guide](dev.md)
+- [ User guide](guide.md)
+- [ Alabaster for MkDocs](readme.md)
+
+(auto index injected at 190910 1134 36.313) 
+
+.::
 
 
-## Features
-
-- Navigation and TOC
-- Search
-- Customizable sidebar (planned)

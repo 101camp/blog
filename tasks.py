@@ -270,7 +270,7 @@ def reidx(c, site):
             #pp(dirs)
             _idx = []
             for f in files:
-                if '_index' in f:
+                if 'index.md' == f:
                     pass
                 else:
                     _md = "%s/%s"%(root,f)
@@ -280,7 +280,7 @@ def reidx(c, site):
                     #print(_itme)
                     _idx.append(_itme)
             #pp(files)
-            _aim = "%s/_index.md"%root
+            _aim = "%s/index.md"%root
             _injector(_aim, '\n'.join(_idx))
         #print('\n\tanothers levels...\n')
 
