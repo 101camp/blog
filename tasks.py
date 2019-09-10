@@ -219,7 +219,7 @@ def pub(c, site):
     global CAMPROOT
     global CSITES
     print(CAMPROOT)
-    pl(c, site)
+    #pl(c, site)
     _crt = '%s/%s'%(CAMPROOT, CSITES[site]['ori'])
     cd(c, _crt)
     chktri(c)
