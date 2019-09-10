@@ -7,12 +7,12 @@ theme:
 
 nav:
   - Home: index.md
-  - DM: DM/_index.md
-  - NC: NC/_index.md
-  - SS: SS/_index.md
-  - TS: TS/_index.md
   - License: license.md
   - theme: alabaster/index.md
+#  - DM: DM/_index.md
+#  - NC: NC/_index.md
+#  - SS: SS/_index.md
+#  - TS: TS/_index.md
 
 markdown_extensions:
   - toc:

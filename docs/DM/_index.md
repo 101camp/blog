@@ -5,6 +5,7 @@
 > 随缘
 
 ::.
+
 - [ 190701 同志们好:](190701_DM0.md)
 - [ DM1: 蟒营为什么?](190702_DM1.md)
 - [ DM2: call back](190709_DM2.md)
@@ -13,7 +14,7 @@
 - [ 首次蟒营式冲击](190905-1st101camp.md)
 - [ DM5: 咩是团队?](DM5-what-is-team.md)
 
-(auto index injected at 190910 1122 50.944) 
+(auto index injected at 190910 1127 11.614) 
 
 .::
 

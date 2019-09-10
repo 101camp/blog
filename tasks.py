@@ -122,9 +122,10 @@ def pl(c, site):
 
 
 @task 
-def bu(c):
+def bu(c, site):
     '''usgae MkDocs build AIM site
     '''
+    reidx(c, site)
     c.run('pwd')
     c.run('mkdocs build', hide=False, warn=True)
 
@@ -230,7 +231,7 @@ def _injector(aim, drug):
             _exp += l 
         elif '.::' == l[:-1]:
             _replace = 0
-            _exp += drug
+            _exp += "\n"+drug
             print(drug)
             _exp += '\n\n(auto index injected at %s) \n\n'% _TS
             _exp += l 
@@ -313,8 +314,7 @@ def pub(c, site):
     if TRIGGER:
         print('auto deplo NOW:')
         #return None
-        reidx(c, site)
-        bu(c)
+        bu(c, site)
         recover(c)
 
         pu(c)

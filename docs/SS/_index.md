@@ -5,6 +5,7 @@
 > 随缘
 
 ::.
+
 - [ SS0: 报名阶段就想着结束了乍办...](190713-SS0-after101camp.md)
 - [ SS1: 为什么访问不了 gitlab?](190714-SS1-ie-err.md)
 - [ SS2: 视而不见的 email](190724-SS2-email-and.md)
@@ -13,7 +14,7 @@
 - [ SS5: 仓库文件用中文命名之囧](SS5-uri-anti-chinese.md)
 - [ SS6: 在判断死角里日常喷血](SS6-auto-list2str.md)
 
-(auto index injected at 190910 1122 50.947) 
+(auto index injected at 190910 1127 11.616) 
 
 .::
 
