@@ -185,10 +185,10 @@ def chktri(c):
     #print(os.listdir(_path))
     #print(type(os.listdir(_path)))
     if _TOBJ in os.listdir(_path):
-        print('TRIGGERed by %s exist'% _TOBJ)
+        print('\n\tTRIGGERed by %s exist'% _TOBJ)
         TRIGGER = 1
     else:
-        print('TRIGGER obj. -> %s ~> NOT exist\n\t CANCEL build...'% _TOBJ)
+        print('\n\tTRIGGER obj. -> %s ~> NOT exist\n\t CANCEL build...'% _TOBJ)
         TRIGGER = 0
 
 #@task
