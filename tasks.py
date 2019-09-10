@@ -245,7 +245,7 @@ def _injector(aim, drug):
     #print(_exp)
     open(aim,'w').write(_exp)
     return None
-#@task
+@task
 def reidx(c, site):
     '''re-build _index auto.
     '''
@@ -256,6 +256,7 @@ def reidx(c, site):
     _crt = '%s/%s'%(CAMPROOT, CSITES[site]['ori'])
     _doc = '%s/docs'%_crt
     #print(_doc)
+    _lasted = {}
     for root, dirs, files in os.walk(_doc):
         '''for d in dirs:
             pp(d)
@@ -267,6 +268,9 @@ def reidx(c, site):
             continue
         else:
             pp(root)
+            print(root.split('/'))
+            _sub = root.split('/')[-1]
+            
             #pp(dirs)
             _idx = []
             for f in files:
@@ -275,10 +279,21 @@ def reidx(c, site):
                 else:
                     _md = "%s/%s"%(root,f)
                     #print(_md)
-                    _itme = '- [{}]({})'.format(open(_md).readlines()[0][1:-1]
+                    #print(f.split('-'))item
+                    _item = '- [{}]({})'.format(open(_md).readlines()[0][1:-1]
                                     , f)
+                    _fn = f.split('-')
+                    _r2li = '- [{}]({}/{})'.format(open(_md).readlines()[0][1:-1]
+                                    ,_sub
+                                    , f)
+                    if len(_fn[0])==6 and len(_fn)>2:
+                        print(_fn)
+                        if _fn[0] in _lasted:
+                            _lasted[_fn[0]].append(_r2li)
+                        else:
+                            _lasted[_fn[0]] = [_r2li]
                     #print(_itme)
-                    _idx.append(_itme)
+                    _idx.append(_item)
             #pp(files)
             _aim = "%s/index.md"%root
             _injector(_aim, '\n'.join(_idx))
@@ -287,6 +302,18 @@ def reidx(c, site):
 
 
 
+    #pp(_lasted)
+    _top = 7
+    _update = []   
+    for i in sorted(_lasted,reverse=True) : 
+        if _top == 0: break
+        _top -= 1
+        print(i, _lasted[i]) 
+        _update.append('\n'.join(_lasted[i]))
+    
+    #pp('\n'.join(_update))
+    _aim = '%s/index.md'%_doc
+    _injector(_aim, '\n'.join(_update))
     
     return None
     #print(os.listdir(_path))
