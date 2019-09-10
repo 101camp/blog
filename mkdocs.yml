@@ -1,5 +1,5 @@
-site_name: Alabaster
-copyright: 2019 Alexander Pushkov
+site_name: Blogging蟒营™
+copyright: 2019 蟒营™101camp
 
 theme:
     name: null
@@ -19,4 +19,4 @@ extra:
   logo: logo.png
   include_toc: yes
   extra_nav_links:
-    Fork me on GitHub: https://github.com/notpushkin/mkdocs-alabaster
+    edit on GitHub: https://github.com/101camp/blog

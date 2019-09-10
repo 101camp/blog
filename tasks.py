@@ -97,7 +97,7 @@ def sync4media(c):
     c.run('pwd')
 
 
-@task 
+#@task 
 def pl(c, site):
     '''$ inv pl [101|py] <- pull all relation repo.
     '''
@@ -130,7 +130,7 @@ def bu(c):
 
 #@task 
 def pu(c):
-    '''push gl manuscript...
+    '''push original branch...
     '''
     _ts = '{}.{}'.format(time.strftime('%y%m%d %H%M %S')
                      , str(time.time()).split('.')[1][:3] )
@@ -145,8 +145,6 @@ def pu(c):
     #c.run('git pu', hide=False, warn=True)
 
 #   'rsync -avzP4 {static_path}/media/ {deploy_path}/media/ && '
-
-
 #@task 
 def gh(c, site):
     '''$ inv gh [101|py] <- push gh-pages for site publish
@@ -156,7 +154,7 @@ def gh(c, site):
     print(CAMPROOT)
     
     ccname(c)
-    sync4media(c)
+    #sync4media(c)
     
     _ts = '{}.{}'.format(time.strftime('%y%m%d %H%M %S')
                      , str(time.time()).split('.')[1][:3] )
@@ -222,7 +220,7 @@ def pub(c, site):
     global CSITES
     print(CAMPROOT)
     pl(c, site)
-    _crt = '%s/%s'%(CAMPROOT, CSITES[site]['gl'])
+    _crt = '%s/%s'%(CAMPROOT, CSITES[site]['ori'])
     cd(c, _crt)
     chktri(c)
     
