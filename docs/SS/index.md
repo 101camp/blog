@@ -14,7 +14,7 @@
 - [ SS5: 仓库文件用中文命名之囧](190815-uri-anti-chinese.md)
 - [ SS6: 在判断死角里日常喷血](190818-auto-list2str.md)
 
-(auto index injected at 190910 1802 33.115) 
+(auto index injected at 190911 2211 27.326) 
 
 .::
 
