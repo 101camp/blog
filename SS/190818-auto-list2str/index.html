@@ -41,7 +41,7 @@
 </blockquote>
 <ul>
 <li>思路出现错误, 在编程时误把 list 数据当成 dict 数据.</li>
-<li>痛点在于 Python “过于智能”,直接把整个 list 转化为 str 类型, - 报错信息没完理解,导致对自己的判断 坚信不疑.</li>
+<li>痛点在于 Python "过于智能",直接把整个 list 转化为 str 类型, - 报错信息没完理解,导致对自己的判断 坚信不疑.</li>
 </ul>
 <h3 id="_2">背景<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
 <blockquote>
@@ -53,22 +53,22 @@
 </ul>
 <p>101camp2py ch3 周任务获取 commit-comment 数据时,遭遇报错.</p>
 <p>于是尝试在错误代码中间插入 print 函数打印存疑变量或对象.</p>
-<p>下图中左侧是插入 print 函数后代码,右图则是执行代码后控制台输出,箭头由被打印变量、对象指向打印结果.报错 “TypeError: string indices must be integers” 被误认为是需要处理 “[ ]” 这种意外字符.</p>
+<p>下图中左侧是插入 print 函数后代码,右图则是执行代码后控制台输出,箭头由被打印变量,对象指向打印结果.报错 "TypeError: string indices must be integers" 被误认为是需要处理 "[ ]" 这种意外字符.</p>
 <p><img alt="ch3list2str" src="https://ipic.zoomquiet.top/2019-08-18-ch3list2str.png" /></p>
 <h3 id="_3">问题<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
 <ul>
 <li>When? 精确发生时间点 ~见背景</li>
-<li>Where? 在什么场景中,什么数据上下文?…<ul>
-<li>ch3 任务中，提取 commit-comment 数据时遇到报错</li>
+<li>Where? 在什么场景中,什么数据上下文?... <ul>
+<li>ch3 任务中,提取 commit-comment 数据时遇到报错</li>
 <li>插入 print 函数打印 debug</li>
 <li>报错 TypeError: string indices must be integers</li>
-<li>不同 commit 对应不同的 URL, 拼接字符串的时候发现字符串带符号 “[ ]”</li>
+<li>不同 commit 对应不同的 URL, 拼接字符串的时候发现字符串带符号 "[ ]"</li>
 </ul>
 </li>
-<li>What?  想完成什么目标? 操作序列, 指令, 终端输出?…<ul>
-<li>字符串分割，提取「[content]」字符串中的 content.</li>
-<li>如：<ul>
-<li>[‘df934cf2bccf28f06c30a7c3b4049ded914e4be7’]  </li>
+<li>What?  想完成什么目标? 操作序列, 指令, 终端输出?... <ul>
+<li>字符串分割,提取'[content]'字符串中的 content.</li>
+<li>如:<ul>
+<li>['df934cf2bccf28f06c30a7c3b4049ded914e4be7']  </li>
 <li>-&gt;  </li>
 <li>df934cf2bccf28f06c30a7c3b4049ded914e4be7</li>
 </ul>
@@ -76,7 +76,7 @@
 </ul>
 </li>
 <li>Why? 如何理解的?<ul>
-<li>误以为字符串自带符号 「[ ]」 ，想要去除这个符号</li>
+<li>误以为字符串自带符号 '[ ]' ,想要去除这个符号</li>
 </ul>
 </li>
 <li>How? 进行了什么尝试<ul>
@@ -86,93 +86,93 @@
 </ul>
 <h3 id="_4">现场解惑还原<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
 <blockquote>
-<p>本对话, 从提问之后的解答开始——</p>
+<p>本对话, 从提问之后的解答开始---</p>
 </blockquote>
-<pre><code>「 ZoomQuiet 大妈: 想多了 --&gt; 列表就一个元素~取出来就好 」
+<pre><code>' ZoomQuiet 大妈: 想多了 --&gt; 列表就一个元素~取出来就好 '
 - - - - - - - - - - - - - - -
-「 m**i: 可是我之前就是没有切片，然后url有错误 」
+' m**i: 可是我之前就是没有切片,然后url有错误 '
 - - - - - - - - - - - - - - -
-「 m**i: @ZoomQuiet 大妈  」
+' m**i: @ZoomQuiet 大妈  '
 - - - - - - - - - - - - - - -
-「 m**i: ASCII码里
+' m**i: ASCII码里
 [ = 5D 
-] = 5B 」
+] = 5B '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: 那不叫切片……
-提取而已… 」
+' ZoomQuiet 大妈: 那不叫切片... 
+提取而已...  '
 - - - - - - - - - - - - - - -
-「 m**i: 那我这个方法有错误了？ 」
+' m**i: 那我这个方法有错误了? '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: 所以…请求前…
-先把拼好的 url 打印出来…复制到浏览器可用 --&gt; 再代入运行 」
+' ZoomQuiet 大妈: 所以... 请求前... 
+先把拼好的 url 打印出来... 复制到浏览器可用 --&gt; 再代入运行 '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: @m**i 那我这个方法有错误了？
+' ZoomQuiet 大妈: @m**i 那我这个方法有错误了?
  &lt;-- 是也乎 ╮(╯▽╰)╭
 
-方法没错思路反了 」
+方法没错思路反了 '
 - - - - - - - - - - - - - - -
-「 m**i: 不呢，没有[ ]的url是正确的 」
+' m**i: 不呢,没有[ ]的url是正确的 '
 - - - - - - - - - - - - - - -
-「 m**i: 但是我从json里面拿出来，不知为何就带了[ ] 」
+' m**i: 但是我从json里面拿出来,不知为何就带了[ ] '
 - - - - - - - - - - - - - - -
-「 m**i: 噢，我懂了 」
+' m**i: 噢,我懂了 '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: @m**i 但是我从json里面拿出来，不知为何就带了[ ]
+' ZoomQuiet 大妈: @m**i 但是我从json里面拿出来,不知为何就带了[ ]
  &lt;-- 是也乎 ╮(╯▽╰)╭
 
 你没拿出来吧
-直接列表就当结果了 」
+直接列表就当结果了 '
 - - - - - - - - - - - - - - -
-「 m**i: 天啦，我知道了，对的，那个是列表，只有一项的列表 」
+' m**i: 天啦,我知道了,对的,那个是列表,只有一项的列表 '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: 但 python 智能的转成了 str 」
+' ZoomQuiet 大妈: 但 python 智能的转成了 str '
 - - - - - - - - - - - - - - -
-「 m**i: 但是我当成str了 」
+' m**i: 但是我当成str了 '
 - - - - - - - - - - - - - - -
-「 m**i: 对，我输了type也告诉我是str 」
+' m**i: 对,我输了type也告诉我是str '
 - - - - - - - - - - - - - - -
-「 m**i: 真血案 」
+' m**i: 真血案 '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: 是也乎 ╮(╯▽╰)╭
+' ZoomQuiet 大妈: 是也乎 ╮(╯▽╰)╭
 
-这是笨办法第五课的练习 」
+这是笨办法第五课的练习 '
 - - - - - - - - - - - - - - -
-「 m**i: 好的，笨办法没刷[捂脸] 」
+' m**i: 好的,笨办法没刷[捂脸] '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: @m**i 真血案
+' ZoomQuiet 大妈: @m**i 真血案
  &lt;-- 是也乎 ╮(╯▽╰)╭
 
-通透 --&gt; 将 QA 变成血案回顾吧…
+通透 --&gt; 将 QA 变成血案回顾吧...
 
-这是常见问题…
-都怪 python 太智能了…
-其它语言根本不准运行的 」
+这是常见问题... 
+都怪 python 太智能了... 
+其它语言根本不准运行的 '
 - - - - - - - - - - - - - - -
-「 m**i: hhh，所以说，python代码全靠程序员自觉遵守规则了 」
+' m**i: hhh,所以说,python代码全靠程序员自觉遵守规则了 '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: 是也乎 ╮(╯▽╰)╭
+' ZoomQuiet 大妈: 是也乎 ╮(╯▽╰)╭
 
 Yes and not....
 
-关键是看乍用~ 」
+关键是看乍用~ '
 - - - - - - - - - - - - - - -
-「 m**i: 🆗了！谢谢您嘞 」
+' m**i: 🆗了!谢谢您嘞 '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: 这类智能特性…没有时很累~有了又容易出问题…
+' ZoomQuiet 大妈: 这类智能特性... 没有时很累~有了又容易出问题... 
 所以 --&gt; 
 C'est la vie (´-ι_-｀)
- 」
+ '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: 为人民服务 ●ｖ●嗯~ 」
+' ZoomQuiet 大妈: 为人民服务 ●ｖ●嗯~ '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: 等你的血案故事会~ 」
+' ZoomQuiet 大妈: 等你的血案故事会~ '
 - - - - - - - - - - - - - - -
-「 m**i: 好的，血案制造机☞ 」
+' m**i: 好的,血案制造机☞ '
 - - - - - - - - - - - - - - -
-「 ZoomQuiet 大妈: 是也乎 ╮(╯▽╰)╭
+' ZoomQuiet 大妈: 是也乎 ╮(╯▽╰)╭
 
  &lt;-- 你们才是
-俺是血瀑布模型 」
+俺是血瀑布模型 '
 - - - - - - - - - - - - - - -
 </code></pre>
 <h2 id="_5">是也乎:<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
@@ -505,7 +505,7 @@ Reactivate Joy by Self-teach with You
 
   <!--
   MkDocs version      : 1.0.4
-  Docs Build Date UTC : 2019-09-11 14:11:28
+  Docs Build Date UTC : 2019-09-12 01:37:50
   -->
 </body>
 </html>
