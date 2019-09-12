@@ -13,8 +13,9 @@
 - [ SS4: 在Pyenv中从3.6.5升级至3.7.3时僵局](190815-block-pyenv373.md)
 - [ SS5: 仓库文件用中文命名之囧](190815-uri-anti-chinese.md)
 - [ SS6: 在判断死角里日常喷血](190818-auto-list2str.md)
+- [ SS7: 在判断死角里日常喷血](190912-i-am-happy.md)
 
-(auto index injected at 190911 2211 27.326) 
+(auto index injected at 190912 0937 49.661) 
 
 .::
 
