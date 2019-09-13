@@ -23,7 +23,7 @@
 ## GNU 教
 所以, 那年中秋, 一个人, 憋出仿诗, 配图发送给 ICQ 好友们, 以及 啄木鸟Python技术社区列表中
 
-[2002-singleMoon.JPG (JPEG Image, 600 × 545 pixels)](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/2002-singleMoon.JPG)
+![2002-singleMoon.JPG (JPEG Image, 600 × 545 pixels)](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/2002-singleMoon.JPG)
 
 
     时逢中秋 佳节自古 
