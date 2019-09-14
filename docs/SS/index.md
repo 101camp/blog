@@ -14,8 +14,9 @@
 - [ SS5: 仓库文件用中文命名之囧](190815-uri-anti-chinese.md)
 - [ SS6: 在判断死角里日常喷血](190818-auto-list2str.md)
 - [ SS7: 我很快乐...](190912-i-am-happy.md)
+- [ SS7: 我的蟒营时间](190914-jy-time-story.md)
 
-(auto index injected at 190913 0906 30.432) 
+(auto index injected at 190914 2313 52.998) 
 
 .::
 
