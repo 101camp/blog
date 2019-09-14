@@ -5,7 +5,7 @@
 
 ::.
 
-- [ SS7: 我的蟒营时间](SS/190914-jy-time-story.md)
+- [ SS8: 我的蟒营时间](SS/190914-jy-time-story.md)
 - [ DM8:佳节自古](DM/190913-single-moon.md)
 - [ SS7: 我很快乐...](SS/190912-i-am-happy.md)
 - [ DM7:灵魂导师 RMS](DM/190910-rms-soul-master.md)
@@ -13,7 +13,7 @@
 - [ NC1:从放弃到入门？蟒营新一期 Python 学习班助你踢这临门一脚](NC/190902-3py-what-is-camp.md)
 - [ DM5: 咩是团队?](DM/190822-what-is-team.md)
 
-(auto index injected at 190914 2313 53.002) 
+(auto index injected at 190914 2316 50.527) 
 
 .::
 
