@@ -13,7 +13,7 @@
 - [ NC1:从放弃到入门？蟒营新一期 Python 学习班助你踢这临门一脚](NC/190902-3py-what-is-camp.md)
 - [ DM5: 咩是团队?](DM/190822-what-is-team.md)
 
-(auto index injected at 190914 2316 50.527) 
+(auto index injected at 190915 1958 51.578) 
 
 .::
 
