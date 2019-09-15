@@ -303,7 +303,7 @@
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido2014gao.jpg)
 
 
-### PyCon17/18China
+### PyConChina17/18/...
 > 由小伙伴们全权设计
 
 
@@ -328,6 +328,16 @@
 
 
 那么, 今年的设计是什么呢?
+
+如果是俺, 当然恢复苦短系列:
+
+    人生苦短
+    再伴卅年
+    
+    Life is short
+    partner python 3 decades again
+    
+
 
 
 ## 纪念衫:
