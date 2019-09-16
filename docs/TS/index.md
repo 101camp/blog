@@ -10,7 +10,7 @@
 - [ TS1: 老令公今天70了](190814-EKR-70th-birthday.md)
 - [ TS2: 细数我与 Linux 这十三年](190815-tinylab-falcon-and-linux.md)
 
-(auto index injected at 190916 0817 38.449) 
+(auto index injected at 190916 0846 41.832) 
 
 .::
 

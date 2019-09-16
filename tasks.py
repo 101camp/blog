@@ -2,7 +2,7 @@
 '''inv matter for auto pub. 101.camp
 '''
 
-__version__ = 'blog101CAMP v.190910.0942'
+__version__ = 'blog101CAMP v.190916.0842'
 __author__ = 'Zoom.Quiet'
 __license__ = 'CC-by-nc-nd@2019-09'
 
@@ -286,15 +286,20 @@ def reidx(c, site):
                     _r2li = '- [{}]({}/{})'.format(open(_md).readlines()[0][1:-1]
                                     ,_sub
                                     , f)
-                    if len(_fn[0])==6 and len(_fn)>2:
+                    if len(_fn[0])==6 and len(_fn)>=2:
                         #print(_fn)
                         if _fn[0] in _lasted:
+                            #print(_lasted[_fn[0]])
                             _lasted[_fn[0]].append(_r2li)
+                            #print(_lasted[_fn[0]])
                         else:
-                            _lasted[_fn[0]] = [_r2li]
+                            _lasted[_fn[0]] = []
+                            _lasted[_fn[0]].append(_r2li)
                     #print(_itme)
+                    #print(_r2li)
                     _idx.append(_item)
             #pp(files)
+            #pp(_idx)
             _aim = "%s/index.md"%root
             _injector(_aim, '\n'.join(_idx))
         #print('\n\tanothers levels...\n')
@@ -305,6 +310,7 @@ def reidx(c, site):
     #pp(_lasted)
     _top = 7
     _update = []   
+    #pp(sorted(_lasted,reverse=True))
     for i in sorted(_lasted,reverse=True) : 
         if _top == 0: break
         _top -= 1
@@ -313,6 +319,7 @@ def reidx(c, site):
     
     #pp('\n'.join(_update))
     _aim = '%s/index.md'%_doc
+    print('\n\t _injector', _aim)
     _injector(_aim, '\n'.join(_update))
     
     return None

@@ -5,15 +5,17 @@
 
 ::.
 
+- [ DM9:苦短衫的故事](DM/190914-teestory.md)
 - [ SS8: 我的蟒营时间](SS/190914-jy-time-story.md)
 - [ DM8:佳节自古](DM/190913-single-moon.md)
 - [ SS7: 我很快乐...](SS/190912-i-am-happy.md)
 - [ DM7:灵魂导师 RMS](DM/190910-rms-soul-master.md)
+- [ DM6:首次蟒营式冲击](DM/190905-1st101camp.md)
 - [ NC2:专注反焦虑17年:蟒营 Python 学习班又来一期](NC/190905-3py-just101camp.md)
 - [ NC1:从放弃到入门？蟒营新一期 Python 学习班助你踢这临门一脚](NC/190902-3py-what-is-camp.md)
 - [ DM5: 咩是团队?](DM/190822-what-is-team.md)
 
-(auto index injected at 190916 0817 38.450) 
+(auto index injected at 190916 0846 41.833) 
 
 .::
 
