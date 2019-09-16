@@ -6,7 +6,7 @@
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido2007GDD.jpg)
 
-当年, 第一次直面 老爹时, 只有 BPUG 的 logo , 而没有对应的Tee...
+当年, 第一次直面 老爹时, 只有 **[CPUG](https://wiki.woodpecker.org.cn/moin/CPUG)** 的 logo , 而没有对应的Tee...
 
 
 ## 触发
@@ -15,7 +15,7 @@
 
 俺应邀设计了 Python 7种14款, 最终选择了其中3种生产;
 
-比如`出没`款:
+比如 __出没__ 款:
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2006zeuux-py-b.jpg)
 
@@ -39,11 +39,11 @@
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007lshort-zq.jpg)
 
 
-在 EXUCcon2007:
+在 ECUG2007con(CN Erliunge II):
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007lshort-ecug-yufeng.jpg)
 (注意, 后面那个小胡子, 就是现在的 `褚霸` 当年看完了 Menisa 源代码来分享 Erlang 进程锁奇观的)
 
-是的, 其实最初人肉 LOGO 中隐藏着 Python...
+是的, Erlang 中国用户组(后来升级为 **实效云用户组**)最初人肉 LOGO 中隐藏着 Python...
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007lshort-ecug.jpg)
 
 
@@ -70,21 +70,21 @@
 ## PyCon
 > 转脸, 到了 2011 年...
 
-前一年, 联合当时豆瓣的清风老师, 一起参加了首届: [PyCon Asia Pacific 2010](https://wiki.woodpecker.org.cn/moin/PyCon2010)(亚太Python年会);
-回来吐糟说, 新加坡一个村, 就想代表整个亚太地区办理大会?
+前一年, 联合当时豆瓣的[清风](https://www.douban.com/people/qingfeng/)老师, 一起参加了首届: [PyCon Asia Pacific 2010](https://wiki.woodpecker.org.cn/moin/PyCon2010)(亚太Python年会);
+回来吐糟说, 新加坡一个村, 就想代表整个亚太地区办大会?
 中国必须办自己的 PyConChina 哪...
 
 结果,还是上海 Pythonista 给力, 不声不响就办起来了:
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2011pyconchina.jpg)
 
-是的, 后来一直使用的 `毛毛虫` 双龙, 就是首群 PyCon中国大会出现的;
+是的, 后来一直使用的 `毛毛虫双龙` logo, 就是首届 **PyCon中国大会** 出现的;
 设计师, 也是纪念 Tee 的设计者, 来自新加坡一位Python工程师的老婆.
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2011pyconchina-tee.jpg)
 
 这款 Tee 用料异常扎实, 久穿不烂, 可是胸前图案太复杂, 用的又是整体烫印, 
-没出一年就起泡发皱皴裂了....
+没出一年就发皱起泡皴裂了....
 
 
 不过, 出镜也很多:
@@ -97,7 +97,7 @@
 ### PyCon2012China
 > 首次参与大会筹办, 并单独完成 北京场 筹备/发布/组织/主持/赞助/....
 
-上海方面继续请 2011 纪念衫设计师升级了设计:
+上海方面继续请头年纪念衫设计师升级了设计:
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2012pyconcn-tee-sh.jpg)
 
@@ -114,7 +114,7 @@
 而且在豆厂举行了:[首届Pythonic Hackathon 竞赛!_豆瓣](https://www.douban.com/event/17299206/)
 
 - [现场录音](http://pychina.up.zoomquiet.top/PyCon2012China/121027-bj-pyhackathon/)
-- 并全程进行了直播, 在 Youtube 上
+- 尝试全程进行了直播到 Youtube 上
 - 是的, 当年并没和谐掉...
 - 所有视频地址, 都是上述豆瓣同城活动中...
 
@@ -125,7 +125,7 @@
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013pyconcn-zh.jpg)
 
 
-这次, 回到主场, 就放飞了:
+这年, 回到主场, 就放飞了:
 
 
 有帽子:
@@ -137,6 +137,7 @@
 
 
 有自己翻译出版的书:
+
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013pyconcn-book.jpg)
 
 
@@ -146,16 +147,15 @@
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido2013-twitter.jpg)
 
 
-
-
-首次独立设计,当然蹭`苦短衫`热点:
+再次独立设计,当然蹭 `苦短衫` 热点:
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013lshort-tee-design.jpg)
 
 并首次在衣脚追加设计师信息:
+
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013lshort-tee-author.jpg)
 
-而最出彩的, 反而是现场北理工珠海校区的志愿者们:
+而最出彩的, 反而是现场**北理工珠海校区**的志愿者们:
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013pyconcn-vol.jpg)
 
@@ -191,7 +191,7 @@
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-zh.jpg)
 
 总结以往经验, 这次事先公开征集 `苦短衫` 文案:
-[Pythonic口号的Pivot](http://blog.pychina.org/imho/140916-pycon-slogen.html)
+**[Pythonic口号的Pivot](http://blog.pychina.org/imho/140916-pycon-slogen.html)**
 
 
 并最终找珠海本地厂商完成制作:
@@ -223,7 +223,7 @@
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-stick.jpg)
 
-只是现场对比隔壁社区的周边产品, 瞬间还是被比下去了:
+只是现场发现隔壁社区的周边, 还是瞬间被了比下去:
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-ubuntu.jpg)
 
@@ -287,8 +287,7 @@
 > 被创业, 暂时告别统计圈
 
 
-不过, 还是顾问, 然后, 大家都说不能再苦短了,
-就说了句:
+不过, 还是常设顾问, 当时, 大家都感叹不能再苦短了, 就说:
 
     Ç'est la vie
 
@@ -317,7 +316,7 @@
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2017tpyconcn-with-b.jpg)
 
 
-2018 设计出了很多, 以至一直没决心用哪个
+2018 设计出了很多, 以致一直没决心用哪个, 最后还是选择了最不象虫子的:
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2018pyconcn-import-f.jpg)
 
@@ -347,7 +346,7 @@
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007zeuux-gnu-f.jpg)
 
-2007 冬季款长袖 GNU 衫;
+2007 冬季款长袖 **GNU** 衫;
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007zeuux-gnu-b.jpg)
 
@@ -371,7 +370,7 @@
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/cnodejs-tee.jpg)
 
-肆意又简洁的设计
+肆意又精确的传达
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/cnodejs-tee-designer.jpg)
 
@@ -379,7 +378,7 @@
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/cnodejs-tee-betacafe.jpg)
 
-当前北京活动现场的自得....
+当时北京活动现场的自得....
 
 
 来自 [CNode：Node.js专业中文社区](https://cnodejs.org/)
@@ -418,7 +417,7 @@
 ### 蟒营™101camp
 > 2018 圣诞节试运营原型班
 
-为了替代毕业证, 将以往积累的 纪念衫 经验都用上了
+为了替代毕业证, 将以往积累的 **纪念衫** 制作经验都用上了:
 
 
 ![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2019lshort101camp-design.jpg)
@@ -475,6 +474,11 @@
     + 因为街头, 当面走过来, 太小, 只能接近了才看的清楚
     + 而无论对方是男还是女, 盯着胸部看, 都不礼貌
     + 所以, 应该张大图案, 尽可能拉远识别距离
+- 后背图案位置要小心:
+    + 太高, 头发长一点儿就档住了
+    + 太低, 双肩包也就档住了
+    + 所以, 其实只有很小一个范围可以使用
+    + 那就尽可能都用上
 - 颜色要小心:
     + 尽可能别用白色为底色:
         * 程序猿们多数不勤与家务
@@ -495,6 +499,10 @@
     + 能多少支就多少支, T衫对于程序猿来说全年都可穿的
     + 有凯夫拉, 能加就加, 恨不能穿10年不坏
     + ...
+- 水牌/袖标/... 酌情使用
+- 领口一定要有:
+    + 不然真的很象口袋
+    + 而且用料一定要好, 因为, 一般先坏的都是领口
 - 文案, 尽可能使用简洁的中文
     + 并配合英文翻译,以便外国友人使用
         * 要知道, 中文在海外, 一直是 `神密*强大` 符咒代表
@@ -515,5 +523,5 @@
 
 >> NN 3771
 
-
+首发: [DM9:苦短衫的故事 — Blogging 蟒营™ 博客](https://blog.101.camp/DM/190914-teestory/)
 
