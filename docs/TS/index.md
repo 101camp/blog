@@ -11,7 +11,7 @@
 - [ TS2: 细数我与 Linux 这十三年](190815-tinylab-falcon-and-linux.md)
 - [ TS3: 细数我与 Linux 这十三年](190919-pyenv-finally-intro.md)
 
-(auto index injected at 190920 1641 54.712) 
+(auto index injected at 190920 1646 00.991) 
 
 .::
 
