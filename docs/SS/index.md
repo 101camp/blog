@@ -15,8 +15,9 @@
 - [ SS6: 在判断死角里日常喷血](190818-auto-list2str.md)
 - [ SS7: 我很快乐...](190912-i-am-happy.md)
 - [ SS8: 我的蟒营时间](190914-jy-time-story.md)
+- [ SS9: 为什么不让 Push ?](190920-why-cant-push.md)
 
-(auto index injected at 190916 1537 32.474) 
+(auto index injected at 190920 1641 54.710) 
 
 .::
 

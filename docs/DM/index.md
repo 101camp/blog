@@ -17,7 +17,7 @@
 - [ DM8:佳节自古](190913-single-moon.md)
 - [ DM9:苦短衫的故事](190914-teestory.md)
 
-(auto index injected at 190916 1537 32.466) 
+(auto index injected at 190920 1641 54.705) 
 
 .::
 
