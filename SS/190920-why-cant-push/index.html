@@ -5,7 +5,7 @@
   
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <title>SS8: 我的蟒营时间 &mdash; Blogging 蟒营™ 博客</title>
+    <title>SS9: 为什么不让 Push ? &mdash; Blogging 蟒营™ 博客</title>
 
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
@@ -47,67 +47,131 @@ var _hmt = _hmt || [];
       <div class="bodywrapper">
         <div class="body" role="main">
           
-            <h1 id="ss8">SS8: 我的蟒营时间<a class="headerlink" href="#ss8" title="Permanent link">¶</a></h1>
+            <h1 id="ss9-push">SS9: 为什么不让 Push ?<a class="headerlink" href="#ss9-push" title="Permanent link">¶</a></h1>
 <blockquote>
-<p>101camp2py 190914 触发</p>
+<p>101camp2py 190919 触发</p>
 </blockquote>
-<h2 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<p>这里的 <code>我</code> 不是大妈, 而是 101camp2py 一位学员:</p>
+<h2 id="_1">苦也:<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>一位真小白学员, 在折腾了两天没成功后, 苦闷的发布了 Issue:</p>
+<blockquote>
+<p>在本地仓库里添加的ken文件,没法Push到仓库master里</p>
+</blockquote>
+<p>...</p>
+<p>同时,在playground中可以看到ken的分支,但master里没有ken文件</p>
 <ul>
-<li><code>MixPower</code> ~ 混合动力队的, team leader</li>
-<li>这只队伍仅有两名成员, 低于最小团队人数</li>
-<li>但是, 也一样完成了 BP路演, 并决定将毕业作品, 持续开发下去, 产品化.</li>
+<li>When? git push --all指令输入后</li>
+<li>Where?</li>
+<li>What? 想将本地仓库的ken文件,远程同步到playground的master里. </li>
+<li>Why? 报错提示是,没法将主仓库远程同步主仓库,应该是中间缺乏了一个步骤</li>
+<li>How? 尝试用了git push --all指令推送所有分支内容,但还是没有显示</li>
 </ul>
-<p>PS:</p>
-<p>队长同时也是大妈另外一个付费社区 <code>自怼圈</code> (du.101.camp) 积年老怼友了;
-只是, 以往一直以产品经理自居, 最近因缘际会, 在高速向全栈开发经理转变中,
-就顺便参加了 蟒营™Python 入门班, 
-作为仪式, 自我印证了 -&gt; 终于脱离了小白身份,
-现在已经是名合格的软件工程师, 只是级别才开积累.</p>
-<p>他的回顾, 就已经非常 Pythonic 了, 将利于阅读的情绪词, 精简到最少,
-用逻辑严密的结构, 快速完成核心思想的阐述;</p>
-<p>然后, 继续编程去了...</p>
-<h2 id="_2">回顾<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p>-- 时间记录开发项目的诞生</p>
+<p>...</p>
+<h2 id="_2">嗯哼...<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <blockquote>
-<p>参加蟒营,我的目标是明确的,希望完成一个能为自己所用的时间记录相关的功能. 功能实现了,我也明确了下一个目标:让更多人参与进来实现更多的功能,让时间记录的分析不再困难. </p>
+<p>助教当然知道怎么回事儿, 但是, 比如何操作更加重要的是为什么这么想, 所以:</p>
 </blockquote>
-<p>这段时间自己很忙碌,所以我明确了目标,本文开头的那部分内容. 因为忙碌,要有所取舍,这段时间我放弃了很多事情,蟒营是少数放不下的事情,我不希望自己再等三个月. 如果我等到现在参加,课程结束已经快到明年了. </p>
-<p>期间的许多的程序和思考都是在往返京沪的高铁上完成的. 对于这部分时间,我会记录在输出中,因为相对于交通,我完成的事情更加重要. </p>
-<p>蟒营也属于工作之外最重要的事情之一,通过下面的时间记录可以发现. 按照每周10小时算起来,自己用了四周的时间,实际节奏要更紧凑一些. </p>
-<h3 id="_3">蟒营时间<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
-<p>这次101camp的课程里,我参与的总时间为:39小时13分钟(2353mins). 
-* 沟通部分 9小时3分钟(543mins)</p>
+<p>你好,非常高兴看到你的第一个 issue.</p>
+<p>我的回答如下,希望能够帮到你.</p>
+<p>如有不明白的地方,非常欢迎追问.</p>
+<ul>
+<li>本 issue,相对微信群中的沟通,并没有补充太多有效信息.</li>
+<li>究其原因,就问题的排查需要,你的过程复述描述粒度不够细.</li>
+</ul>
+<p>如:</p>
+<h3 id="_3">背景方面<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>你对 git 的了解如何?</p>
+<ul>
+<li>什么时候接触的</li>
+<li>看了什么资料</li>
+<li>知道哪些 git 的基础概念</li>
+<li>会用哪些命令?</li>
+</ul>
+<h3 id="_4">叙述方面<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
 <blockquote>
-<p>其中参加周末的例会和答疑会议时间共5小时2分钟(302mins),组内开小会的时间2小时45分钟(165mins),结业大作业路演和旁听路演共1小时16分钟(76mins)</p>
+<p>用 git add ken,增加ken文件到暂存区</p>
 </blockquote>
 <ul>
-<li>日常作业和Issue时间:5小时41分钟(341mins)</li>
-<li>大作业开发:23小时32分钟(1412mins)</li>
-<li>后续:57mins</li>
+<li>前述是 ken文件夹,到这儿变成了 ken文件,那么这两个所指是同一个么?</li>
+<li>这个操作是在 master 分支下操作的还是你前述的 ken 分支?</li>
 </ul>
-<h3 id="_4">蟒营理解<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
-<p>蟒营并不像一门课程,更像是一种环境. 在这种环境中,你可以按照你的想法自由发挥,做你想做的事情. </p>
-<p>蟒营不是一个随心所欲的地方. 你需要完成任务,你需要足够的时间精力投入,才能获得收获. </p>
-<p>蟒营不是一个付出一定有收获的地方. 除了时间精力,你还需要思考,需要观察,需要提问,需要了解蟒营,了解大妈style. </p>
-<p>蟒营不是一个人的蟒营,蟒营是一群人的环境. 在环境中,重要的是你如何行动,把什么看做收获. </p>
-<p>也许你只是想完成一个编程课程的入门,你发现了最重要的并不是那些语法,而是学会如何掉入一个又一个坑的时候自己爬出来. </p>
-<p>也许你只是想做一个你想做的程序,你发现如何让每一次的完成,都成为一个阶段性的产品. (MVP思想)</p>
-<p>最后的最后,别忘记大妈Style,这可能是这个环境里最重要的那个把一切据合在一起的因子. 如果六度人脉理论是合理的,那么大妈会成为你面向一切开源Python社区的领路人. </p>
-<h3 id="_5">后续<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
-<p>蟒营并不是结束,这是开始. 当你完成了一个产品的核心MVP,你发现自己有兴趣也有能力持续向下走的时候,事情变得有趣起来. </p>
-<p>希望你的蟒营时间也是如此,这里更像一个孵化器,开拓学习思路,了解开源思想,孵化开源项目. </p>
-<p>也祝各位蟒友们找到自己感兴趣的事情,如果能够用程序实现就再好不过了~</p>
-<pre><code>人生苦短,我用Python
+<blockquote>
+<p>用 git commit -m "ken的文件",提交暂存区的文件到仓库区</p>
+</blockquote>
+<p>git bash 的反馈是什么?</p>
+<blockquote>
+<p>然后,用git push 命令,出现报错</p>
+</blockquote>
+<ul>
+<li>完整的报错信息原文全文是什么?</li>
+<li>你是如何理解的?</li>
+</ul>
+<blockquote>
+<p>最后用 git push --all,推送所有分支到远程仓库. </p>
+</blockquote>
+<p>这里为什么想到用 <code>--all</code> 参数,终端又返回了什么信息?</p>
+<h3 id="_5">我从微信截图看到的<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>其实都可以把文字复制出来.按顺序组织起来,这样让回答者能够高效复现你的问题.</p>
+<p><img alt="" src="https://ipic.zoomquiet.top/2019-09-20-i17-0.png" /></p>
+<p>现在我用 OCR 软件,提取识别并整理以下截图中显示的报错(error)信息:</p>
+<pre><code>error: failed to push some refs to 'https://gitlab.com/101camp/3py/playground.git'
+hint: Updates were rejected because the remote contains work that you do 
+hint: not have locally. This is usually caused by another repository pushing 
+hint: to the same ref. You may want to first integrate the remote changes 
+hint: (e.g., 'git pull...') before pushing again.
+...
 </code></pre>
-<h2 id="_6">是也乎:<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+
+<p>我们把报错信息翻译一下,很容易得到:</p>
+<p><img alt="" src="https://ipic.zoomquiet.top/2019-09-20-i17-1.png" /></p>
+<ul>
+<li>这个翻译你是如何理解的?</li>
+<li>能够获得什么关键词?</li>
+<li>下一步的探索方向是?</li>
+</ul>
+<p>接着,请对比一下你的翻译,有什么不同?</p>
+<p><img alt="" src="https://ipic.zoomquiet.top/2019-09-20-i17-2.png" /></p>
+<p>为什么你的翻译没有得到有效信息?</p>
+<p>因为你没有把报错信息整理为自然书写形式,去掉 <code>hint:</code> 这种命令行工具用来区分各种不同类型反馈的提示头.</p>
+<p>而这一点我在微信中其实有提示你:</p>
+<p><img alt="" src="https://ipic.zoomquiet.top/2019-09-20-ScreenShot%202019-09-20%2016.06.43.jpg" /></p>
+<h3 id="_6">小结<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p>综上,你只描述了<strong>"你想看到的"</strong>信息,但是没有客观描述自己与工具的交互细节以及工具返回的信息.</p>
+<p>这一点,我也在微信群中特地强调了:</p>
+<ul>
+<li>写 issue 的时候记得参考"提问的智慧",此外留意用绝对坐标复述关键信息. <ul>
+<li>提问的智慧</li>
+<li>https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md</li>
+</ul>
+</li>
+<li>提高邮件沟通效率[1]:<ul>
+<li>用绝对坐标沟通_余晟以为_传送门</li>
+<li>https://chuansongme.com/n/1864892</li>
+</ul>
+</li>
+</ul>
+<h3 id="_7">要求<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>所以,请:</p>
+<ul>
+<li>针对我在'叙述'下的追问,补充本次问题过程细节</li>
+<li>参考我的回答,尝试总结为什么会有 3 次'视而不见'<ul>
+<li>忽视报错信息</li>
+<li>忽视微信群内两次提醒</li>
+</ul>
+</li>
+<li>借助看到的'新'信息,尝试问题排除,并更新在本 issue ~</li>
+</ul>
+<h2 id="_8">是也乎:<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
 <p>这就是蟒营™课程体验, 和以往所有课程体验根本相反, 正如隔壁队长说的:</p>
 <blockquote>
 <p>一个十分开放的课程,开放到他只给你一个框架,内容完全由自己来填写,任何形式任何方法都可以得到包容,也没有人说[哎呀这个应该这样做],他完全靠自己实际操作来触发一系列隐藏任务,而大妈则是"和蔼"的站在背后不时的看看你,指引你,帮助你把这个发现的问题狠狠的踩下去,推动你去弄个明白. </p>
 </blockquote>
 <p>蟒营(101.camp): </p>
-<pre><code>伴你重新享受自学乐趣
+<pre><code>编程人生伴侣
+编程起重人生
+你本来就很行
+
 Reactivate Joy by Self-teach with You
+    伴你重享学习乐趣
 </code></pre>
 <blockquote>
 <p>综合来说, 蟒营可以激发学员获得各种价值</p>
@@ -123,7 +187,7 @@ Reactivate Joy by Self-teach with You
 </li>
 </ul>
 <p>而这一切收获, 都在6周里即可完成.</p>
-<p>PPS:</p>
+<p>PS:</p>
 <p>14岁~72岁都能学, 嘦:</p>
 <pre><code>0: 想学编程
 1: 有个人电脑
@@ -132,7 +196,7 @@ Reactivate Joy by Self-teach with You
 </code></pre>
 <blockquote>
 <blockquote>
-<p>NN 3770</p>
+<p>NN 3776</p>
 </blockquote>
 </blockquote>
             
@@ -262,32 +326,42 @@ Reactivate Joy by Self-teach with You
   
     <ul>
     
-      <li><a href="#_1">背景</a></li>
+      <li><a href="#_1">苦也:</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#_2">回顾</a></li>
+      <li><a href="#_2">嗯哼...</a></li>
       <ul>
     
-      <li><a href="#_3">蟒营时间</a></li>
-      <ul>
-    
-  </ul>
-    
-      <li><a href="#_4">蟒营理解</a></li>
+      <li><a href="#_3">背景方面</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#_5">后续</a></li>
+      <li><a href="#_4">叙述方面</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">我从微信截图看到的</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_6">小结</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_7">要求</a></li>
       <ul>
     
   </ul>
     
   </ul>
     
-      <li><a href="#_6">是也乎:</a></li>
+      <li><a href="#_8">是也乎:</a></li>
       <ul>
     
   </ul>
@@ -302,7 +376,7 @@ Reactivate Joy by Self-teach with You
       <!--
         <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
       -->
-        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/SS/190914-jy-time-story.md">edit➔GitHub</a></li>
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/SS/190920-why-cant-push.md">edit➔GitHub</a></li>
 
       
     </ul>
