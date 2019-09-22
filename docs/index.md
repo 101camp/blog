@@ -15,7 +15,7 @@
 - [ DM6:首次蟒营式冲击](DM/190905-1st101camp.md)
 - [ NC2:专注反焦虑17年:蟒营 Python 学习班又来一期](NC/190905-3py-just101camp.md)
 
-(auto index injected at 190922 1814 55.201) 
+(auto index injected at 190922 1821 16.373) 
 
 .::
 
