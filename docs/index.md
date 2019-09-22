@@ -6,7 +6,7 @@
 ::.
 
 - [ SS9: 为什么不让 Push ?](SS/190920-why-cant-push.md)
-- [ TS3: 细数我与 Linux 这十三年](TS/190919-pyenv-finally-intro.md)
+- [ TS3: Pyenv 最终介绍](TS/190919-pyenv-finally-intro.md)
 - [ DM9:苦短衫的故事](DM/190914-teestory.md)
 - [ SS8: 我的蟒营时间](SS/190914-jy-time-story.md)
 - [ DM8:佳节自古](DM/190913-single-moon.md)
@@ -15,7 +15,7 @@
 - [ DM6:首次蟒营式冲击](DM/190905-1st101camp.md)
 - [ NC2:专注反焦虑17年:蟒营 Python 学习班又来一期](NC/190905-3py-just101camp.md)
 
-(auto index injected at 190920 1646 00.991) 
+(auto index injected at 190922 1814 55.201) 
 
 .::
 

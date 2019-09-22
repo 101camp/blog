@@ -9,9 +9,9 @@
 - [ TS0: Python 初学者常见 5 种错误](190725-TS0-5-beginner-mistakes-py.md)
 - [ TS1: 老令公今天70了](190814-EKR-70th-birthday.md)
 - [ TS2: 细数我与 Linux 这十三年](190815-tinylab-falcon-and-linux.md)
-- [ TS3: 细数我与 Linux 这十三年](190919-pyenv-finally-intro.md)
+- [ TS3: Pyenv 最终介绍](190919-pyenv-finally-intro.md)
 
-(auto index injected at 190920 1646 00.991) 
+(auto index injected at 190922 1814 55.199) 
 
 .::
 
