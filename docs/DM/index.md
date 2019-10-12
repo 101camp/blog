@@ -16,8 +16,9 @@
 - [ DM7:灵魂导师 RMS](190910-rms-soul-master.md)
 - [ DM8:佳节自古](190913-single-moon.md)
 - [ DM9:苦短衫的故事](190914-teestory.md)
+- [ DM10:叕一次重启](191012-rerestart.md)
 
-(auto index injected at 190922 1821 16.362) 
+(auto index injected at 191012 1140 08.669) 
 
 .::
 

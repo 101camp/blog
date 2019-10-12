@@ -5,6 +5,7 @@
 
 ::.
 
+- [ DM10:叕一次重启](DM/191012-rerestart.md)
 - [ SS9: 为什么不让 Push ?](SS/190920-why-cant-push.md)
 - [ TS3: Pyenv 最终介绍](TS/190919-pyenv-finally-intro.md)
 - [ DM9:苦短衫的故事](DM/190914-teestory.md)
@@ -12,10 +13,8 @@
 - [ DM8:佳节自古](DM/190913-single-moon.md)
 - [ SS7: 我很快乐...](SS/190912-i-am-happy.md)
 - [ DM7:灵魂导师 RMS](DM/190910-rms-soul-master.md)
-- [ DM6:首次蟒营式冲击](DM/190905-1st101camp.md)
-- [ NC2:专注反焦虑17年:蟒营 Python 学习班又来一期](NC/190905-3py-just101camp.md)
 
-(auto index injected at 190922 1821 16.373) 
+(auto index injected at 191012 1140 08.680) 
 
 .::
 
