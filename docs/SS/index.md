@@ -16,8 +16,9 @@
 - [ SS7: 我很快乐...](190912-i-am-happy.md)
 - [ SS8: 我的蟒营时间](190914-jy-time-story.md)
 - [ SS9: 为什么不让 Push ?](190920-why-cant-push.md)
+- [ SS10: 说不明白了?](190924-SS10-cannot-make-it-clear.md)
 
-(auto index injected at 191012 1209 21.741) 
+(auto index injected at 191013 1956 04.989) 
 
 .::
 

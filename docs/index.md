@@ -6,15 +6,15 @@
 ::.
 
 - [ DM10:叕一次重启](DM/191012-rerestart.md)
+- [ SS10: 说不明白了?](SS/190924-SS10-cannot-make-it-clear.md)
 - [ SS9: 为什么不让 Push ?](SS/190920-why-cant-push.md)
 - [ TS3: Pyenv 最终介绍](TS/190919-pyenv-finally-intro.md)
 - [ DM9:苦短衫的故事](DM/190914-teestory.md)
 - [ SS8: 我的蟒营时间](SS/190914-jy-time-story.md)
 - [ DM8:佳节自古](DM/190913-single-moon.md)
 - [ SS7: 我很快乐...](SS/190912-i-am-happy.md)
-- [ DM7:灵魂导师 RMS](DM/190910-rms-soul-master.md)
 
-(auto index injected at 191012 1209 21.748) 
+(auto index injected at 191013 1956 04.995) 
 
 .::
 
