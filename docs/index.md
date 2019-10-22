@@ -5,6 +5,7 @@
 
 ::.
 
+- [ DM11: 终于开始回忆](DM/191022-pycon19nn.md)
 - [ DM10:叕一次重启](DM/191012-rerestart.md)
 - [ SS10: 说不明白了?](SS/190924-SS10-cannot-make-it-clear.md)
 - [ SS9: 为什么不让 Push ?](SS/190920-why-cant-push.md)
@@ -12,9 +13,8 @@
 - [ DM9:苦短衫的故事](DM/190914-teestory.md)
 - [ SS8: 我的蟒营时间](SS/190914-jy-time-story.md)
 - [ DM8:佳节自古](DM/190913-single-moon.md)
-- [ SS7: 我很快乐...](SS/190912-i-am-happy.md)
 
-(auto index injected at 191018 2137 54.197) 
+(auto index injected at 191022 0852 44.763) 
 
 .::
 

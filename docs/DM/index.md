@@ -17,8 +17,9 @@
 - [ DM8:佳节自古](190913-single-moon.md)
 - [ DM9:苦短衫的故事](190914-teestory.md)
 - [ DM10:叕一次重启](191012-rerestart.md)
+- [ DM11: 终于开始回忆](191022-pycon19nn.md)
 
-(auto index injected at 191018 2137 54.183) 
+(auto index injected at 191022 0852 44.740) 
 
 .::
 
