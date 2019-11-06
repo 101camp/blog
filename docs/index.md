@@ -5,6 +5,7 @@
 
 ::.
 
+- [ DM12: 有关 gitlab 职位的永居国家/地区决择](DM/191106-gitlab-5555.md)
 - [ DM11: 终于开始回忆](DM/191022-pycon19nn.md)
 - [ DM10:叕一次重启](DM/191012-rerestart.md)
 - [ SS10: 说不明白了?](SS/190924-SS10-cannot-make-it-clear.md)
@@ -12,9 +13,8 @@
 - [ TS3: Pyenv 最终介绍](TS/190919-pyenv-finally-intro.md)
 - [ DM9:苦短衫的故事](DM/190914-teestory.md)
 - [ SS8: 我的蟒营时间](SS/190914-jy-time-story.md)
-- [ DM8:佳节自古](DM/190913-single-moon.md)
 
-(auto index injected at 191101 1509 42.552) 
+(auto index injected at 191106 2115 09.136) 
 
 .::
 

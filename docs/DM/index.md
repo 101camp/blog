@@ -18,8 +18,9 @@
 - [ DM9:苦短衫的故事](190914-teestory.md)
 - [ DM10:叕一次重启](191012-rerestart.md)
 - [ DM11: 终于开始回忆](191022-pycon19nn.md)
+- [ DM12: 有关 gitlab 职位的永居国家/地区决择](191106-gitlab-5555.md)
 
-(auto index injected at 191101 1509 42.518) 
+(auto index injected at 191106 2115 09.123) 
 
 .::
 
