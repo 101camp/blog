@@ -16,7 +16,6 @@
 - [ SS7: 我很快乐...](190912-i-am-happy.md)
 - [ SS8: 我的蟒营时间](190914-jy-time-story.md)
 - [ SS9: 为什么不让 Push ?](190920-why-cant-push.md)
-- [ SS10: 说不明白了?](190924-SS10-cannot-make-it-clear.md)
 - [ SS11: 任务描述误解根源](191108-chaos-tasks.md)
 - [ SS12: 中文之祸](191108-chinese-chaos.md)
 
