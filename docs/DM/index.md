@@ -19,8 +19,9 @@
 - [ DM10:叕一次重启](191012-rerestart.md)
 - [ DM11: 终于开始回忆](191022-pycon19nn.md)
 - [ DM12: 有关 gitlab 职位的永居国家/地区决择](191106-gitlab-5555.md)
+- [ DM13: COSCon19私人回顾](191108-coscon19-sh-review.md)
 
-(auto index injected at 191108 1634 09.499) 
+(auto index injected at 191108 2107 11.432) 
 
 .::
 

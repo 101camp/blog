@@ -20,7 +20,7 @@
 - [ SS11: 任务描述误解根源](191108-chaos-tasks.md)
 - [ SS12: 中文之祸](191108-chinese-chaos.md)
 
-(auto index injected at 191108 1634 09.506) 
+(auto index injected at 191108 2107 11.440) 
 
 .::
 
