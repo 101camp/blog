@@ -20,7 +20,7 @@
 - [ DM11: 终于开始回忆](191022-pycon19nn.md)
 - [ DM12: 有关 gitlab 职位的永居国家/地区决择](191106-gitlab-5555.md)
 
-(auto index injected at 191106 2115 09.123) 
+(auto index injected at 191108 1634 09.499) 
 
 .::
 
