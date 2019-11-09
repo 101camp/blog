@@ -5,6 +5,7 @@
 
 ::.
 
+- [ SS13: 无法描述之问题](SS/191109-2py-chaos-ask.md)
 - [ DM13: COSCon19私人回顾](DM/191108-coscon19-sh-review.md)
 - [ SS11: 任务描述误解根源](SS/191108-chaos-tasks.md)
 - [ SS12: 中文之祸](SS/191108-chinese-chaos.md)
@@ -13,9 +14,8 @@
 - [ DM10:叕一次重启](DM/191012-rerestart.md)
 - [ SS10: 说不明白了?](SS/190924-SS10-cannot-make-it-clear.md)
 - [ SS9: 为什么不让 Push ?](SS/190920-why-cant-push.md)
-- [ TS3: Pyenv 最终介绍](TS/190919-pyenv-finally-intro.md)
 
-(auto index injected at 191108 2107 11.457) 
+(auto index injected at 191109 0933 33.318) 
 
 .::
 

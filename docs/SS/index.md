@@ -19,8 +19,9 @@
 - [ SS10: 说不明白了?](190924-SS10-cannot-make-it-clear.md)
 - [ SS11: 任务描述误解根源](191108-chaos-tasks.md)
 - [ SS12: 中文之祸](191108-chinese-chaos.md)
+- [ SS13: 无法描述之问题](191109-2py-chaos-ask.md)
 
-(auto index injected at 191108 2107 11.440) 
+(auto index injected at 191109 0933 33.308) 
 
 .::
 
