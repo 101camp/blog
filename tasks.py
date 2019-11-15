@@ -2,7 +2,7 @@
 '''inv matter for auto pub. 101.camp
 '''
 
-__version__ = 'blog101CAMP v.190916.0842'
+__version__ = 'blog101CAMP v.191115.0842'
 __author__ = 'Zoom.Quiet'
 __license__ = 'CC-by-nc-nd@2019-09'
 
@@ -245,7 +245,9 @@ def _injector(aim, drug):
     #print(_exp)
     open(aim,'w').write(_exp)
     return None
-@task
+
+
+#@task
 def reidx(c, site):
     '''re-build _index auto.
     '''
@@ -334,7 +336,7 @@ def reidx(c, site):
 
 @task 
 def pub(c, site):
-    '''$ inv pub [101|py] <- auto deploy new site version base multi-repo.
+    '''$ inv pub blog <- auto deploy new site version base multi-repo.
     '''
     global TRIGGER
     global CAMPROOT
