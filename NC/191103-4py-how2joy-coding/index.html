@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>NC3:看不懂 Python 代码陷入自我怀疑？有人却学得不亦乐乎？ &mdash; Blogging 蟒营™ 博客</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+
+
+<!--
+190916 ++tongji.baidu
+-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7b96768fb6a5e86ac53eae70bb5fd60b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="nc3-python">NC3:看不懂 Python 代码陷入自我怀疑？有人却学得不亦乐乎？<a class="headerlink" href="#nc3-python" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>一次彻底的心智训练</p>
+</blockquote>
+<p>对于入门 Python 来说, 很多初学者通过一些编程书籍或市面上的各种入门课程视频, 对于 Python 的语法与结构有所了解, 也开始尝试做一些小的程序, 但在进一步尝试的路上却陷入了近似深渊一样的体验</p>
+<p>------当自己去参照其它的开发者的程序时, 完全不知如何下手, 或者明明知道这一段代码是用于何种用途的, 却迟迟无法运用得当....</p>
+<p>进而开始怀疑自己, 我到底会不会用 Python, 到底有没有学会 Python?</p>
+<p>困难总是存在的, 这就像那些编程学习之路上, 你所踩过的, 将踩的以及默默在等候着你的坑一样, 无法逃避. </p>
+<p>在往期的课程每周例会上, 有学习 Python 入门的蟒营同学提出一个问题: </p>
+<blockquote>
+<p>当我知道我要实现什么功能, 然后我去 Google 搜索, 可以找到相关语句支撑。
+但对于语句本身是怎么运作的, 我了解得很少。
+所以, 当满足复杂功能的一整段语句（其中涉及到结构和单个语句）出现时, 我基本上看不明白。</p>
+</blockquote>
+<h2 id="_1">冲突<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>这个问题, 在编程初学者中极具典型性, 小白学会了搜索大法, 但面对搜索到的信息仍<code>无法理解和入门</code>, 怎么破? 就如同婴儿面对大餐却无法自己动手吃一般.</p>
+<p>对小白来说, 要<code>如何阅读别人的代码, 如何理解进而自己写好代码?</code></p>
+<h2 id="_2">点解？<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>那蟒营怎么「看」这个问题呢？</p>
+<p>首先, 是关于阅读别人的代码这一点——
+这种感觉在进入任何一个陌生领域知识时, 其实都是相似的: 
+好比开始学习英文时:</p>
+<pre><code>刚刚知道字母以及如何查字典,
+掌握的单词还没超过 42 个时,
+看英文名著当然是根本看不下的。
+几乎每一句什么意思, 都要查字典..
+</code></pre>
+<p>那么, 我们如何跨过这一阶段的? 以往的学习经历告诉我们:</p>
+<pre><code>多查字典
+多看文章
+多写文章
+多背名句
+...
+</code></pre>
+<p>是的, 非常非常笨以及老土的方法.</p>
+<p>对于编程来说, 也一样.</p>
+<h3 id="_3">读代码<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<p>具体到 Python 这门语言的学习，Python 对国人有着非常友好的一面:</p>
+<ul>
+<li>Python 是已知语言中最接近自然英文的开发语言之一</li>
+<li>如果将变量名设计好, 脚本几乎能视为一篇比较怪的作文来看</li>
+<li>回溯到源头, Python 原型 ABC 语言的设计目标就是儿童教育...</li>
+</ul>
+<p>总而言之, <code>阅读代码本身就是编程的一个重要环节</code>.</p>
+<p>在阅读他人代码的过程中, 吸收软件设计/工程管理/行业惯用/命名学/... 的知识.</p>
+<p>当然, 在代码的选取方面, 我们应当优先去阅读的, 是<code>优秀 Python 作品</code>的代码.</p>
+<h2 id="_4">好代码如何好<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<p>有同学可能会问, 什么样的代码才称得上<strong>「优秀」</strong>呢?</p>
+<p>粗暴的说, GitHub 中 star 超过 <strong>1000</strong> 的一般可以算是.
+又其实, 当前蟒营 Py 班同学间互访问代码分支, 也是一种锻炼阅读代码的能力.</p>
+<p>因为, 同学们完成的代码都是为实现相同功能:</p>
+<ul>
+<li>只是各自用了自己掌握知识点的组</li>
+<li>可以说就是回字的 4 种写法</li>
+</ul>
+<p>这对你来说, 可能就不是看细节, 而是多看整体: 大家如何组织代码的? 如何切分函式的? 如何设计变量名的?...</p>
+<p>所谓<strong>「三人行必有我师」</strong>, 从阅读同学的代码中, 了解到相同功能的不同实现方式, 也会无意识的思索哪种方式好在哪里, 不足在哪里, 我选择用哪种, 各种决断能力「嗯哼」.</p>
+<h2 id="_5">好代码如何写<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<p>我们回过头来, 再来审视一下本文开头那个问题所提到的难点: </p>
+<pre><code>所以, 
+当满足复杂功能的一整段语句出现时, 
+    我基本上看不明白。
+</code></pre>
+<p>这里其实隐含着一点, 这段满足复杂功能的语句, 也有可能并不是友好易懂的「优秀代码」,  或者其实是非常好的代码, 但回答者并没有通俗易懂的呈现出来, 看不明白不一定是小白的锅. 但小白确实是看不出来这整段语句是否是好代码.
+到底什么是好代码? 如何写出别人也容易看懂的好代码? 在此, 需要明确的是: </p>
+<pre><code>代码第一读者是人, 而不是机器.
+简洁直白的代码才是好代码.
+</code></pre>
+<p>但是, 「直白」的定义, 是随着学习在变化的, 就好比说英文学习历程中:</p>
+<ul>
+<li>开始时, 只有 this is, that is, 这种 4 个单词以内固定句式的对自己算直白.</li>
+<li>但随着经验/语感的积累, 感觉直白的句子,其实在逐渐变得复杂起来..</li>
+<li>所以, 当前这种「看不明白」状态是自然的, 必然的, 不可以忽略的...</li>
+<li>那, 问题又来了, 自己作为一个初学者 , 如何快速冲破这种拘束状态? </li>
+</ul>
+<blockquote>
+<p>作为一个初学者 , 如何快速冲破这种拘束状态? </p>
+</blockquote>
+<ul>
+<li>坚持...每天尝试写/运行/理解找来的代码 </li>
+<li>坚持...每天尝试写/运行/理解找来的代码</li>
+<li>坚持...每天尝试写/运行/理解找来的代码<ul>
+<li>...直到你习惯 Python 的形式</li>
+</ul>
+</li>
+</ul>
+<h2 id="_6">蟒营如何教？<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<p><code>蟒营™Python入门班课程</code>, 在学员学习时可以提供的切实辅助就是:
+在这个坚持学习编程的过程中, 任何自己无法理解的知识点/形式/模块/概念/...., 都可以及时来问, <code>以 Issue 的正式形式</code>来驱动问题的解决.
+此处, 重要的事情再重复三遍：</p>
+<pre><code>以 Issue 的正式形式
+以 Issue 的正式形式
+以 Issue 的正式形式
+</code></pre>
+<p>... 是的, 正如  <strong>Eric Steven Raymond 在《提问的智慧》</strong> 中给出的经验.</p>
+<p>但是切记, 前提是: </p>
+<pre><code>“
+只有你认真, 大家才可能认真.
+”
+</code></pre>
+<p>认真的力量是很惊人的, 试过就知道.</p>
+<p>除此之外, 无它.</p>
+<h2 id="_7">什么是蟒营？<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<p>所以, 什么是蟒营呢?</p>
+<p><img alt="嗯哼" src="https://ipic.zoomquiet.top/2019-09-08-theory101camp_v2.jpg" /></p>
+<p>正如隔壁队长说的:</p>
+<blockquote>
+<p>一个十分开放的课程, 开放到它只给你一个框架, 内容完全由自己来填写, 任何形式任何方法都可以得到包容, 也没有人说「哎呀这个应该这样做」, 他完全靠自己实际操作来触发一系列隐藏任务, 而大妈则是「和蔼」的站在背后不时的看看你, 指引你, 帮助你把这个发现的问题狠狠的踩下去, 推动你去弄个明白. 这就是蟒营. </p>
+</blockquote>
+<p>综合来说, 蟒营可以激发学员获得各种价值 ——</p>
+<ul>
+<li>在职非 Python 程序员 &lt;- 实用工程经验, 包含团队管理体验</li>
+<li>在校大二/三学生 &lt;- 完备软件经历, <code>无论是否专业相关, 都能独立用 Python 完成实用脚本开发</code></li>
+<li><strong>真小白</strong>无基础人士 &lt;- 切实编程自信, 真正理解什么是编程, 并熟悉 Python 技术生态,能基于工程思维来解析具体问题..</li>
+<li>以及所有学员能获得的:<ul>
+<li>高效问题讨论习惯</li>
+<li>实践自学社区协作</li>
+</ul>
+</li>
+</ul>
+<p>而这一切的技能与成果, 都在 6 周里即可达成.</p>
+<p>PPS: 14 岁~72 岁都能学, 嘦:</p>
+<pre><code>0: 想学编程 
+1: 有个人电脑 
+2: 每周能挤出10+小时自主学习时间 
+3: 英文能查字典看懂
+</code></pre>
+            
+
+            
+
+            <!--190910 init. comments-->
+            <hr/>
+
+<h3>精品小班, 正在报名</h3>
+
+<blockquote><p>
+    101camp4py ~ 第4期 Python 入门班:
+<br/>
+
+<img alt="报名" 
+    src="http://ydlj.zoomquiet.top/ipic/2019-11-01-4py-reg-qr.jpg"/>
+<br/>
+
+费用: <b>1642元/位</b>
+<br/>
+有各种<a href="https://py.101.camp/faq/#_3">优惠可选...</a>
+    
+<ul>
+    <li>
+    正式报名: <b>191102</b>
+    </li>
+    <li>
+    报名截止: <b>191124</b>
+    </li>
+    <li>
+    正式开课: <b>191201</b>
+    </li>
+    <li>
+    课程结束: <b>200112</b>
+    </li>
+</ul>
+
+
+<br/>
+任何疑问可先进入知识星球<b>(免费)</b>咨询:
+<br/>
+<img alt="FAQ" 
+    src="https://ipic.zoomquiet.top/2019-08-28-FAQ101camp.jpeg"/>
+<br/>
+
+</p></blockquote>
+
+
+<hr/>
+
+<h2>蟒营</h2>
+<p>
+    伴你重享<b>学习</b>乐趣
+</p>
+<blockquote>
+<p>
+    <b>
+    101.camp
+    </b>
+</p>
+<p>
+    <i>
+    Reactivate Joy by Self-teach with You
+    </i>
+</p>
+</blockquote>
+
+<p>关注公众号, 持续获得相关各种咨询, :
+<img alt="mainium" src="https://ipic.zoomquiet.top/2019-10-12-mainium-qr-barnner.jpg"/>
+
+<!--
+<img alt="PythoniCamp" src="http://0.zoomquiet.top/logos/101.camp/banner_101camp_h191.jpg"/>
+
+    <br/>
+实在想立即开始感受蟒营, 可以加入知识星球(免费):
+    <br/>
+
+<img alt="蟒营101camp" src="https://ipic.zoomquiet.top/2019-08-09-190809camp101.jpeg"/>
+
+-->
+</p>
+
+<hr/>
+
+<h3>追问</h3>
+<p>
+    任何问题, 随时邮件提问可也:
+</p>
+<blockquote>
+<p>
+    <i>
+    ask@101.camp
+    </i>
+</p>
+</blockquote>
+
+<hr/>
+
+
+
+
+
+            <script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <img class="logo" src="../../logo.png" title="Blogging 蟒营™ 博客">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#_1">冲突</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_2">点解？</a></li>
+      <ul>
+    
+      <li><a href="#_3">读代码</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#_4">好代码如何好</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">好代码如何写</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_6">蟒营如何教？</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_7">什么是蟒营？</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+      <!--
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
+      -->
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/NC/191103-4py-how2joy-coding.md">edit➔GitHub</a></li>
+
+      
+    </ul>
+  
+</nav>
+          
+            
+
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+
+        <!--190910 init. comments-->
+        <h4>column</h4>
+<ul>
+    <li><a href="/DM/">DM 大妈嗯哼</a></li>
+    <li><a href="/NC/">NC 嗯哼蟒营</a></li>
+    <li><a href="/SS/">SS 学员故事</a></li>
+    <li><a href="/TS/">TS 技术鳮汤</a></li>
+</ul>
+
+<h3>Powered by</h3>
+<ul>
+    <li>
+        <a href="https://101.camp/">蟒营™</a>
+<ul>
+    <li>
+        <a href="https://py.101.camp/">Python 入门班</a>
+    </li>
+    <li>
+        <a href="https://io.101.camp/">图谱</a>
+    </li>
+    <li>
+        <a href="https://slides.101.camp/">幻灯</a>
+    </li>
+    <li>
+        <a href="https://wiki.101.camp/">维基</a>
+    </li>
+    <li>
+        <a href="https://github.com/101camp/comments/issues">评注</a>
+    </li>
+</ul>
+    </li>
+
+    <li>
+        <a href="https://du.101.camp/">自怼圈</a>
+    </li>
+    <li>
+        <a href="http://weekly.pychina.org/">蟒周刊</a>
+    </li>
+    <li>
+        <a href="https://blog.zhgdg.org/">珠海GDG</a>
+    </li>
+    <li>
+        "大妈"们
+<ul>
+    <li>
+        <a href="https://yixuan.li/">Yixuan</a>
+    </li>
+
+    <li>
+        <a href="https://www.douban.com/people/Azeril/">Azeril</a>
+    </li>
+    <li>
+        <a href="https://zoomquiet.io/">Zoom.Quiet</a>
+    </li>
+    <li>
+        ...
+    </li>
+</ul>
+    <li>
+        <a href="http://mainium.icu">昧因科技®</a>
+    </li>
+    </li>
+</ul>
+
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; 2019 蟒营™101camp
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2019-11-17 13:50:08
+  -->
+</body>
+</html>
