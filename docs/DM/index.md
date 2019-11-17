@@ -21,7 +21,7 @@
 - [ DM12: 有关 gitlab 职位的永居国家/地区决择](191106-gitlab-5555.md)
 - [ DM13: COSCon19私人回顾](191108-coscon19-sh-review.md)
 
-(auto index injected at 191112 1439 32.067) 
+(auto index injected at 191117 2150 07.390) 
 
 .::
 
