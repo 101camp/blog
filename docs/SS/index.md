@@ -19,9 +19,9 @@
 - [ SS11: 任务描述误解根源](191108-chaos-tasks.md)
 - [ SS12: 中文之祸](191108-chinese-chaos.md)
 - [ SS13: 无法描述之问题](191109-2py-chaos-ask.md)
-- [ SS14 | 从年轻到懂事的文科生](2019-11-15-SS14-datetime-from-young-2grownup.md)
+- [ SS14 | 从年轻到懂事的文科生](191115-SS14-datetime-from-young-2grownup.md)
 
-(auto index injected at 191117 2150 07.398) 
+(auto index injected at 191121 0017 19.670) 
 
 .::
 

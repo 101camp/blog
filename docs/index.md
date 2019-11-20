@@ -5,6 +5,7 @@
 
 ::.
 
+- [ SS14 | 从年轻到懂事的文科生](SS/191115-SS14-datetime-from-young-2grownup.md)
 - [ SS13: 无法描述之问题](SS/191109-2py-chaos-ask.md)
 - [ DM13: COSCon19私人回顾](DM/191108-coscon19-sh-review.md)
 - [ SS11: 任务描述误解根源](SS/191108-chaos-tasks.md)
@@ -13,9 +14,8 @@
 - [ NC3:看不懂 Python 代码陷入自我怀疑？有人却学得不亦乐乎？](NC/191103-4py-how2joy-coding.md)
 - [ DM11: 终于开始回忆](DM/191022-pycon19nn.md)
 - [ DM10:叕一次重启](DM/191012-rerestart.md)
-- [ SS9: 为什么不让 Push ?](SS/190920-why-cant-push.md)
 
-(auto index injected at 191117 2150 07.416) 
+(auto index injected at 191121 0017 19.674) 
 
 .::
 
