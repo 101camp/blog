@@ -15,7 +15,7 @@
 - [ DM11: 终于开始回忆](DM/191022-pycon19nn.md)
 - [ DM10:叕一次重启](DM/191012-rerestart.md)
 
-(auto index injected at 191121 0017 19.674) 
+(auto index injected at 191124 1547 18.004) 
 
 .::
 
