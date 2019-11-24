@@ -20,8 +20,9 @@
 - [ SS12: 中文之祸](191108-chinese-chaos.md)
 - [ SS13: 无法描述之问题](191109-2py-chaos-ask.md)
 - [ SS14 | 从年轻到懂事的文科生](191115-SS14-datetime-from-young-2grownup.md)
+- [ SS15: 嘦问就能回答的了,神奇的学员...](191124-SS15-2py-py2-3-try.md)
 
-(auto index injected at 191124 1547 17.993) 
+(auto index injected at 191124 2030 54.887) 
 
 .::
 

@@ -5,6 +5,7 @@
 
 ::.
 
+- [ SS15: 嘦问就能回答的了,神奇的学员...](SS/191124-SS15-2py-py2-3-try.md)
 - [ SS14 | 从年轻到懂事的文科生](SS/191115-SS14-datetime-from-young-2grownup.md)
 - [ SS13: 无法描述之问题](SS/191109-2py-chaos-ask.md)
 - [ DM13: COSCon19私人回顾](DM/191108-coscon19-sh-review.md)
@@ -13,9 +14,8 @@
 - [ DM12: 有关 gitlab 职位的永居国家/地区决择](DM/191106-gitlab-5555.md)
 - [ NC3:看不懂 Python 代码陷入自我怀疑？有人却学得不亦乐乎？](NC/191103-4py-how2joy-coding.md)
 - [ DM11: 终于开始回忆](DM/191022-pycon19nn.md)
-- [ DM10:叕一次重启](DM/191012-rerestart.md)
 
-(auto index injected at 191124 1547 18.004) 
+(auto index injected at 191124 2030 54.900) 
 
 .::
 

@@ -11,7 +11,7 @@
 - 满嘴谎话得宣称, 按自然周查看个人 gitlab 发布 issue 个数,即可获得自我学习行为的理性评价.
 - 当然, 这是扯淡... 好在蟒营开放的氛围, 一向崇尚「犯错是最好的学习路径」,给了年轻人检验自己荒唐想法的机会.
 
-![3py-bear-need](http://ydlj.zoomquiet.top/ipic/2019-11-24-101camp3py-bear-need.png?imageView2/2/w/360)
+![3py-bear-need](http://ydlj.zoomquiet.top/ipic/2019-11-24-101camp3py-bear-need.png?imageView2/2/w/420)
 
 ### 1. 鲁莽惹事
 
