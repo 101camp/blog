@@ -15,7 +15,7 @@
 - [ NC3:看不懂 Python 代码陷入自我怀疑？有人却学得不亦乐乎？](NC/191103-4py-how2joy-coding.md)
 - [ DM11: 终于开始回忆](DM/191022-pycon19nn.md)
 
-(auto index injected at 191125 1048 18.498) 
+(auto index injected at 191126 0936 58.245) 
 
 .::
 
