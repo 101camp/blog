@@ -5,7 +5,7 @@
 - 直觉上,抓取数据不外乎三步,打开冰箱(输入),放进大象(处理),关上冰箱(输出).
 - 小白却发现,打开冰箱的第一步已经需要学习大量知识点,比如,怎么认证登录?
 
-![Screen_Shot_2019-12-06_at_2.57.12_PM](/uploads/77fe66500b554a8897762af031f3382f/Screen_Shot_2019-12-06_at_2.57.12_PM.png)
+![191206-TS3-gitlabAPI-authentication.png](https://i.loli.net/2019/12/10/2Crb5LzcR6UGXgd.png)
 
 ## 认证的真相
 - 以 gitlab 为例,抓取数据的一种流行方法为,从 gitlab api 获取数据.
