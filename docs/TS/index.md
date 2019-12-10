@@ -10,8 +10,9 @@
 - [ TS1: 老令公今天70了](190814-EKR-70th-birthday.md)
 - [ TS2: 细数我与 Linux 这十三年](190815-tinylab-falcon-and-linux.md)
 - [ TS3: Pyenv 最终介绍](190919-pyenv-finally-intro.md)
+- [ TS3:认证的真相](191206-TS3-gitlabAPI-authentication.md)
 
-(auto index injected at 191210 1711 21.875) 
+(auto index injected at 191210 1744 50.252) 
 
 .::
 
