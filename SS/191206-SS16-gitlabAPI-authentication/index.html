@@ -5,7 +5,7 @@
   
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <title>DM4: 程序猿成长迷思... &mdash; Blogging 蟒营™ 博客</title>
+    <title>认证的真相 &mdash; Blogging 蟒营™ 博客</title>
 
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
@@ -47,82 +47,91 @@ var _hmt = _hmt || [];
       <div class="bodywrapper">
         <div class="body" role="main">
           
-            <h1 id="dm4">DM4: 程序猿成长迷思...<a class="headerlink" href="#dm4" title="Permanent link">¶</a></h1>
-<p>the5fire 公众号: <code>Python程序员杂谈</code></p>
-<p>今天推荐: </p>
-<blockquote>
-<p>'谈到这里,不得不提的是, git 绝对是软件行业近二十年最伟大的发明之一. 它值得每个程序员正儿八经的学习,绝不应满足于会 commit push pull 就够了. 它是进入开源世界的敲门砖. 一个能力超强的程序员,如果不融入同样顶尖的团体,就是在浪费自己的人生. '</p>
-</blockquote>
-<p>云风大神的文章:"程序员怎么提高自己"</p>
-<p>https://blog.codingnow.com/2019/07/top_programmer.html</p>
-<h2 id="_1">是也乎,(￣▽￣)<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<p>无法同意更多, 10多年前, 开始面试时, 就将 卫斯理 小说是否算科幻小说, 列为面试问题之一...</p>
-<p>最令俺共鸣的是: </p>
-<blockquote>
-<p>...造轮子固然有趣,会用轮子却更为重要</p>
-</blockquote>
-<p>追求代码的效能/优雅, 没错,
-但是, 开发语言是为了减少软件开发时不必要的心智消耗而创造出来的,
-进一步的, 所有开发语言多年积累聚集的生态, 更加是各行各业解决各种实际问题后, 程序猿自发自觉的将经验抽象为对应模块/库/工具/...</p>
-<p>所以, 如果发现自己的开发乐趣不在代码本身, 
-而在代码形成软件解决的问题上....</p>
-<p>那么, 也没什么问题, 专注快速完成 MVP, 在实际使用过程中持续优化,
-这种成就感, 一点也不亚于从一开始就用完备宏观整体性思维设计/构建出简洁优雅又强力的代码来的成就感差...</p>
-<p>所以, 在俺来看, 程序猿提高自己, 无非是增广见识,
-无论在技术领域, 还是在现实领域...</p>
-<p>总之, 反复在一个领域/岗位作事儿,
-很容易退缩到只有当前领域工程的优雅/效率/功能/...上来, 
-而, 一但领域行业发生变化,
-是真的没什么储备技能来面对天翻地覆大变化的...</p>
-<p>所以, 最简单的开始就是:</p>
+            <h1 id="_1">认证的真相<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<h2 id="_2">烦恼的认证<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <ul>
-<li>坚持写技术/学习/思考/...笔记</li>
-<li>并持续公开出来...<ul>
-<li>输出是更残酷的输入...</li>
-<li>很多时候只有在书写时, 才知道自己哪儿没真正理解...</li>
+<li>花花世界,数据繁多,小白们看到心水数据,往往相恨太晚不能自持,总希望能把这些可爱的数据搬回家.</li>
+<li>直觉上,抓取数据不外乎三步,打开冰箱(输入),放进大象(处理),关上冰箱(输出).</li>
+<li>小白却发现,打开冰箱的第一步已经需要学习大量知识点,比如,怎么认证登录?</li>
 </ul>
-</li>
-<li>也只有输出/公开出来, 才可能有机会将自己的思考纳入到其它能人圈子里</li>
-<li>当然, 现在新人想通过自己专有网站来吸引注意力, 从而进入圈子太难<ul>
-<li>流量基本被巨头控制住了</li>
-<li>除非象云风这种固定域名/模板/格式, 坚持 10年以上稳定输出...</li>
-<li>否则, 建议同步在 微公众号/简书/知乎/... 并链接回自己的 blog</li>
-<li>进行, 一点儿人肉 SEO 吧...</li>
+<p><img alt="Screen_Shot_2019-12-06_at_2.57.12_PM" src="/uploads/77fe66500b554a8897762af031f3382f/Screen_Shot_2019-12-06_at_2.57.12_PM.png" /></p>
+<h2 id="_3">认证的真相<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<ul>
+<li>以 gitlab 为例,抓取数据的一种流行方法为,从 gitlab api 获取数据.</li>
+<li>可以通过各式各样工具,向 gitlab 提出请求,比如 curl,requests,GraphQL 等.</li>
+<li>gitlab 给出的示例代码如下,但小白们大呼看不懂!不好用!</li>
 </ul>
-</li>
-</ul>
-<p>PS:
-以及如何高速提高表达能力?</p>
-<pre><code>交个女朋友
-或者是养条狗
+<pre><code>    curl --header &quot;Private-Token: &lt;your_access_token&gt;&quot; \
+        https://gitlab.example.com/api/v4/projects
 </code></pre>
-<p>逼自己张开始嘴, 才能知道如何言说了...</p>
-<blockquote>
-<blockquote>
-<p>NN 3720</p>
-</blockquote>
-</blockquote>
-<h2 id="ps">PS:<a class="headerlink" href="#ps" title="Permanent link">¶</a></h2>
-<blockquote>
-<p>精品小班现已开课,
-第3期, 预计 九月 上现</p>
-</blockquote>
-<p>想及时获得通知, 请关注公众号:</p>
-<p><img alt="PythoniCamp" src="https://ipic.zoomquiet.top/2019-07-26-banner_101camp_h139.jpg" /></p>
-<p>实在想立即开始感受蟒营, 有知识星球可以加入:</p>
-<p><img alt="蟒营101camp自怼圈" src="https://ipic.zoomquiet.top/2019-07-26-xmq-du101camp-1.jpeg" /></p>
-<p>蟒营(<strong>101camp</strong>)</p>
-<pre><code>伴你重新享受自学的乐趣
-    Reactivate Joy by Self-study with You
 
-  0    o-o    0
- /|   o  /o  /|
-o |   | / | o |    o-o  oo o-O-o o-o
-  |   o/  o   |   |    | | | | | |  |
-o-o-o  o-o  o-o-o  o-o o-o-o o o O-o
-                                 |
-                                 o
-</code></pre>
+<ul>
+<li>其实核心问题在于,示例代码并不是直接就能上手用的. </li>
+<li>类似这种示例,如何最终结合到 Python 代码中? 这才是小白们自己该动手的地方.</li>
+<li>那么, 这里就涉及到一系列有严密逻辑关系的问题:</li>
+<li>curl?<ul>
+<li>是什么?</li>
+<li>如何安装?</li>
+<li>如何使用?</li>
+</ul>
+</li>
+<li>gitlab.example.com<ul>
+<li>为什么不存在?</li>
+<li>应该是什么?</li>
+<li>为什么?</li>
+</ul>
+</li>
+<li>--header "Private-Token: <your_access_token>"<ul>
+<li>--header 是什么意思?</li>
+<li>"Private-Token: <your_access_token>" 怎么理解?</li>
+<li>your_access_token 从哪儿获取?</li>
+<li>整个儿真实使用时, 应该长什么样?<ul>
+<li><code>&lt;</code>your_access_token<code>&gt;</code> 这儿的尖括号要保留嘛?</li>
+<li>为什么? 这是什么格式?...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>curl 示例 Python 的行为以及代码实现?</p>
+<ul>
+<li>什么是 http ?</li>
+<li>什么是 header ?</li>
+<li>Python 中有什么网络请求模块?<ul>
+<li>哪个最好?</li>
+<li>如何安装</li>
+<li>基本使用?</li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>那么, 如果无法自动分析并规划出这种探索路径,当然真相永远无法抵达...</p>
+</li>
+</ul>
+<h2 id="_4">不可遗忘的隐藏<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<ul>
+<li>当理解了认证后,更加重要的来了.</li>
+<li>代码中 <your_access_token> 涉及个人隐私和信息安全的情况.</li>
+<li>软件工程师习惯将一个软件运行起来需要的参数放在INI格式的配置文件里.</li>
+<li>通过 python 模块调用配置文件里的参数.</li>
+<li>所以特别提醒正在认证的小白们, 一定要保护好自己的隐私.</li>
+<li>同时,务必在README或文档醒目位置告知最终用户配置文件的预期位置和名称,否则参数不对软件甚至无法运行.</li>
+</ul>
+<h2 id="_5">结语<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<ul>
+<li>这就是蟒营对小白们的挑战,给小白们提供的并不只是知识/技能/常识,更多的是逻辑的挑战...</li>
+</ul>
+<h2 id="refer">refer<a class="headerlink" href="#refer" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://gitlab.com/101camp/4py/tasks/issues/50#note_255534812">如何用爬虫抓取需要登录的网站内容 (#50) · Issues · 101Camp / 4py / tasks · GitLab</a></li>
+<li><a href="https://gitlab.com/101camp/4py/tasks/issues/47">[team] <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#84;&#82;&#73;&#64;&#102;&#108;&#121;&#109;&#101;&#50;&#51;&#51;&#51;">&#84;&#82;&#73;&#64;&#102;&#108;&#121;&#109;&#101;&#50;&#51;&#51;&#51;</a> 数据抓取/分析 (#47) · Issues · 101Camp / 4py / tasks · GitLab</a></li>
+<li><a href="https://gitlab.com/101camp/3py/tasks/issues/63">[FAQ]在 python-gitlab 环境中使用配置文件 Configuration file 详细使用指南 (#63) · Issues · 101Camp / 3py / tasks · GitLab</a></li>
+<li><a href="https://gitlab.com/101camp/3py/tasks/issues/60">[FAQ]用配置文件替换代码中敏感信息 (#60) · Issues · 101Camp / 3py / tasks · GitLab</a></li>
+<li><a href="https://docs.gitlab.com/ee/api/access_requests.html">Group and project access requests API | GitLab</a></li>
+<li><a href="https://docs.gitlab.com/ee/api/README.html#personal-access-tokens">API Docs | GitLab | personal-access-tokens</a></li>
+</ul>
             
 
             
@@ -246,12 +255,27 @@ o-o-o  o-o  o-o-o  o-o o-o-o o o O-o
   
     <ul>
     
-      <li><a href="#_1">是也乎,(￣▽￣)</a></li>
+      <li><a href="#_2">烦恼的认证</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#ps">PS:</a></li>
+      <li><a href="#_3">认证的真相</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_4">不可遗忘的隐藏</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">结语</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#refer">refer</a></li>
       <ul>
     
   </ul>
@@ -266,7 +290,7 @@ o-o-o  o-o  o-o-o  o-o o-o-o o o O-o
       <!--
         <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
       -->
-        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/DM/190725-DM4-coder-how2-growup.md">edit➔GitHub</a></li>
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/SS/191206-SS16-gitlabAPI-authentication.md">edit➔GitHub</a></li>
 
       
     </ul>
