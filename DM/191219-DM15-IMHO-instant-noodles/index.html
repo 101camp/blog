@@ -5,7 +5,7 @@
   
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <title>SS15: 嘦问就能回答的了,神奇的学员... &mdash; Blogging 蟒营™ 博客</title>
+    <title>DM15: Python 代码嗯哼起来就象泡个面 &mdash; Blogging 蟒营™ 博客</title>
 
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
@@ -47,90 +47,97 @@ var _hmt = _hmt || [];
       <div class="bodywrapper">
         <div class="body" role="main">
           
-            <h1 id="ss15">SS15: 嘦问就能回答的了,神奇的学员...<a class="headerlink" href="#ss15" title="Permanent link">¶</a></h1>
+            <h1 id="dm15-python">DM15: Python 代码嗯哼起来就象泡个面<a class="headerlink" href="#dm15-python" title="Permanent link">¶</a></h1>
 <blockquote>
-<p>101camp2py 190707 1542 触发</p>
+<p>总是 debug 来一碗正义而欢快 ...</p>
 </blockquote>
-<h2 id="_1">苦也:<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<p>课程推荐教材中最基础的 <code>Hello, World</code> 即触发最宏大的背景问题:</p>
-<blockquote>
-<p>Printing "Hello, World" above via Python 2 looked quite "normal". However, if we have multiple objects inside the parantheses, we will create a tuple, since <code>print</code> is a "statement" in Python 2, not a function call.</p>
-</blockquote>
-<p>课程要求使用 Python 3.7.3 环境,
-可很多优秀教材, 内容还是基于 Python 2.X 的,</p>
-<p>结果呢? 当然,网络中也有很多针对性经验:</p>
+<h2 id="_1">苦也<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>自从 02 年撞见 Python , 总是感叹其非常象自然语言的形式以及丰富的生态;</p>
+<p>但是, 在各种场景中推荐 Python 或是其它任何一种开发语言时;
+收到最多的反馈总是相似的:</p>
 <ul>
-<li>Differences of print key word between Python2 and Python3 </li>
+<li>太难了, 完全不知道怎么写</li>
+<li>代码还不会写, 痛苦中...</li>
+<li>无论怎么写都报错...</li>
 <li>...</li>
 </ul>
-<h2 id="_2">嗯哼:<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<ul>
-<li>助教问: 所以, 课程环境要求统一到  Python3.7.3 而如果习题是 py 2 的话, 怎么办?</li>
-<li>学员答: 解决方案有如下几种<ul>
-<li>
-<ol>
-<li>写两份代码,命名上以2和3区分,同时注意2和3之间的差异</li>
-</ol>
-</li>
-<li>
-<ol>
-<li>只写一份py2代码,使用2to3命令转为Python3.7.3</li>
-</ol>
-</li>
-<li>
-<ol>
-<li>只写Python3.7.3,抛弃2,2020年就不维护了- . -</li>
-</ol>
-</li>
-</ul>
-</li>
-<li>大妈赞: 高兴你已有这么理性的逻辑思维,<ul>
-<li>那么:<ul>
-<li>用第3种, 看 Py2 的习题, 自己对应写成 Py3 的调试通过</li>
-<li>不用特意安装两种运行版本, 也不用专门多写一份了</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>可见, 先贤曰的对:</p>
-<ul>
-<li>教育不是灌输, 而是<strong>点燃</strong>火熖<ul>
-<li>教育最有效的方法不是告诉答案,</li>
-<li>而是向他们提问!</li>
-</ul>
-</li>
-<li>--- Σωκράτης (Socrates)</li>
-</ul>
-<p>兴趣和内在动机才是长期坚持的动力:</p>
-<ul>
-<li>问题在, 兴趣总是随时被激发</li>
-<li>而动机也总是在变化</li>
-<li>可惜没有一个合理的路径/学习线索</li>
-<li>兴趣/热情/意志/... 总是被无法预测的挫败感高速吞噬殆尽</li>
-<li>以至无法形成:<ul>
-<li>持续投入时间</li>
-<li>持续投入精力</li>
-<li>持续解决问题</li>
-</ul>
-</li>
-<li>...导致永远无法建立自己的基础编程经验集</li>
-<li>那么, 也自然总是放弃, 无论尝试几次, 都卡在基础语法这个门槛上</li>
-<li>却无法理解, 语法根本就不是编程的核心难点<ul>
-<li>合理有效的高速调试才是一切的开始</li>
-</ul>
-</li>
-</ul>
-<h2 id="_3">是也乎:<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
-<p>这就是蟒营™课程体验, 和以往所有课程体验根本相反, 正如隔壁队长说的:</p>
+<h2 id="_2">其实<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <blockquote>
-<p>一个十分开放的课程,开放到他只给你一个框架,
-内容完全由自己来填写,任何形式任何方法都可以得到包容,
-也没有人说[哎呀这个应该这样做],
-他完全靠自己实际操作来触发一系列隐藏任务,
-而大妈则是"和蔼"的站在背后不时的看看你,指引你,帮助你把这个发现的问题狠狠的踩下去,推动你去弄个明白.</p>
+<p>代码不是写出来的…调出来的… </p>
 </blockquote>
-<h2 id="_4">所以:<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<p>整体上...象煮面~:</p>
+<ul>
+<li>Python 代码完成任务, 象泡方便面<ul>
+<li>--&gt; 问题就是牌子太多挑花眼 </li>
+</ul>
+</li>
+<li>C 代码 --&gt; 得从种麦子开始<ul>
+<li>…见到面条得明年</li>
+</ul>
+</li>
+<li>Perl 代码来完成任务, 象日本的滚动凉面<ul>
+<li>你不一定捞得到面...</li>
+</ul>
+</li>
+<li>JAVA ...</li>
+</ul>
+<h2 id="_3">嗯哼<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>为什么这么说?</p>
+</blockquote>
+<p>编写代码, 真实过程其实就是和电脑对话:</p>
+<pre><code>编写/修改
+^   +-&gt;运行
+|       +-&gt; 观察
+\__________/
+</code></pre>
+<p>这个 MVP(最小可用过程),建立起来后,
+就是持续高速和电脑就一行行代码的理解进行反复对话确认而已.</p>
+<p>因为:</p>
+<ul>
+<li>代码只是我们意识的表达</li>
+<li>目标是令电脑按照我们的设想完成工作</li>
+<li>那么, 问题是我们并不知道最终正确代码是什么<ul>
+<li>我们只是知道我们的目的是什么</li>
+<li>是的, 这才是首要条件</li>
+<li>这也是为什么很多人初学编程时, 束手无策<ul>
+<li>原因就在他们内心戏太多</li>
+<li>以为, 如果内心没有正确代码的想象</li>
+<li>那么不可能写对程序</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>而其实, 编程, 不过是和电脑聊天儿<ul>
+<li>一点点儿将自己想作什么</li>
+<li>和电脑聊清楚了,聊透彻了</li>
+<li>聊到电脑真正理解明白,并完成我们期待的结果</li>
+<li>这个聊天过程的记录, 就是代码</li>
+</ul>
+</li>
+<li>可我们平时聊天时, 也不可能字字玑珠, 出口成章的哪<ul>
+<li>也是废话满天</li>
+<li>套话/客气话自动填充各种尴尬时刻..</li>
+<li>这些就是代码中的自省/调试用/临时代码</li>
+<li>为了帮助自己和电脑双方真正理解相互的意图</li>
+<li>快速/反复/随时打印出来自己不明白的对象/过程/数据/类型/...</li>
+<li>推进代码理解以及生长</li>
+<li>随时删除/注释已经无用的调试代码, 保留/抽象有效代码...</li>
+</ul>
+</li>
+<li>只是, 因为这个本地调试/编撰过程一般无人完整的保留下来<ul>
+<li>大家搜索出来, 看到的都是最终成品代码</li>
+<li>从而误以为代码都是一次写出来</li>
+<li>那么,当然是只能完全僵死在起点无法开始了...</li>
+</ul>
+</li>
+</ul>
+<h2 id="_4">是也乎:<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<p>这就是蟒营™课程体验, 和以往所有课程体验根本相反, 正如学员感叹的:</p>
+<blockquote>
+<p>蟒营™Python入门班,有学员评价:"…是以Python语言为例的通识课,目标是能到达[掌握所有程序语言]那种状态";社区般氛围中,由具体开发任务触发提问/思考/尝试;陪同学员一起享受编程/关注效率/找到长期兴趣和伙伴;</p>
+</blockquote>
+<h2 id="_5">所以:<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
 <p>蟒营(101.camp): </p>
 <pre><code>编程人生伴侣
 编程起重人生
@@ -162,11 +169,13 @@ Reactivate Joy by Self-teach with You
 2: 每周能挤出10+小时自主学习时间
 3: 英文资料能查字典看懂
 </code></pre>
+<hr />
 <blockquote>
 <blockquote>
-<p>NN 3841</p>
+<p>NN 3866</p>
 </blockquote>
 </blockquote>
+<p>首发: <a href="https://blog.101.camp/DM/191219-DM15-IMHO-instant-noodles.md/">DM15: Python 代码嗯哼起来就象泡个面 — Blogging 蟒营™ 博客</a></p>
             
 
             
@@ -290,22 +299,27 @@ Reactivate Joy by Self-teach with You
   
     <ul>
     
-      <li><a href="#_1">苦也:</a></li>
+      <li><a href="#_1">苦也</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#_2">嗯哼:</a></li>
+      <li><a href="#_2">其实</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#_3">是也乎:</a></li>
+      <li><a href="#_3">嗯哼</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#_4">所以:</a></li>
+      <li><a href="#_4">是也乎:</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">所以:</a></li>
       <ul>
     
   </ul>
@@ -320,7 +334,7 @@ Reactivate Joy by Self-teach with You
       <!--
         <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
       -->
-        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/SS/191124-SS15-2py-py2-3-try.md">edit➔GitHub</a></li>
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/DM/191219-DM15-IMHO-instant-noodles.md">edit➔GitHub</a></li>
 
       
     </ul>

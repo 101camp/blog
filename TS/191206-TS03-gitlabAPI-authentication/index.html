@@ -5,7 +5,7 @@
   
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <title>SS15: 嘦问就能回答的了,神奇的学员... &mdash; Blogging 蟒营™ 博客</title>
+    <title>TS3:认证的真相 &mdash; Blogging 蟒营™ 博客</title>
 
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
@@ -47,126 +47,94 @@ var _hmt = _hmt || [];
       <div class="bodywrapper">
         <div class="body" role="main">
           
-            <h1 id="ss15">SS15: 嘦问就能回答的了,神奇的学员...<a class="headerlink" href="#ss15" title="Permanent link">¶</a></h1>
+            <h1 id="ts3">TS3:认证的真相<a class="headerlink" href="#ts3" title="Permanent link">¶</a></h1>
+<h2 id="_1">烦恼的认证<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<ul>
+<li>花花世界,数据繁多,小白们看到心水数据,往往相恨太晚不能自持,总希望能把这些可爱的数据搬回家.</li>
+<li>直觉上,抓取数据不外乎三步,打开冰箱(输入),放进大象(处理),关上冰箱(输出).</li>
+<li>小白却发现,打开冰箱的第一步已经需要学习大量知识点,比如,怎么认证登录?</li>
+</ul>
 <blockquote>
-<p>101camp2py 190707 1542 触发</p>
+<p>明确团队希望掌握,模拟网站登录的功能区网页直接抓取数据,但需要学习的知识点太多...</p>
+<p>经大妈提醒,可以通过 API 抓取.但因为第一次接触 API,资料中很多专有名词和概念,都要转去补充阅读资料才理解,进展很慢...</p>
 </blockquote>
-<h2 id="_1">苦也:<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<p>课程推荐教材中最基础的 <code>Hello, World</code> 即触发最宏大的背景问题:</p>
-<blockquote>
-<p>Printing "Hello, World" above via Python 2 looked quite "normal". However, if we have multiple objects inside the parantheses, we will create a tuple, since <code>print</code> is a "statement" in Python 2, not a function call.</p>
-</blockquote>
-<p>课程要求使用 Python 3.7.3 环境,
-可很多优秀教材, 内容还是基于 Python 2.X 的,</p>
-<p>结果呢? 当然,网络中也有很多针对性经验:</p>
+<h2 id="_2">认证的真相<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <ul>
-<li>Differences of print key word between Python2 and Python3 </li>
-<li>...</li>
+<li>以 gitlab 为例,抓取数据的一种流行方法为,从 gitlab api 获取数据.</li>
+<li>可以通过各式各样工具,向 gitlab 提出请求,比如 curl,requests,GraphQL 等.</li>
+<li>gitlab 给出的示例代码如下,但小白们大呼看不懂!不好用!</li>
 </ul>
-<h2 id="_2">嗯哼:<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<ul>
-<li>助教问: 所以, 课程环境要求统一到  Python3.7.3 而如果习题是 py 2 的话, 怎么办?</li>
-<li>学员答: 解决方案有如下几种<ul>
-<li>
-<ol>
-<li>写两份代码,命名上以2和3区分,同时注意2和3之间的差异</li>
-</ol>
-</li>
-<li>
-<ol>
-<li>只写一份py2代码,使用2to3命令转为Python3.7.3</li>
-</ol>
-</li>
-<li>
-<ol>
-<li>只写Python3.7.3,抛弃2,2020年就不维护了- . -</li>
-</ol>
-</li>
-</ul>
-</li>
-<li>大妈赞: 高兴你已有这么理性的逻辑思维,<ul>
-<li>那么:<ul>
-<li>用第3种, 看 Py2 的习题, 自己对应写成 Py3 的调试通过</li>
-<li>不用特意安装两种运行版本, 也不用专门多写一份了</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>可见, 先贤曰的对:</p>
-<ul>
-<li>教育不是灌输, 而是<strong>点燃</strong>火熖<ul>
-<li>教育最有效的方法不是告诉答案,</li>
-<li>而是向他们提问!</li>
-</ul>
-</li>
-<li>--- Σωκράτης (Socrates)</li>
-</ul>
-<p>兴趣和内在动机才是长期坚持的动力:</p>
-<ul>
-<li>问题在, 兴趣总是随时被激发</li>
-<li>而动机也总是在变化</li>
-<li>可惜没有一个合理的路径/学习线索</li>
-<li>兴趣/热情/意志/... 总是被无法预测的挫败感高速吞噬殆尽</li>
-<li>以至无法形成:<ul>
-<li>持续投入时间</li>
-<li>持续投入精力</li>
-<li>持续解决问题</li>
-</ul>
-</li>
-<li>...导致永远无法建立自己的基础编程经验集</li>
-<li>那么, 也自然总是放弃, 无论尝试几次, 都卡在基础语法这个门槛上</li>
-<li>却无法理解, 语法根本就不是编程的核心难点<ul>
-<li>合理有效的高速调试才是一切的开始</li>
-</ul>
-</li>
-</ul>
-<h2 id="_3">是也乎:<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
-<p>这就是蟒营™课程体验, 和以往所有课程体验根本相反, 正如隔壁队长说的:</p>
-<blockquote>
-<p>一个十分开放的课程,开放到他只给你一个框架,
-内容完全由自己来填写,任何形式任何方法都可以得到包容,
-也没有人说[哎呀这个应该这样做],
-他完全靠自己实际操作来触发一系列隐藏任务,
-而大妈则是"和蔼"的站在背后不时的看看你,指引你,帮助你把这个发现的问题狠狠的踩下去,推动你去弄个明白.</p>
-</blockquote>
-<h2 id="_4">所以:<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
-<p>蟒营(101.camp): </p>
-<pre><code>编程人生伴侣
-编程起重人生
-你本来就很行
+<pre><code>    curl --header &quot;Private-Token: &lt;your_access_token&gt;&quot; \
+        https://gitlab.example.com/api/v4/projects
+</code></pre>
 
-Reactivate Joy by Self-teach with You
-    伴你重享学习乐趣
-</code></pre>
-<blockquote>
-<p>综合来说, 蟒营可以激发学员获得多种进步:</p>
-</blockquote>
 <ul>
-<li>在职非 Python 程序员 &lt;-实用工程经验, 包含团队管理体验</li>
-<li>在校大二/三学生 &lt;-  完备软件开发经历, 能独立用 Python 完成实用工具开发</li>
-<li><code>真小白</code>(无基础人士) &lt;- 切实编程自信, 真正理解什么是编程, 并熟悉 Python 技术生态,能基于工程思维来解析具体问题..</li>
-<li>以及所有学员能获得的:<ul>
-<li>高效问题讨论习惯</li>
-<li>上手标准社区协作</li>
-<li>自律的周学习节奏</li>
+<li>其实核心问题在于,示例代码并不是直接就能上手用的. </li>
+<li>类似这种示例,如何最终结合到 Python 代码中? 这才是小白们自己该动手的地方.</li>
+<li>那么, 这里就涉及到一系列有严密逻辑关系的问题:</li>
+<li>curl?<ul>
+<li>是什么?</li>
+<li>如何安装?</li>
+<li>如何使用?</li>
+</ul>
+</li>
+<li>gitlab.example.com<ul>
+<li>为什么不存在?</li>
+<li>应该是什么?</li>
+<li>为什么?</li>
+</ul>
+</li>
+<li>--header "Private-Token: <your_access_token>"<ul>
+<li>--header 是什么意思?</li>
+<li>"Private-Token: <your_access_token>" 怎么理解?</li>
+<li>your_access_token 从哪儿获取?</li>
+<li>整个儿真实使用时, 应该长什么样?<ul>
+<li><code>&lt;</code>your_access_token<code>&gt;</code> 这儿的尖括号要保留嘛?</li>
+<li>为什么? 这是什么格式?...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>curl 示例 Python 的行为以及代码实现?</p>
+<ul>
+<li>什么是 http ?</li>
+<li>什么是 header ?</li>
+<li>Python 中有什么网络请求模块?<ul>
+<li>哪个最好?</li>
+<li>如何安装</li>
+<li>基本使用?</li>
 <li>...</li>
 </ul>
 </li>
 </ul>
-<p>而这一切变化, 都在6周里即可完成.</p>
-<p>PS:</p>
-<p>14岁~72岁都能学, 嘦:</p>
-<pre><code>0: 想学编程
-1: 有个人电脑
-2: 每周能挤出10+小时自主学习时间
-3: 英文资料能查字典看懂
-</code></pre>
-<blockquote>
-<blockquote>
-<p>NN 3841</p>
-</blockquote>
-</blockquote>
+</li>
+<li>
+<p>那么, 如果无法自动分析并规划出这种探索路径,当然真相永远无法抵达...</p>
+</li>
+</ul>
+<h2 id="_3">不可遗忘的隐藏<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<ul>
+<li>当理解了认证后,更加重要的来了.</li>
+<li>代码中 <your_access_token> 涉及个人隐私和信息安全的情况.</li>
+<li>软件工程师习惯将一个软件运行起来需要的参数放在INI格式的配置文件里.</li>
+<li>通过 python 模块调用配置文件里的参数.</li>
+<li>所以特别提醒正在认证的小白们, 一定要保护好自己的隐私.</li>
+<li>同时,务必在README或文档醒目位置告知最终用户配置文件的预期位置和名称,否则参数不对软件甚至无法运行.</li>
+</ul>
+<h2 id="_4">结语<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<ul>
+<li>这就是蟒营对小白们的挑战,给小白们提供的并不只是知识/技能/常识,更多的是逻辑的挑战...</li>
+</ul>
+<h2 id="refer">refer<a class="headerlink" href="#refer" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://gitlab.com/101camp/4py/tasks/issues/50#note_255534812">如何用爬虫抓取需要登录的网站内容 (#50) · Issues · 101Camp / 4py / tasks · GitLab</a></li>
+<li><a href="https://gitlab.com/101camp/4py/tasks/issues/47">[team] <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#84;&#82;&#73;&#64;&#102;&#108;&#121;&#109;&#101;&#50;&#51;&#51;&#51;">&#84;&#82;&#73;&#64;&#102;&#108;&#121;&#109;&#101;&#50;&#51;&#51;&#51;</a> 数据抓取/分析 (#47) · Issues · 101Camp / 4py / tasks · GitLab</a></li>
+<li><a href="https://gitlab.com/101camp/3py/tasks/issues/63">[FAQ]在 python-gitlab 环境中使用配置文件 Configuration file 详细使用指南 (#63) · Issues · 101Camp / 3py / tasks · GitLab</a></li>
+<li><a href="https://gitlab.com/101camp/3py/tasks/issues/60">[FAQ]用配置文件替换代码中敏感信息 (#60) · Issues · 101Camp / 3py / tasks · GitLab</a></li>
+<li><a href="https://docs.gitlab.com/ee/api/access_requests.html">Group and project access requests API | GitLab</a></li>
+<li><a href="https://docs.gitlab.com/ee/api/README.html#personal-access-tokens">API Docs | GitLab | personal-access-tokens</a></li>
+</ul>
             
 
             
@@ -290,22 +258,27 @@ Reactivate Joy by Self-teach with You
   
     <ul>
     
-      <li><a href="#_1">苦也:</a></li>
+      <li><a href="#_1">烦恼的认证</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#_2">嗯哼:</a></li>
+      <li><a href="#_2">认证的真相</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#_3">是也乎:</a></li>
+      <li><a href="#_3">不可遗忘的隐藏</a></li>
       <ul>
     
   </ul>
     
-      <li><a href="#_4">所以:</a></li>
+      <li><a href="#_4">结语</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#refer">refer</a></li>
       <ul>
     
   </ul>
@@ -320,7 +293,7 @@ Reactivate Joy by Self-teach with You
       <!--
         <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
       -->
-        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/SS/191124-SS15-2py-py2-3-try.md">edit➔GitHub</a></li>
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/TS/191206-TS03-gitlabAPI-authentication.md">edit➔GitHub</a></li>
 
       
     </ul>
