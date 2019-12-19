@@ -20,8 +20,10 @@
 - [ DM11: 终于开始回忆](191022-pycon19nn.md)
 - [ DM12: 有关 gitlab 职位的永居国家/地区决择](191106-gitlab-5555.md)
 - [ DM13: COSCon19私人回顾](191108-coscon19-sh-review.md)
+- [ DM14: 学习的本质只能是自学嘛?](191219-DM14-wtf-101camp-self-tech.md)
+- [ DM15: Python 代码嗯哼起来就象泡个面](191219-DM15-IMHO-instant-noodles.md)
 
-(auto index injected at 191210 1744 50.229) 
+(auto index injected at 191219 2157 08.957) 
 
 .::
 

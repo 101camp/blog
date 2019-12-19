@@ -5,17 +5,16 @@
 
 ::.
 
+- [ DM14: 学习的本质只能是自学嘛?](DM/191219-DM14-wtf-101camp-self-tech.md)
+- [ DM15: Python 代码嗯哼起来就象泡个面](DM/191219-DM15-IMHO-instant-noodles.md)
+- [ 远山近水 pydoc](TS/191214-TS04-handy-pydoc.md)
 - [ SS16: 美术从业者问大妈几个问题](SS/191210-SS16-2py-dama-ask.md)
-- [ TS3:认证的真相](TS/191206-TS3-gitlabAPI-authentication.md)
+- [ TS3:认证的真相](TS/191206-TS03-gitlabAPI-authentication.md)
 - [ SS15: 嘦问就能回答的了,神奇的学员...](SS/191124-SS15-2py-py2-3-try.md)
 - [ SS14 | 从年轻到懂事的文科生](SS/191115-SS14-datetime-from-young-2grownup.md)
 - [ SS13: 无法描述之问题](SS/191109-2py-chaos-ask.md)
-- [ DM13: COSCon19私人回顾](DM/191108-coscon19-sh-review.md)
-- [ SS11: 任务描述误解根源](SS/191108-chaos-tasks.md)
-- [ SS12: 中文之祸](SS/191108-chinese-chaos.md)
-- [ DM12: 有关 gitlab 职位的永居国家/地区决择](DM/191106-gitlab-5555.md)
 
-(auto index injected at 191210 1744 50.253) 
+(auto index injected at 191219 2157 08.976) 
 
 .::
 
