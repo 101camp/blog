@@ -206,5 +206,5 @@ PS:
 
 >> NN 3867
 
-首发: [TS05: 记要也是计划 — Blogging 蟒营™ 博客](https://blog.101.camp/TS/191220-TS05-logging-as-plannin/)
+首发: [TS06: 记要也是计划 — Blogging 蟒营™ 博客](https://blog.101.camp/TS/191220-TS06-logging-as-plannin/)
 
