@@ -5,7 +5,7 @@
   
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <title>DM15: Python 代码嗯哼起来就象泡个面 &mdash; Blogging 蟒营™ 博客</title>
+    <title>TS05: 记要也是计划 &mdash; Blogging 蟒营™ 博客</title>
 
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
@@ -47,95 +47,230 @@ var _hmt = _hmt || [];
       <div class="bodywrapper">
         <div class="body" role="main">
           
-            <h1 id="dm15-python">DM15: Python 代码嗯哼起来就象泡个面<a class="headerlink" href="#dm15-python" title="Permanent link">¶</a></h1>
+            <h1 id="ts05">TS05: 记要也是计划<a class="headerlink" href="#ts05" title="Permanent link">¶</a></h1>
 <blockquote>
-<p>总是 debug 来一碗正义而欢快 ...</p>
+<p>编程学习中大量的探索过程应该科学记要起来...</p>
 </blockquote>
 <h2 id="_1">苦也<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<p>自从 02 年撞见 Python , 总是感叹其非常象自然语言的形式以及丰富的生态;</p>
-<p>但是, 在各种场景中推荐 Python 或是其它任何一种开发语言时;
-收到最多的反馈总是相似的:</p>
+<p>不仅仅在蟒营™Python 入门班课程中, 在以往各种组织/社区中,
+都经常见到初学者, 异常痛苦的提问:</p>
 <ul>
-<li>太难了, 完全不知道怎么写</li>
-<li>代码还不会写, 痛苦中...</li>
-<li>无论怎么写都报错...</li>
+<li>如题跪求</li>
+<li>电脑兰屏了...怎么办</li>
+<li>为什么我就是找不到分支</li>
 <li>...</li>
 </ul>
 <h2 id="_2">其实<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <blockquote>
-<p>代码不是写出来的…调出来的… </p>
+<p>问题本身一定包含了解决方案, 如果没有, 一定是没找对问题</p>
 </blockquote>
-<p>整体上...象煮面~:</p>
+<p>认真回顾一下自己想发布的 "问题", 如果情绪相关的描述超过 20% ,
+就已经证明这基本不是"问题", 只是哭号而已...</p>
+<p>但是, 也理解为什么一般初学者, 难以提供有效的问题信息, 以便有经验的先学者分享体验?</p>
 <ul>
-<li>Python 代码完成任务, 象泡方便面<ul>
-<li>--&gt; 问题就是牌子太多挑花眼 </li>
+<li>因为, 问题的触发是完全无计划的,随时可能发生的</li>
+<li>比如:<ul>
+<li>只是按照资料中提供的代码, 复制过来</li>
+<li>怎么一运行就报错呢?</li>
+<li>我真的一点儿都没敢改哪...</li>
 </ul>
 </li>
-<li>C 代码 --&gt; 得从种麦子开始<ul>
-<li>…见到面条得明年</li>
+<li>好比:<ul>
+<li>自己在作罗宋汤</li>
+<li>刚刚烧好了水, 但是, 不知道后续行动</li>
+<li>上网找到一则绿咖喱蔬菜汤的部分菜谱</li>
+<li>什么也没变动照样丢进锅</li>
+<li>然后莫明惊诧: 为什么是绿色的?</li>
 </ul>
 </li>
-<li>Perl 代码来完成任务, 象日本的滚动凉面<ul>
-<li>你不一定捞得到面...</li>
+<li>其实, 开发/学习过程中的记要本身, 也是编程的一部分:<ul>
+<li>记述目标</li>
+<li>分析目的</li>
+<li>规划探索</li>
+<li>检验效果</li>
+<li>记载过程</li>
+<li>...</li>
 </ul>
 </li>
-<li>JAVA ...</li>
+<li>也就说, 编程中, 代码之外的所有思考/行为/... 都应该尽可能记录下来<ul>
+<li>这样发生问题</li>
+<li>才有足够的信息/数据可以对应匹配起来</li>
+<li>变成一份合格的理性的包含足够信息的好问题.</li>
+</ul>
+</li>
 </ul>
 <h2 id="_3">嗯哼<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <blockquote>
 <p>为什么这么说?</p>
 </blockquote>
-<p>编写代码, 真实过程其实就是和电脑对话:</p>
-<pre><code>编写/修改
-^   +-&gt;运行
-|       +-&gt; 观察
-\__________/
-</code></pre>
-<p>这个 MVP(最小可用过程),建立起来后,
-就是持续高速和电脑就一行行代码的理解进行反复对话确认而已.</p>
-<p>因为:</p>
+<p>先看看蟒营™课程中提供的提问模板的关键部分吧:</p>
+<hr />
+<blockquote>
+<p><a href="https://wiki.woodpecker.org.cn/moin/5W1H">5W1H</a></p>
+</blockquote>
 <ul>
-<li>代码只是我们意识的表达</li>
-<li>目标是令电脑按照我们的设想完成工作</li>
-<li>那么, 问题是我们并不知道最终正确代码是什么<ul>
-<li>我们只是知道我们的目的是什么</li>
-<li>是的, 这才是首要条件</li>
-<li>这也是为什么很多人初学编程时, 束手无策<ul>
-<li>原因就在他们内心戏太多</li>
-<li>以为, 如果内心没有正确代码的想象</li>
-<li>那么不可能写对程序</li>
+<li>When? 精确发生时间点<ul>
+<li>不止是时间, 还包含事件序列</li>
+<li>比如:<ul>
+<li>先准备了什么</li>
+<li>输入了什么</li>
+<li>触发了当前问题</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>而其实, 编程, 不过是和电脑聊天儿<ul>
-<li>一点点儿将自己想作什么</li>
-<li>和电脑聊清楚了,聊透彻了</li>
-<li>聊到电脑真正理解明白,并完成我们期待的结果</li>
-<li>这个聊天过程的记录, 就是代码</li>
+<li>Where? 在什么场景中,什么数据上下文?...<ul>
+<li>不止是输入, 还包含所有运行时应该明确的周围环境</li>
+<li>网络: wifi 2g? 4G 手机? 有线?</li>
+<li>什么终端软件中?版本? 什么浏览器中?版本? ...</li>
 </ul>
 </li>
-<li>可我们平时聊天时, 也不可能字字玑珠, 出口成章的哪<ul>
-<li>也是废话满天</li>
-<li>套话/客气话自动填充各种尴尬时刻..</li>
-<li>这些就是代码中的自省/调试用/临时代码</li>
-<li>为了帮助自己和电脑双方真正理解相互的意图</li>
-<li>快速/反复/随时打印出来自己不明白的对象/过程/数据/类型/...</li>
-<li>推进代码理解以及生长</li>
-<li>随时删除/注释已经无用的调试代码, 保留/抽象有效代码...</li>
+<li>What? 想完成什么目标? 操作序列, 指令, 终端输出?...<ul>
+<li>问题触发时, 原本目的是什么?</li>
+<li>具体想达到什么目标?</li>
+<li>输入什么, 期望获得什么?</li>
 </ul>
 </li>
-<li>只是, 因为这个本地调试/编撰过程一般无人完整的保留下来<ul>
-<li>大家搜索出来, 看到的都是最终成品代码</li>
-<li>从而误以为代码都是一次写出来</li>
-<li>那么,当然是只能完全僵死在起点无法开始了...</li>
+<li>Why? 如何理解的? <ul>
+<li>当前自己的理解, 分析...</li>
+</ul>
+</li>
+<li>How? 进行了什么尝试?<ul>
+<li>已经搜索了什么关键词, 每次都看了什么文章?</li>
+<li>记录形式类似:<ul>
+<li>Bing搜索: python 多版本</li>
+<li>参考:<ul>
+<li><a href="https://www.jianshu.com/p/37576a6de65b">Python多版本管理 - 简书</a></li>
+<li><a href="https://www.cnblogs.com/yinzhengjie/p/9106558.html">windows配置Python多版本共存 - 尹正杰 - 博客园</a></li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>其实, 这一模板本身就是学习笔记记要的形式建议了:</p>
+<ul>
+<li>在开始探索前, 先记录自己开始时的状态, 包含:<ul>
+<li>系统</li>
+<li>软件版本</li>
+<li>目录</li>
+<li>...</li>
+</ul>
+</li>
+<li>当然, 也应该包含当前任务目标:<ul>
+<li>目标分析</li>
+<li>自己理解的目标</li>
+<li>要达成, 应该包含几个环节<ul>
+<li>每个阶段达成的指标</li>
+<li>指标的体验工具/方式/数值/...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>也就是说, 在真正动手前, <ul>
+<li>就象登山前一样, 至少应该清点明白:<ul>
+<li>自己的能力</li>
+<li>当前携带的物资</li>
+<li>去目标高度可能的路径</li>
+<li>路径上关键标志物的精确数据</li>
+<li>....</li>
+</ul>
+</li>
+<li>这样, 才可能在登山过程中, 不断和计划对比, 快速修正,<ul>
+<li>作到发生任何意外, 都有预案</li>
+<li>或是有足够信息可以快速完成新的决策</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>那么开始探索时:<ul>
+<li>则是在对应规划条目之下</li>
+<li>根据真实的探索/搜索/实验/...</li>
+<li>将所有必要信息都记录下来, 按照对应子问题的解决探索过程<ul>
+<li>有效的搜索关键词</li>
+<li>感觉有用的文章链接</li>
+<li>文章中参考的代码</li>
+<li>代码中涉及的新模块<ul>
+<li>模块官网</li>
+<li>模块文档</li>
+<li>文档中对应案例代码</li>
+<li>关键函式参数说明</li>
+</ul>
+</li>
+<li>代码试运行时涉及的依赖配置/数据/操作<ul>
+<li>成功时的输入/出</li>
+<li>失败时的输入/报警</li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>也就是说, 记录不过是持续对开始前规划的探索路径的持续完备<ul>
+<li>并在过程中不断证实是否有效</li>
+<li>放弃无效逻辑分支</li>
+<li>深入有效可工作分支</li>
+<li>随着代码的增长, 记录也应该至少以 1:42 的比例增长<ul>
+<li>也就是说, 每一行可用代码, 至少应该对应42行以上的探索记要</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>当然, 这种学习笔记/记要, 记的多了就会发现<ul>
+<li>值得记录的东西越来越少</li>
+<li>以往用 420 行记要才弄明白的事儿</li>
+<li>现在连 4.2 个字都懒得记<ul>
+<li>因为, 太常识了, 太明显了</li>
+<li>太普通了, 根本没记要的价值...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>这其实, 也从另外一个角度在印证了我们在相关领域已经真正掌握了对应知识</li>
+</ul>
+<p>总之编程学习过程中的笔记就象绘画中素描过程,</p>
+<ul>
+<li>记要也一定要从打轮廓开始<ul>
+<li>先外形, </li>
+<li>再明暗</li>
+<li>然后, 才能进入细节</li>
+</ul>
+</li>
+<li>只有这样, 我们在无尽的互联网中探索时</li>
+<li>才能不致迷失在无穷的资料宇宙中...</li>
+<li>一直以任务解决为目标<ul>
+<li>以笔记大纲为框架</li>
+<li>高效探索/检验/明确最终最可行的路径</li>
+<li>并随时可以重新开始一轮实验<ul>
+<li>因为每个阶段, 每个探索的开始状态</li>
+<li>都在笔记中</li>
+</ul>
+</li>
+<li>也意味着可以随时结合代码和笔记<ul>
+<li>发布一份非常完备的技术问题</li>
+<li>而且不包含任何情绪内容</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>PS: </p>
+<ul>
+<li>如果这种笔记结合 Issue 来追踪自己学习/探索过程</li>
+<li>其实, 就是 IDD 了<ul>
+<li>Issue Driver Develop</li>
+<li>提案驱动式开发.</li>
 </ul>
 </li>
 </ul>
 <h2 id="_4">是也乎:<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
 <p>这就是蟒营™课程体验, 和以往所有课程体验根本相反, 正如学员感叹的:</p>
 <blockquote>
-<p>蟒营™Python入门班,有学员评价:"…是以Python语言为例的通识课,目标是能到达[掌握所有程序语言]那种状态";社区般氛围中,由具体开发任务触发提问/思考/尝试;陪同学员一起享受编程/关注效率/找到长期兴趣和伙伴;</p>
+<p>究竟如何算"会编程"?蟒营™Python入门班认为:"能自信将具体软件功能分解为自身能力范畴以内的系列子问题",而如何达到这一状态?蟒营™执意想陪同学员一起渡过新手最困难的时期,建立自信享受编程乐趣.</p>
 </blockquote>
 <h2 id="_5">所以:<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
 <p>蟒营(101.camp): </p>
@@ -172,10 +307,10 @@ Reactivate Joy by Self-teach with You
 <hr />
 <blockquote>
 <blockquote>
-<p>NN 3866</p>
+<p>NN 3867</p>
 </blockquote>
 </blockquote>
-<p>首发: <a href="https://blog.101.camp/DM/191219-DM15-IMHO-instant-noodles/">DM15: Python 代码嗯哼起来就象泡个面 — Blogging 蟒营™ 博客</a></p>
+<p>首发: <a href="https://blog.101.camp/TS/191220-TS05-logging-as-plannin/">TS05: 记要也是计划 — Blogging 蟒营™ 博客</a></p>
             
 
             
@@ -334,7 +469,7 @@ Reactivate Joy by Self-teach with You
       <!--
         <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
       -->
-        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/DM/191219-DM15-IMHO-instant-noodles.md">edit➔GitHub</a></li>
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/TS/191220-TS05-logging-as-plannin.md">edit➔GitHub</a></li>
 
       
     </ul>
