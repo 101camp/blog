@@ -12,8 +12,9 @@
 - [ TS3: Pyenv 最终介绍](190919-pyenv-finally-intro.md)
 - [ TS3:认证的真相](191206-TS03-gitlabAPI-authentication.md)
 - [ 远山近水 pydoc](191214-TS04-handy-pydoc.md)
+- [ TS05: 记要也是计划](191220-TS05-logging-as-plannin.md)
 
-(auto index injected at 191220 1201 33.352) 
+(auto index injected at 191220 1619 38.463) 
 
 .::
 
