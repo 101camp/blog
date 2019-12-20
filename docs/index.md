@@ -5,6 +5,7 @@
 
 ::.
 
+- [ DM16: 在蟒营™练习编程就象打乒乓](DM/191220-DM16-IMHO-bing-pang-now.md)
 - [ DM14: 学习的本质只能是自学嘛?](DM/191219-DM14-wtf-101camp-self-tech.md)
 - [ DM15: Python 代码嗯哼起来就象泡个面](DM/191219-DM15-IMHO-instant-noodles.md)
 - [ 远山近水 pydoc](TS/191214-TS04-handy-pydoc.md)
@@ -12,9 +13,8 @@
 - [ TS3:认证的真相](TS/191206-TS03-gitlabAPI-authentication.md)
 - [ SS15: 嘦问就能回答的了,神奇的学员...](SS/191124-SS15-2py-py2-3-try.md)
 - [ SS14 | 从年轻到懂事的文科生](SS/191115-SS14-datetime-from-young-2grownup.md)
-- [ SS13: 无法描述之问题](SS/191109-2py-chaos-ask.md)
 
-(auto index injected at 191219 2157 08.976) 
+(auto index injected at 191220 1201 33.354) 
 
 .::
 

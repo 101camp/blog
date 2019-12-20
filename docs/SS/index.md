@@ -23,7 +23,7 @@
 - [ SS15: 嘦问就能回答的了,神奇的学员...](191124-SS15-2py-py2-3-try.md)
 - [ SS16: 美术从业者问大妈几个问题](191210-SS16-2py-dama-ask.md)
 
-(auto index injected at 191219 2157 08.966) 
+(auto index injected at 191220 1201 33.344) 
 
 .::
 

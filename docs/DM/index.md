@@ -22,8 +22,9 @@
 - [ DM13: COSCon19私人回顾](191108-coscon19-sh-review.md)
 - [ DM14: 学习的本质只能是自学嘛?](191219-DM14-wtf-101camp-self-tech.md)
 - [ DM15: Python 代码嗯哼起来就象泡个面](191219-DM15-IMHO-instant-noodles.md)
+- [ DM16: 在蟒营™练习编程就象打乒乓](191220-DM16-IMHO-bing-pang-now.md)
 
-(auto index injected at 191219 2157 08.957) 
+(auto index injected at 191220 1201 33.317) 
 
 .::
 
