@@ -122,5 +122,5 @@ PS:
 
 >> NN 3866
 
-首发: [DM15: Python 代码嗯哼起来就象泡个面 — Blogging 蟒营™ 博客](https://blog.101.camp/DM/191219-DM15-IMHO-instant-noodles.md/)
+首发: [DM15: Python 代码嗯哼起来就象泡个面 — Blogging 蟒营™ 博客](https://blog.101.camp/DM/191219-DM15-IMHO-instant-noodles/)
 
