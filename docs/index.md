@@ -6,16 +6,16 @@
 ::.
 
 - [ DM16: 在蟒营™练习编程就象打乒乓](DM/191220-DM16-IMHO-bing-pang-now.md)
-- [ TS05: 记要也是计划](TS/191220-TS05-logging-as-plannin.md)
+- [ TS06: 记要也是计划](TS/191220-TS06-logging-as-plannin.md)
 - [ DM14: 学习的本质只能是自学嘛?](DM/191219-DM14-wtf-101camp-self-tech.md)
 - [ DM15: Python 代码嗯哼起来就象泡个面](DM/191219-DM15-IMHO-instant-noodles.md)
-- [ 远山近水 pydoc](TS/191214-TS04-handy-pydoc.md)
+- [ TS05:远山近水 pydoc](TS/191214-TS05-handy-pydoc.md)
 - [ SS16: 美术从业者问大妈几个问题](SS/191210-SS16-2py-dama-ask.md)
-- [ TS3:认证的真相](TS/191206-TS03-gitlabAPI-authentication.md)
+- [ TS04:认证的真相](TS/191206-TS04-gitlabAPI-authentication.md)
 - [ SS15: 嘦问就能回答的了,神奇的学员...](SS/191124-SS15-2py-py2-3-try.md)
 - [ SS14 | 从年轻到懂事的文科生](SS/191115-SS14-datetime-from-young-2grownup.md)
 
-(auto index injected at 191220 1619 38.464) 
+(auto index injected at 191220 1622 06.926) 
 
 .::
 
