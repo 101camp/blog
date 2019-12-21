@@ -1,0 +1,586 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Pythoneer 如何科学的增殖同类? &mdash; Blogging 蟒营™ 博客</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+
+
+<!--
+190916 ++tongji.baidu
+-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7b96768fb6a5e86ac53eae70bb5fd60b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="pythoneer">Pythoneer 如何科学的增殖同类?<a class="headerlink" href="#pythoneer" title="Permanent link">¶</a></h1>
+<p>juejin.im 程序猿节日专题约稿要求:</p>
+<blockquote>
+<p>...一篇Python相关的技术干货，字数最低在1000-2000字。无上限，包括但不限于Python爬虫、数据可视化、web开发相关...</p>
+</blockquote>
+<p>俺认为具体技术问题的分析解答, 其实对技术社区生态的促进很有限,
+远没有一个好问题带出更多嗯哼来的有意思, 有用, 有种;</p>
+<p>所以, 俺丢个命题, 并尝试回答一下:</p>
+<ul>
+<li>Pythoneer  "A pioneer within the Python programming language community." 即 Pythoneer 是更积极的 Pythonista. </li>
+<li>科学而不是市场/宣传/作秀/..导向的</li>
+<li>增殖 , 偏重短语哪, 繁殖嘛大家都能, 主要看缘份, 关注增加这个方向</li>
+</ul>
+<p>毕竟一个技术领域是否有吸引力, 还得看社区人口否足够大, 成功的项目案例是否多, 有多少大厂在积极折腾…</p>
+<p>否则,走街上一说 PHP 旁人只道是 "拍黄片" 的, 多尴尬.</p>
+<h2 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>俺在专注吐糟35年后, 找到了真爱....</p>
+</blockquote>
+<p>不是, 俺想说的是:在 <a href="https://wiki.woodpecker.org.cn/moin/PyCon2010">PyCon Asia Pacific 2010</a> ,
+8 年前, 私下代表中国, 去新加坡参加第2届亚太 Python 大会时,
+分享的是有关在 <code>被毕业</code> 大环境下, 中国专业教育出来的学生很少有能打的,
+如何能通过靠谱的培训, 快速将具有一定知识背景,
+又对 Python 有好奇心的学生快速转变为一名基本合格的程序猿?</p>
+<p>可惜, 到现在学校方面的情况并没有变好…</p>
+<p>作为  Python 老司机, 也感受到新语言(类似 golang) 在公司里话语权的快速增长.</p>
+<h2 id="_2">现象<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>2018.3 教育部将Python纳入全国计算机等级考试科目,</p>
+</blockquote>
+<p>这一政策是在以 Google 为首的大数据厂商, 联合宣传 AI 系列概念/服务/产品时环境压力下,
+并发现所有人工智能/机械学习/深度学习/...框架都以 Python 为主要编程界面,</p>
+<p>因为 Python 从一开始, 设计思想就是面向非专业用户,
+导致数据科学这个领域, 
+早年折腾的那些数学/经济/社会学/…等等学科专家们使用的都是 Python 生态作品.</p>
+<p>进一步的, Python 相对其它开发语言, 更少的关键词, 更多的选模块, 
+更简洁的代码形式...
+都在加强 Python 用户的增长, 以及社会影响力:</p>
+<p>比如:</p>
+<blockquote>
+<p>获得 2018 年度诺贝尔经济学奖的 Paul Romer 就是一位 Python 编程语言的使用者,
+在对比了各种数据分析平台后, 大力宣扬  Jupyter 平台的开放和便利...
+--&gt; <a href="https://paulromer.net/jupyter-mathematica-and-the-future-of-the-research-paper/">Jupyter, Mathematica, and the Future of the Research Paper – Paul Romer</a></p>
+</blockquote>
+<p>等等, 各种成功故事, 都将 Python 的名望在推高.</p>
+<p>但是, 对应的国内学校教育根本来不及反应, 毕竟 <code>谭浩强</code> 不会 Python 哪.</p>
+<p>所以, 这一市场就被敏锐的生意人们发现了:</p>
+<ul>
+<li>无数大小 Python 专家冒出来在各种知识变现平台上发布课程</li>
+<li>无数培训机构发布 Python 相关各级咨询/课程</li>
+<li>MOOC 平台上 Python 有关课程点购率爆发</li>
+<li>公司职位要求中包含 Python 的比率上升</li>
+<li>...</li>
+</ul>
+<p>对应技术社区的反应...嗯哼, 几乎没有对应的足够呼应:</p>
+<ul>
+<li>CPyUG 列表的订阅, 从之前, 每周10人左右, 增长了一倍</li>
+<li>中国流行的各种技术交流平台上, Python 频道订阅人数有一定增长</li>
+<li>以 Python 为主要内容的公众号, 每次发文, 从一篇变成了3篇左右</li>
+<li>...</li>
+</ul>
+<blockquote>
+<p>为什么?</p>
+</blockquote>
+<h2 id="_3">破题<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>从各种青鸟们出来的学员, Python 依然不够用.</p>
+</blockquote>
+<p>正是因为, 即便环境上 Python 突然变热, 但是, 真正的 Pythonista 并没有对应增长,
+导致技术社区没有受到足够的触发.</p>
+<p>环境变好了, 为了社区以及自身生存环境的改善, 趁机多多发展爱好者, 扩大社区影响力不是正解嘛?</p>
+<p>问题在, 自学编程, 和教授他人编程是完全两个技术桟哪, 不通用的.</p>
+<p>俺认识的大小专家, 其实都有讲课/咨询/培训的经历, 无论是自己组课, 被邀请去讲课/培训,
+回想起来, 效果都不明显, 并没有那个课程, 能坚持3年以上, 
+并逐步变成 Python 技术学习首选什么的倾向.</p>
+<blockquote>
+<p>为什么? 课程效果不佳?</p>
+</blockquote>
+<p>所以, Pythoneer :</p>
+<ul>
+<li>有责任主动增殖同类, 为自己和社区的发展</li>
+<li>同类的增殖有很多正法/渠道/形式</li>
+<li>其中最科学的, 当然是将他人逐一或是批量变成真正的 Pythonista<ul>
+<li>什么是 Pythonista?</li>
+<li>具备 Pythonic 素养的 Python 用户</li>
+<li>嗯哼? Pythonic 又是什么?</li>
+<li>是了, 只要领悟到 Pythonic 就标志着一头 Pythonista 诞生了</li>
+<li>而促进任何一只 Pythonista 诞生的 Pythonista 也就升格为一名 Pythoneer 了 ;-)</li>
+</ul>
+</li>
+<li>所以, 这一促生过程, 就是最科学的增殖姿态</li>
+<li>问题是: <ul>
+<li>这种过程有什么内在模型? </li>
+<li>有什么可复用的经验?</li>
+<li>对应哪家靠谱的教程?</li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+<h2 id="_4">分析<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>什么是"课"?</p>
+</blockquote>
+<h3 id="_5">朔源<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p><img alt="8AB2" src="https://user-gold-cdn.xitu.io/2018/10/12/166678be00d1ea30?w=100&amp;h=100&amp;f=gif&amp;s=1198" /></p>
+<p>小篆的"课"字是个形声兼会意字. 左边的言字旁是形符,表示这个字与讲话发言有关. 右边的"果"是读音. </p>
+<ul>
+<li>"课"的本义是按照一定的标准进行试验,考核,以检验成果. </li>
+<li>所以引申为国家根据数额征收赋税,如:<ul>
+<li>国课,课税</li>
+</ul>
+</li>
+<li>按照规定的内容和分量,教授和学习称之为"课"</li>
+<li>按照规定的教学内容,教学时间所设置的教学科目,也称之为"课"</li>
+<li>"课"也用来表示教学单位<ul>
+<li>如:一节课. 也表示教授段落</li>
+<li>如:这本教材共有十五课.</li>
+</ul>
+</li>
+</ul>
+<h3 id="_6">反转<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p>结合以往持续自学各种技术知识的过程, 综合出自己心目中的课:</p>
+<ul>
+<li>按照本义, 上课,其实就是来向先生阐述所得, 印证学习成果来的<ul>
+<li>所谓 言</li>
+<li>以证 果</li>
+<li>是然 课</li>
+</ul>
+</li>
+<li>只是, 向先生阐述的,是之前,约定的课题/问题/疑题/试题....</li>
+<li>只有这样,每个人,才是真正用自个儿最有效的方式在正确的方向上积累智慧</li>
+<li>以往,所谓 "上课" 其实变成了:<ul>
+<li>老师求学生记忆单元知识点</li>
+<li>如若不然,用考试用分数用体罚 来加以开导</li>
+<li>至于强填到学生脑子里的东西,老师一般也不以为然的</li>
+<li>反正,考卷怎么要求,就怎么教</li>
+</ul>
+</li>
+<li>回想一下,可怕嘛?! 挺可怕的,但是,我们也十几年熬过来了</li>
+<li>可是,为什么又主动要求, 再来"享受"这种无谓的灌输呢?! <code>斯德哥尔摩综合症</code> ?</li>
+</ul>
+<blockquote>
+<p>综上, 科学的促生仪式/课程宏观设计应该是: 教学反转</p>
+</blockquote>
+<ul>
+<li>学员提出想变身成什么人物</li>
+<li>导师根据自身经验,结合资源限制,设定到一个中阶任务</li>
+<li>然后,以负基础为起点,设计学习路线</li>
+<li>最后,将路线分析为跨度合适的任务发布给学员</li>
+<li>学员,分阶段认领到任务,在预期时间点前, 想尽一切办法,完成任务<ul>
+<li>过程中,如果有具体的困难/问题,可以随时提问</li>
+<li>导师尽力结合学员当前的进展,以及学习姿势,给予提示</li>
+</ul>
+</li>
+<li>最终,学员在自身的驱动力下, 完美的将 6个月 前的自己打造为心目中当前的人物</li>
+<li>以上,收功!</li>
+</ul>
+<h2 id="_7">倡议<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<p>通常, 这种模拟现实工程师在岗位上高速自学新技术的过程, 形成的网络课程中,
+学员通常会报怨:</p>
+<pre><code>我是真不知道每天应该干什么...
+这不是"课"么,
+为什么完全是自力更生的感觉...  
+没有教学,没有资料,最多的就是"可以到XXX中搜索XXX"...
+</code></pre>
+<p>合理解释和引导就好, 千万别按照那些从来不动手实践, 却习惯大声反对学员的要求,</p>
+<ul>
+<li>增加代码</li>
+<li>追加视频</li>
+<li>补充文案</li>
+<li>...</li>
+</ul>
+<p>因为, 现在是 2018 了,不是10多年前, 除了官方文档,几乎没有其它完备的资料,</p>
+<ul>
+<li>通过 google 可搜索出海量的 Python 代码</li>
+<li>在 Youtube 上有海量的 Python 相关工程实践演讲/演示/...</li>
+<li>即, 任何一个 Python 相关的问题, 网络中都有海量的解决方案/思考/解说/代码/...</li>
+</ul>
+<p>而掌握 Python 基本开发能力, 对于任何初学者来说, 关键是不是记忆足够多的知识点, 而是相反:</p>
+<ul>
+<li>掌握足够少的知识点</li>
+<li>但是, 能灵活根据问题组合应用最小技术来解决</li>
+<li>即, 初步建立自主工程自信:<ul>
+<li>对具体开发目标有清醒的规划</li>
+<li>面对具体技术问题, 能根据自己的理解设计解决方案<ul>
+<li>并逐一合理检验</li>
+<li>从中选择自认最合理的</li>
+</ul>
+</li>
+<li>习惯根据编译器报错, 判定代码问题</li>
+<li>习惯用英文关键词在 google 搜索资料</li>
+<li>习惯用完备简洁又认真的问题在合理的场所中提问</li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+<h3 id="_8">简单的说<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<ul>
+<li>科学的增殖同伙, 最好的形式还是课程</li>
+<li>但是, 课程的设计和运营,就不应该重复早已证明不靠谱的 <code>教材+课件+长期讲解+考试</code> 形式</li>
+<li>而是, 教学反转:<ul>
+<li>以写出能教会半年前的自己学会 Python 为目标</li>
+<li>通过设计具体又实用的开发任务, 来组织自学者直接开始使用 Python</li>
+<li>在使用过程中, 逐步:<ul>
+<li>持续调整对程序的误解</li>
+<li>习惯通常的调试过程</li>
+<li>养成提问的智慧</li>
+<li>唤醒自己的逻辑推理能力</li>
+<li>...</li>
+</ul>
+</li>
+<li>导师全程答疑, 在所有反工程行为节点上, 就地引入故事/文档/案例/建议/工具/...激发学员的自学乐趣</li>
+</ul>
+</li>
+<li>只要, 熬过不适期, 体验到创造的乐趣时:<ul>
+<li>本质上, 无论当前学员掌握了多少知识点</li>
+<li>只要他:<ul>
+<li>问出来的问题, 和正常工程师相似</li>
+<li>管理代码的行为, 和正常工作环境中的行为相似</li>
+<li>那么就已经是名合格的 Pythonista 了.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="_9">是也乎<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
+<ul>
+<li>191221 4py 学员勾沉, 收录回课程官网</li>
+<li>181012 高速完成 4K 版本</li>
+<li>181011 被小编摧稿, 嗯哼初版</li>
+<li>181010 被小编忽悠应允</li>
+</ul>
+<hr />
+<blockquote>
+<blockquote>
+<p>NN 3868</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>首发: <a href="https://juejin.im/post/5bbf166bf265da0a8b5744ec">Pythoneer 如何科学的增殖同类? - 掘金</a></li>
+<li>收录: <a href="https://blog.101.camp/NC/181012-preNC-pythoneer-growthup/">Pythoneer 如何科学的增殖同类? — Blogging 蟒营™ 博客</a></li>
+</ul>
+            
+
+            
+
+            <!--190910 init. comments-->
+            <hr/>
+
+<h3>精品小班4Py 已在行进</h3>
+<blockquote><p>
+    
+<ul>
+    <li>
+    正式开课: <b>191201</b>
+    </li>
+    <li>
+    课程结束: <b>200112</b>
+    </li>
+</ul>
+</p></blockquote>
+
+<h3>下期5Py 年后初十报名</h3>
+
+<hr/>
+
+<h2>蟒营</h2>
+<p>
+    伴你重享<b>学习</b>乐趣
+</p>
+<blockquote>
+<p>
+    <b>
+    101.camp
+    </b>
+</p>
+<p>
+    <i>
+    Reactivate Joy by Self-teach with You
+    </i>
+</p>
+</blockquote>
+
+
+<br/>
+任何问题可先进入知识星球<b>(免费)</b>咨询:
+<br/>
+<img alt="FAQ" 
+    src="https://ipic.zoomquiet.top/2019-08-28-FAQ101camp.jpeg"/>
+
+
+<p>关注公众号, 持续获得相关各种咨询, :
+<img alt="mainium" src="https://ipic.zoomquiet.top/2019-10-12-mainium-qr-barnner.jpg"/>
+
+<!--
+<img alt="PythoniCamp" src="http://0.zoomquiet.top/logos/101.camp/banner_101camp_h191.jpg"/>
+
+    <br/>
+实在想立即开始感受蟒营, 可以加入知识星球(免费):
+    <br/>
+
+<img alt="蟒营101camp" src="https://ipic.zoomquiet.top/2019-08-09-190809camp101.jpeg"/>
+
+-->
+</p>
+
+<hr/>
+
+<h3>追问</h3>
+<blockquote>
+<p>
+    任何问题, 随时邮件提问可也:
+<br/>
+    <i>
+    ask@101.camp
+    </i>
+</p>
+</blockquote>
+
+<hr/>
+
+
+
+
+
+            <script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <img class="logo" src="../../logo.png" title="Blogging 蟒营™ 博客">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#_1">背景</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_2">现象</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_3">破题</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_4">分析</a></li>
+      <ul>
+    
+      <li><a href="#_5">朔源</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_6">反转</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#_7">倡议</a></li>
+      <ul>
+    
+      <li><a href="#_8">简单的说</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#_9">是也乎</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+      <!--
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
+      -->
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/NC/181012-preNC-pythoneer-growthup.md">edit➔GitHub</a></li>
+
+      
+    </ul>
+  
+</nav>
+          
+            
+
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+
+        <!--190910 init. comments-->
+        <h4>column</h4>
+<ul>
+    <li><a href="/DM/">DM 大妈嗯哼</a></li>
+    <li><a href="/NC/">NC 嗯哼蟒营</a></li>
+    <li><a href="/SS/">SS 学员故事</a></li>
+    <li><a href="/TS/">TS 技术鳮汤</a></li>
+</ul>
+
+<h3>Powered by</h3>
+<ul>
+    <li>
+        <a href="https://101.camp/">蟒营™</a>
+<ul>
+    <li>
+        <a href="https://py.101.camp/">Python 入门班</a>
+    </li>
+    <li>
+        <a href="https://io.101.camp/">图谱</a>
+    </li>
+    <li>
+        <a href="https://slides.101.camp/">幻灯</a>
+    </li>
+    <li>
+        <a href="https://wiki.101.camp/">维基</a>
+    </li>
+    <li>
+        <a href="https://github.com/101camp/comments/issues">评注</a>
+    </li>
+</ul>
+    </li>
+
+    <li>
+        <a href="https://du.101.camp/">自怼圈</a>
+    </li>
+    <li>
+        <a href="http://weekly.pychina.org/">蟒周刊</a>
+    </li>
+    <li>
+        <a href="https://blog.zhgdg.org/">珠海GDG</a>
+    </li>
+    <li>
+        "大妈"们
+<ul>
+    <li>
+        <a href="https://yixuan.li/">Yixuan</a>
+    </li>
+
+    <li>
+        <a href="https://www.douban.com/people/Azeril/">Azeril</a>
+    </li>
+    <li>
+        <a href="https://zoomquiet.io/">Zoom.Quiet</a>
+    </li>
+    <li>
+        ...
+    </li>
+</ul>
+    <li>
+        <a href="http://mainium.icu">昧因科技®</a>
+    </li>
+    </li>
+</ul>
+
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; 2019 蟒营™101camp
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2019-12-21 08:03:15
+  -->
+</body>
+</html>
