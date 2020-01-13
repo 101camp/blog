@@ -13,8 +13,9 @@
 - [ TS04:认证的真相](191206-TS04-gitlabAPI-authentication.md)
 - [ TS05:远山近水 pydoc](191214-TS05-handy-pydoc.md)
 - [ TS06: 记要也是计划](191220-TS06-logging-as-plannin.md)
+- [ 尝试小众模块 pysrc/fractal, 配置隔离环境](200110-TS07-pyenv4fractal.md)
 
-(auto index injected at 200113 1211 00.664) 
+(auto index injected at 200113 1215 18.025) 
 
 .::
 
