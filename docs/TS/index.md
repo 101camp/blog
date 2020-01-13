@@ -14,7 +14,7 @@
 - [ TS05:远山近水 pydoc](191214-TS05-handy-pydoc.md)
 - [ TS06: 记要也是计划](191220-TS06-logging-as-plannin.md)
 
-(auto index injected at 191221 1603 13.797) 
+(auto index injected at 200113 1211 00.664) 
 
 .::
 

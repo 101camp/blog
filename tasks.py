@@ -273,7 +273,7 @@ def reidx(c, site):
             #print(root.split('/'))
             _sub = root.split('/')[-1]
             
-            #pp(dirs)
+            pp(dirs)
             _idx = []
             for f in files:
                 if 'index.md' == f:

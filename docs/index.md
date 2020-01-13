@@ -6,6 +6,7 @@
 ::.
 
 - [ DM16: 在蟒营™练习编程就象打乒乓](DM/191220-DM16-IMHO-bing-pang-now.md)
+- [ 刻舟求剑怪 json?](SS/191220-SS17-3py-cannot-find-sword-openIssueCount.md)
 - [ TS06: 记要也是计划](TS/191220-TS06-logging-as-plannin.md)
 - [ DM14: 学习的本质只能是自学嘛?](DM/191219-DM14-wtf-101camp-self-tech.md)
 - [ DM15: Python 代码嗯哼起来就象泡个面](DM/191219-DM15-IMHO-instant-noodles.md)
@@ -15,7 +16,7 @@
 - [ SS15: 嘦问就能回答的了,神奇的学员...](SS/191124-SS15-2py-py2-3-try.md)
 - [ SS14 | 从年轻到懂事的文科生](SS/191115-SS14-datetime-from-young-2grownup.md)
 
-(auto index injected at 191221 1603 13.797) 
+(auto index injected at 200113 1211 00.665) 
 
 .::
 
