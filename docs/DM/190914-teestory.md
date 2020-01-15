@@ -381,7 +381,7 @@
 当时北京活动现场的自得....
 
 
-来自 [CNode：Node.js专业中文社区](https://cnodejs.org/)
+来自 [CNode:Node.js专业中文社区](https://cnodejs.org/)
 当年的痕迹: [Node Party HongKong](https://www.slideshare.net/cnsnoopy/node-party-hongkong?from_action=save)
 
 

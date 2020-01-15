@@ -1,4 +1,4 @@
-# 刻舟求剑怪 json?
+# SS17:刻舟求剑怪 json?
 
 ## 0.7 个葫芦
 
@@ -33,8 +33,8 @@
     + 只要数据能 load 进 json
     + 神奇的 json 一定会让统计变得简单起来!
 - 于是乎,针对清洗数据的需求,学员却发问
-    + 「为啥我的 7 个 list 不能被 json.load()?」
-    + 「为啥我这儿报错 `json.decoder.JSONDecodeError`?」
+    + '为啥我的 7 个 list 不能被 json.load()?'
+    + '为啥我这儿报错 `json.decoder.JSONDecodeError`?'
 
 
 ## 2.主持公道

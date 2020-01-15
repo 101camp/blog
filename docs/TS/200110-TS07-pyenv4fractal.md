@@ -1,4 +1,4 @@
-# 尝试小众模块 pysrc/fractal, 配置隔离环境
+# TS:7尝试小众模块 pysrc/fractal, 配置隔离环境
 
 ## 背景
 - 因聚会主题演讲触发,希望试用小众画图模块 [pysrc/fractal: Draw fractal image by python.](https://github.com/pysrc/fractal).
