@@ -10,7 +10,7 @@
 - [ User guide](guide.md)
 - [ Alabaster for MkDocs](readme.md)
 
-(auto index injected at 200114 2252 43.347) 
+(auto index injected at 200115 1002 34.810) 
 
 .::
 
