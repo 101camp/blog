@@ -22,9 +22,9 @@
 - [ SS14 | 从年轻到懂事的文科生](191115-SS14-datetime-from-young-2grownup.md)
 - [ SS15: 嘦问就能回答的了,神奇的学员...](191124-SS15-2py-py2-3-try.md)
 - [ SS16: 美术从业者问大妈几个问题](191210-SS16-2py-dama-ask.md)
-- [ 刻舟求剑怪 json?](191220-SS17-3py-cannot-find-sword-openIssueCount.md)
+- [ SS17:刻舟求剑怪 json?](191220-SS17-3py-cannot-find-sword-openIssueCount.md)
 
-(auto index injected at 200115 1128 36.161) 
+(auto index injected at 200115 1138 19.819) 
 
 .::
 
