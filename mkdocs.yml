@@ -1,5 +1,5 @@
-site_name: Blogging 蟒营™ 博客
-copyright: 2019 蟒营™101camp
+site_name: 蟒营™ 怂怼录
+copyright: 蟒营™101camp
 
 theme:
     name: null
@@ -9,6 +9,10 @@ nav:
   - Home: index.md
   - License: license.md
   - theme: alabaster/index.md
+    - '说明': alabaster/readme.md
+    - '使用': alabaster/guide.md
+    - '定制': alabaster/dev.md
+
 #  - DM: DM/_index.md
 #  - NC: NC/_index.md
 #  - SS: SS/_index.md
@@ -19,7 +23,7 @@ markdown_extensions:
       permalink: "¶"
 
 extra:
-  logo: logo.png
+  logo: logo-owlook.png
   include_toc: yes
   extra_nav_links:
     edit➔GitHub: https://github.com/101camp/blog

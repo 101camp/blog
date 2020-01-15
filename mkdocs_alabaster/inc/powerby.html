@@ -1,4 +1,4 @@
-<h4>column</h4>
+<h3>Columns</h3>
 <ul>
     <li><a href="/DM/">DM 大妈嗯哼</a></li>
     <li><a href="/NC/">NC 嗯哼蟒营</a></li>
@@ -6,7 +6,11 @@
     <li><a href="/TS/">TS 技术鳮汤</a></li>
 </ul>
 
-<h3>Powered by</h3>
+{% if page.is_homepage and theme.homepage_nav %}
+  {% include "inc/homepage_nav.html" %}
+{% endif %}
+
+<h4>Powered by</h4>
 <ul>
     <li>
         <a href="https://101.camp/">蟒营™</a>
