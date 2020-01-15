@@ -9,9 +9,9 @@ nav:
   - Home: index.md
   - License: license.md
   - theme: alabaster/index.md
-    - '说明': alabaster/readme.md
-    - '使用': alabaster/guide.md
-    - '定制': alabaster/dev.md
+      '说明': alabaster/readme.md
+      '使用': alabaster/guide.md
+      '定制': alabaster/dev.md
 
 #  - DM: DM/_index.md
 #  - NC: NC/_index.md
