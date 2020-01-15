@@ -127,7 +127,7 @@ def bu(c, site):
     '''
     reidx(c, site)
     c.run('pwd')
-    c.run('mkdocs build', hide=False, warn=True)
+    c.run('mkdocs  -q  build', hide=False, warn=True)
 
 #@task 
 def pu(c):
