@@ -12,7 +12,7 @@
 - [ NC2:专注反焦虑17年:蟒营 Python 学习班又来一期](190905-3py-just101camp.md)
 - [ NC3:看不懂 Python 代码陷入自我怀疑?有人却学得不亦乐乎?](191103-4py-how2joy-coding.md)
 
-(auto index injected at 200115 1143 08.017) 
+(auto index injected at 200121 2012 13.286) 
 
 .::
 
