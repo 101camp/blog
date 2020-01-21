@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>TS:08 为了部落,再搞 Windows &mdash; 蟒营™ 怂怼录</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+
+
+<!--
+190916 ++tongji.baidu
+-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7b96768fb6a5e86ac53eae70bb5fd60b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="ts08-windows">TS:08 为了部落,再搞 Windows<a class="headerlink" href="#ts08-windows" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>重新体验 windows 环境中的无奈...</p>
+</blockquote>
+<h2 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>主力桌面系统私人历史</p>
+</blockquote>
+<ul>
+<li>半年 -&gt; win3.2 </li>
+<li>4年 -&gt; win95 </li>
+<li>2年 -&gt; XP </li>
+<li>5年 -&gt; NT server </li>
+<li>6年 -&gt; Ubuntu </li>
+<li>至今 -&gt; macOS</li>
+</ul>
+<p>所以, 运营
+<a href="https://py.101.camp/">蟒营™ Python 入门班</a>
+时对所有日常系统中学员的反应都是有自信的...</p>
+<blockquote>
+<p>但是, 没想到...</p>
+</blockquote>
+<h2 id="_2">目标<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>需要一个基本可用的 windows 环境来截屏录像, 比对演示很多日常常识性操作</p>
+</blockquote>
+<ul>
+<li>嘦 windows , 哪个版本都可以</li>
+<li>有 git</li>
+<li>有 类似 Notepad++ 那种反应快速稳定的编辑器</li>
+<li>有 ssh 支持, 以便无口令访问 gitlab 仓库</li>
+</ul>
+<h2 id="_3">折腾<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>看起来目标很少吧? 但是, 没想到...</p>
+</blockquote>
+<h3 id="_4">设想<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>日常是 macOS, 硬盘不大, 不想寄生一个 windows 浪费空间;
+也不愿专门为临时演示浪费一台硬件, 只安装 windows;</p>
+<p>所以, 理想状态:</p>
+<ul>
+<li>内网一台 miniPC , Ubuntu 18.04 系统,作为宿主机<ul>
+<li>通过 VirtualBox 来安装 Windows 子系统</li>
+<li>macOS 通过 VNC 访问远程桌面中 VirtualBox 拉起的 Windows</li>
+</ul>
+</li>
+<li>这样, macOS 桌面本地不消耗任何资源<ul>
+<li>可以随时调用</li>
+<li>也可以随时挂起</li>
+<li>同时, 也不消耗内网服务器的过多资源</li>
+</ul>
+</li>
+</ul>
+<h3 id="_5">环境<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>$ screenfetch</p>
+<pre><code>                          ./+o+-       zoomq@i3SPAM
+                  yyyyy- -yyyyyy+      OS: Ubuntu 18.04 bionic
+               ://+//////-yyyyyyo      Kernel: x86_64 Linux 4.15.0-74-generic
+           .++ .:/++++++/-.+sss/`      Uptime: 1d 7h 39m
+         .:++o:  /++++++++/:--:/-      Packages: 2204
+        o:+o+:++.`..```.-/oo+++++/     Shell: bash 4.4.20
+       .:+o:+o/.          `+sssoo+/    CPU: Intel Core i3-7100U @ 4x 2.4GHz [27.8°C]
+  .++/+:+oo+o:`             /sssooo.   GPU: intel
+ /+++//+:`oo+o               /::--:.   RAM: 2431MiB / 7848MiB
+ \+/+o+++`o++o               ++////.
+  .++.o+++oo+:`             /dddhhh.
+       .+.o+oo:.          `oddhhhh+
+        \+.++o+o``-````.:ohdhhhhh+
+         `:o+++ `ohhhhhhhhyo++os:
+           .o:`.syhhhhhhh/.oo++o`
+               /osyyyyyyo++ooo+++/
+                   ````` +oo+++o\:
+                          `oo++.
+</code></pre>
+<p>$ apt show virtualbox</p>
+<pre><code>Package: virtualbox
+Version: 5.2.34-dfsg-0~ubuntu18.04.1
+Priority: optional
+Section: multiverse/misc
+Origin: Ubuntu
+Maintainer: Ubuntu Developers &lt;ubuntu-devel-discuss@lists.ubuntu.com&gt;
+Original-Maintainer: Debian Virtualbox Team &lt;team+debian-virtualbox@tracker.debian.org&gt;
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+
+...
+
+Homepage: https://www.virtualbox.org
+Download-Size: 17.3 MB
+APT-Manual-Installed: yes
+APT-Sources: http://mirrors.cn99.com/ubuntu bionic-updates/multiverse amd64 Packages
+Description: x86 virtualization solution - base binaries
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the binaries for VirtualBox. Either the virtualbox-dkms
+ or the virtualbox-source package is also required in order to compile the
+ kernel modules needed for virtualbox. A graphical user interface for
+ VirtualBox is provided by the package virtualbox-qt.
+</code></pre>
+<h3 id="_6">记要<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<p>原先就有一个 XP 虚拟机, 但是:</p>
+<ul>
+<li>无论 git 哪个版本, 都无法安装</li>
+<li>又尝试了 cmder 集成终端加强工具, 也无法安装<ul>
+<li>各种 dll 找不到...</li>
+</ul>
+</li>
+<li>想想, 2020年了, 除了 ATM 机, 没个人平时在用 XP 来当桌面环境的了<ul>
+<li>除了 DOS 仿真游戏, 其它什么游戏也玩不了哪...  </li>
+</ul>
+</li>
+</ul>
+<p>然后, 开始搜索如何能快速构建一个 windows 环境, 到 VirtualBox 中:</p>
+<ul>
+<li>首先感动俺的就是: <a href="https://developer.microsoft.com/zh-cn/windows/downloads/virtual-machines">下载 Windows 10 虚拟机 - Windows 应用开发</a><ul>
+<li>虽然有 17Gb 大小</li>
+<li>但是, 好歹是官方的哪...</li>
+<li>然而, 好容易下载下来, 发现 VirtualBox 无法加载 .ova 镜像</li>
+<li>想想, 可能是版本问题</li>
+<li>强行升级到 virtualbox-6.1</li>
+<li>果然可以加载了, 但是, 无法运行, 根本进入不了系统</li>
+</ul>
+</li>
+<li>这才发觉, 当初选购 miniPC 时, 为了一些老模块兼容性, 专门选择 32位兼容的<ul>
+<li>安装的 Ubuntu 也是 32位的</li>
+<li>而 M$ 官方提供的没特殊说明, 早已统一是 64 位的了...</li>
+</ul>
+</li>
+<li>那么回到老思路, 从各种花园中下载对应精简<code>优化</code>过的 ghost 光盘<ul>
+<li>然后, 在 VirtualBox 中创建虚拟机</li>
+<li>加载 .ios 镜像</li>
+<li>通过虚拟光盘启动 Windows 2003 PE 工具系统</li>
+<li>使用内置 Ghost 工具, 将目标系统恢复到虚拟机硬盘中</li>
+</ul>
+</li>
+<li>可惜:<ul>
+<li>win7/8/10 各种优化方案的 ghost 镜像</li>
+<li>从 2.7G~4.7G 各种体积的都有</li>
+<li>全部一个样:<ul>
+<li>win7 好歹能进入系统,但是, 什么也不动, 就自动兰屏屎机,无法恢复</li>
+<li>win8/10 启动时就报各种硬件加速不兼容, 强行完成恢复后<ul>
+<li>都只能停在启动屏幕</li>
+<li>屎也无法进入系统</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>好吧...再退一步<ul>
+<li>老老实实从历史中, 挖出官方 win7 安装光盘</li>
+<li>在 VirtualBox 中从头安装</li>
+<li>还好, 也就20分钟,毕竟是 SSD 时代了...</li>
+<li>安装好, 也顺利进入系统, 然后撞到正版系统激活问题...</li>
+<li>...猜, 怎么解决的?</li>
+</ul>
+</li>
+</ul>
+<p>总算用了大半天, 有了一个干净的"正版" win7 32位系统环境, </p>
+<blockquote>
+<blockquote>
+<p>但是, 没想到...</p>
+</blockquote>
+</blockquote>
+<p>32位 win7 旗舰版, 竟然是如此个性的系统:</p>
+<ul>
+<li>先解决 SSH 的问题:<ul>
+<li>putty 官方下载 32位全功能包</li>
+<li>macOS 下载, SCP 推到 Ubuntu 宿主机</li>
+<li>通过 VirtualBox 和子系统的共享目录</li>
+<li>在 win7 中正常安装(提取)</li>
+<li>使用 puttygen.exe 生成私匙对</li>
+<li>启动 pageant.exe 加载密钥, 发布 SSH 服务</li>
+</ul>
+</li>
+<li>再解决编辑器的问题:<ul>
+<li>VSCode 包含所有主要功能,首先尝试:<ul>
+<li>官方版本可以安装, 但是无法运行</li>
+<li>卡屎在启动页面...</li>
+</ul>
+</li>
+<li><a href="https://notepad-plus-plus.org/">Notepad++</a> 官网下载<ul>
+<li><a href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.3/npp.7.8.3.bin.zip">zip package</a></li>
+<li>可以直接运行, 不用安装</li>
+<li>丢个快捷方式到桌面也就完成了部署</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>真正的挑战爆发在 <a href="https://git-scm.com/download/win">Git</a><ul>
+<li>官方无论哪个形式的 32-bit 版本</li>
+<li>都无法安装, 或是解开后, 无法运行</li>
+</ul>
+</li>
+<li>git-bash 屎了...那么其它 windows 环境兼容的呢?<ul>
+<li><a href="https://tortoisegit.org/download/">TortoiseGit – Windows Shell Interface to Git</a> 和 windows 资源管理器自然结合的形式是最自然的<ul>
+<li>可惜安装/运行都正常</li>
+<li>却依赖外部 git 指令, 自身没有 git 能力</li>
+<li>强行指向几种版本的 git-bash 中的 git </li>
+<li>都无法通过自检</li>
+</ul>
+</li>
+<li><a href="https://git-fork.com/">Fork - a fast and friendly git client for Mac and Windows</a><ul>
+<li>地球最强免费可视化 git 客户端</li>
+<li>无法安装, 没有 32-bit 版本</li>
+</ul>
+</li>
+<li>从官方挖其它客户端, 希望有内置 git 的:<ul>
+<li><a href="https://www.sourcetreeapp.com/">SourceTree</a></li>
+<li><a href="https://desktop.github.com/">GitHub Desktop</a></li>
+<li><a href="https://github.com/FredrikNoren/ungit">ungit</a></li>
+<li><a href="https://github.com/awaescher/RepoZ/">RepoZ</a></li>
+<li><a href="http://cong.tools/">Cong</a></li>
+<li>...免费的基本都无法安装, 报各种 .NET 依赖丢失</li>
+<li><a href="https://www.gitkraken.com/">GitKraken</a> 倒是可安装, 可运行<ul>
+<li>但是,收费</li>
+<li>而且本身就是类似 Atom 一样一个内部网站的壳</li>
+<li>非常慢不说, 帐号注册, 还依赖 github ....<ul>
+<li>那俺为了使用 gitlab 还得先专门注册 github  ?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>怎么办?</p>
+</blockquote>
+<ul>
+<li>按照以往的经验, cmder 是最好的选择, <a href="https://www.cygwin.com/">Cygwin</a> 是最后最完备, 也最没 windows 体验的选择...</li>
+<li>好在, 从官方下载的 <a href="https://www.cygwin.com/">Cygwin</a> 安装器根本无法运行</li>
+<li>那就只能硬怼 <a href="https://cmder.net/">Cmder | Console Emulator</a> 了</li>
+<li>从官方仓库 <a href="https://github.com/cmderdev/cmder/releases">27 releases</a> 中一个个尝试</li>
+<li>发现 <a href="https://github.com/cmderdev/cmder/releases/tag/v1.2.9">v1.2.9 - The Anti-PowerShell Pre-Release</a></li>
+<li>这个名称好屌...<ul>
+<li>一试, 果断可用</li>
+</ul>
+</li>
+</ul>
+<h2 id="_7">成果<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<p><img alt="比对实景" src="http://ydlj.zoomquiet.top/ipic/2020-01-21-py0.5demo-case.jpg" /></p>
+<ul>
+<li>macOS 本地使用:<ul>
+<li>iterm2 作为终端<ul>
+<li>包含 OpenSSH/git/vim<ul>
+<li>git version 2.14.3 (Apple Git-98)</li>
+</ul>
+</li>
+<li>通过 Homebrew 统一管理</li>
+</ul>
+</li>
+<li>Sublime Text3 作为编辑器<ul>
+<li>正版, 个人终身授权</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>透过 VNC view 访问内网远程 Ubuntu GNOME 桌面<ul>
+<li>运行 VirtualBox</li>
+<li>拉起 win7 桌面<ul>
+<li>Notepad++ 7.8.3 作为编辑器</li>
+<li>Cmder 1.2.9 作为终端<ul>
+<li>包含一系列预编译实用工具</li>
+<li>从 ls 到 vim...</li>
+<li>当然, 也包含 git <ul>
+<li>git version 2.6.1.windows.1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>至此, 基本完成可以客观演示/对比 windows 环境中 
+<a href="https://py.101.camp/">蟒营™ Python 入门班</a>
+所需要的各种基本操作实景.</p>
+<blockquote>
+<p>是也乎,(￣▽￣)</p>
+</blockquote>
+<ul>
+<li>还没开始优化系统呢</li>
+<li>各种注册表, path 环境加强...</li>
+<li>回想当年自己为了在 windows 环境中, 有各种 Linux/mac 中的开发体验,<ul>
+<li>折腾了多少东西哪...</li>
+</ul>
+</li>
+</ul>
+<h2 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">¶</a></h2>
+<ul>
+<li>200121 1h 成文</li>
+<li>200120 6.5h 确认最终组合</li>
+<li>200119 5.5h 试安装各种嗯哼</li>
+<li>200118 1h 规划</li>
+<li>191225 .5h 起意</li>
+</ul>
+            
+<!--
+            
+
+-->
+
+            <!--190910 init. comments-->
+            <hr/>
+
+<h3>精品小班4Py 按时完成 ;-)</h3>
+<h3>101camp5Py 大年初十上线</h3>
+<blockquote><p>
+    
+<ul>
+    <li>
+    开始报名: <b>2020.2.3</b>
+    </li>
+    <li>
+    报名结束: <b>2020.2.23</b>
+    </li>
+    <li>
+    正式开课: <b>2020.3.2</b>
+    </li>
+    <li>
+    课程结束: <b>2020.4.12</b>
+    </li>
+</ul>
+</p></blockquote>
+
+<hr/>
+
+<h2>蟒营</h2>
+<p>
+    伴你重享<b>学习</b>乐趣
+</p>
+<blockquote>
+<p>
+    <b>
+    101.camp
+    </b>
+</p>
+<p>
+    <i>
+    Reactivate Joy by Self-teach with You
+    </i>
+</p>
+</blockquote>
+
+
+<br/>
+任何问题可先进入知识星球<b>(免费)</b>咨询:
+<br/>
+<img alt="FAQ" 
+    src="https://ipic.zoomquiet.top/2019-08-28-FAQ101camp.jpeg"/>
+
+
+<p>关注公众号, 持续获得相关各种咨询, :
+<img alt="mainium" src="https://ipic.zoomquiet.top/2019-10-12-mainium-qr-barnner.jpg"/>
+
+<!--
+<img alt="PythoniCamp" src="http://0.zoomquiet.top/logos/101.camp/banner_101camp_h191.jpg"/>
+
+    <br/>
+实在想立即开始感受蟒营, 可以加入知识星球(免费):
+    <br/>
+
+<img alt="蟒营101camp" src="https://ipic.zoomquiet.top/2019-08-09-190809camp101.jpeg"/>
+
+-->
+</p>
+
+<hr/>
+
+<h3>追问</h3>
+<blockquote>
+<p>
+    任何问题, 随时邮件提问可也:
+<br/>
+    <i>
+    ask@101.camp
+    </i>
+</p>
+</blockquote>
+
+<hr/>
+
+
+
+
+
+            <script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <img class="logo" src="../../logo-owlook.png" title="蟒营™ 怂怼录">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#_1">背景</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_2">目标</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_3">折腾</a></li>
+      <ul>
+    
+      <li><a href="#_4">设想</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">环境</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_6">记要</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#_7">成果</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#changelog">Changelog</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+      <!--
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
+      -->
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/TS/200121-TS08-windows-demo-env.md">edit➔GitHub</a></li>
+
+      
+    </ul>
+  
+</nav>
+          
+            
+
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+
+        <!--190910 init. comments-->
+        <h3>Columns</h3>
+<ul>
+    <li><a href="/DM/">DM 大妈嗯哼</a></li>
+    <li><a href="/NC/">NC 嗯哼蟒营</a></li>
+    <li><a href="/SS/">SS 学员故事</a></li>
+    <li><a href="/TS/">TS 技术鳮汤</a></li>
+</ul>
+
+
+
+<h4>Powered by</h4>
+<ul>
+    <li>
+        <a href="https://101.camp/">蟒营™</a>
+<ul>
+    <li>
+        <a href="https://py.101.camp/">Python 入门班</a>
+    </li>
+    <li>
+        <a href="https://io.101.camp/">图谱</a>
+    </li>
+    <li>
+        <a href="https://slides.101.camp/">幻灯</a>
+    </li>
+    <li>
+        <a href="https://wiki.101.camp/">维基</a>
+    </li>
+    <li>
+        <a href="https://github.com/101camp/comments/issues">评注</a>
+    </li>
+</ul>
+    </li>
+
+    <li>
+        <a href="https://du.101.camp/">自怼圈</a>
+    </li>
+    <li>
+        <a href="http://weekly.pychina.org/">蟒周刊</a>
+    </li>
+    <li>
+        <a href="https://blog.zhgdg.org/">珠海GDG</a>
+    </li>
+    <li>
+        "大妈"们
+<ul>
+    <li>
+        <a href="https://yixuan.li/">Yixuan</a>
+    </li>
+
+    <li>
+        <a href="https://www.douban.com/people/Azeril/">Azeril</a>
+    </li>
+    <li>
+        <a href="https://zoomquiet.io/">Zoom.Quiet</a>
+    </li>
+    <li>
+        ...
+    </li>
+</ul>
+    <li>
+        <a href="http://mainium.icu">昧因科技®</a>
+    </li>
+    </li>
+</ul>
+
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; 蟒营™101camp
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2020-01-21 12:12:15
+  -->
+</body>
+</html>
