@@ -5,7 +5,7 @@
 
 ::.
 
-- [ NC4:什么是蟒营™Python入门班?](NC/200202-NC4-what-is5py.md)
+- [ NC4:一次彻底的心智训练](NC/200202-NC4-what-is5py.md)
 - [ TS:08 为了部落,再搞 Windows](TS/200121-TS08-windows-demo-env.md)
 - [ TS:7尝试小众模块 pysrc/fractal, 配置隔离环境](TS/200110-TS07-pyenv4fractal.md)
 - [ DM16: 在蟒营™练习编程就象打乒乓](DM/191220-DM16-IMHO-bing-pang-now.md)
@@ -16,7 +16,7 @@
 - [ TS5:远山近水 pydoc](TS/191214-TS05-handy-pydoc.md)
 - [ SS16: 美术从业者问大妈几个问题](SS/191210-SS16-2py-dama-ask.md)
 
-(auto index injected at 200202 1739 46.847) 
+(auto index injected at 200202 2004 48.859) 
 
 .::
 
