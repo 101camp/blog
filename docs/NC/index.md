@@ -13,7 +13,7 @@
 - [ NC3:看不懂 Python 代码陷入自我怀疑?有人却学得不亦乐乎?](191103-4py-how2joy-coding.md)
 - [ NC4:什么是蟒营™Python入门班?](200202-NC4-what-is5py.md)
 
-(auto index injected at 200202 1719 22.123) 
+(auto index injected at 200202 1739 46.827) 
 
 .::
 
