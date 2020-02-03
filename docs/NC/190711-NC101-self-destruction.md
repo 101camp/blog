@@ -272,7 +272,6 @@ ASP 当然无法运行在 Linux 中了, 那时至高组合是 `LAMP` :
         Reactivate Joy by Self-teach with You
 
 
-Python 入门班**第三期**正在报名,想有效获得编程体验请访问:
 
 https://py.101.camp/
 
