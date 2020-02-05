@@ -23,8 +23,9 @@
 - [ DM14: 学习的本质只能是自学嘛?](191219-DM14-wtf-101camp-self-tech.md)
 - [ DM15: Python 代码嗯哼起来就象泡个面](191219-DM15-IMHO-instant-noodles.md)
 - [ DM16: 在蟒营™练习编程就象打乒乓](191220-DM16-IMHO-bing-pang-now.md)
+- [ DM17: 如何提高自己的专注力?](200205-DM17-IMHO-devoted.md)
 
-(auto index injected at 200203 1128 14.665) 
+(auto index injected at 200205 2054 22.792) 
 
 .::
 
