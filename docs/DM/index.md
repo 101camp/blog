@@ -29,7 +29,7 @@
 - [ 2019-nCoV 正确应对姿势:2](200207-DM20-IMHO-2019-nCoV-2.md)
 - [ 2019-nCoV 正确应对姿势:3](200207-DM21-IMHO-2019-nCoV-3.md)
 
-(auto index injected at 200207 2133 46.929) 
+(auto index injected at 200207 2136 58.809) 
 
 .::
 
