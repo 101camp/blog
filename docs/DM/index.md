@@ -24,12 +24,12 @@
 - [ DM15: Python 代码嗯哼起来就象泡个面](191219-DM15-IMHO-instant-noodles.md)
 - [ DM16: 在蟒营™练习编程就象打乒乓](191220-DM16-IMHO-bing-pang-now.md)
 - [ DM17: 如何提高自己的专注力?](200205-DM17-IMHO-devoted.md)
-- [ 2019-nCoV 正确应对姿势:0](200205-DM18-IMHO-2019-nCoV-0.md)
-- [ 2019-nCoV 正确应对姿势:1](200206-DM19-IMHO-2019-nCoV-1.md)
-- [ 2019-nCoV 正确应对姿势:2](200207-DM20-IMHO-2019-nCoV-2.md)
-- [ 2019-nCoV 正确应对姿势:3](200207-DM21-IMHO-2019-nCoV-3.md)
+- [ 新型冠状病毒(2019-nCoV)正确应对姿势:0](200205-DM18-IMHO-2019-nCoV-0.md)
+- [ 新型冠状病毒(2019-nCoV)正确应对姿势:1](200206-DM19-IMHO-2019-nCoV-1.md)
+- [ 新型冠状病毒(2019-nCoV)正确应对姿势:2](200207-DM20-IMHO-2019-nCoV-2.md)
+- [ 新型冠状病毒(2019-nCoV)正确应对姿势:3](200207-DM21-IMHO-2019-nCoV-3.md)
 
-(auto index injected at 200207 2136 58.809) 
+(auto index injected at 200207 2253 29.085) 
 
 .::
 
