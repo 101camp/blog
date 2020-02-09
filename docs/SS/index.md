@@ -24,7 +24,7 @@
 - [ SS16: 美术从业者问大妈几个问题](191210-SS16-2py-dama-ask.md)
 - [ SS17:刻舟求剑怪 json?](191220-SS17-3py-cannot-find-sword-openIssueCount.md)
 
-(auto index injected at 200208 0849 52.915) 
+(auto index injected at 200209 0940 47.065) 
 
 .::
 
