@@ -27,8 +27,9 @@
 - [ 新型冠状病毒(2019-nCoV)正确应对姿势:0](200205-DM18-IMHO-2019-nCoV-0.md)
 - [ 新型冠状病毒(2019-nCoV)正确应对姿势:1](200206-DM19-IMHO-2019-nCoV-1.md)
 - [ 新型冠状病毒(2019-nCoV)正确应对姿势:2](200207-DM20-IMHO-2019-nCoV-2.md)
+- [ 新型冠状病毒(2019-nCoV)正确应对姿势:3](200207-DM21-IMHO-2019-nCoV-3.md)
 
-(auto index injected at 200209 0940 47.055) 
+(auto index injected at 200210 0911 43.524) 
 
 .::
 
