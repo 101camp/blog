@@ -107,6 +107,9 @@ var _hmt = _hmt || [];
         {% if config.copyright %}|{% endif %}
         Powered by <a href="http://www.mkdocs.org">mkdocs {{ mkdocs_version }}</a>
         &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+
+        {% include "inc/affiliate.html" %}
+
       {% endif %}
     </div>
   {% endblock %}
