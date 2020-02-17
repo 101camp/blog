@@ -5,6 +5,7 @@
 
 ::.
 
+- [ 如何应对,就是不愿意上班的心情?](DM/200211-DM26-IMHO-anti-working.md)
 - [ 新冠肺炎(NCP)正确应对姿势:6](DM/200209-DM24-IMHO-NCP-6.md)
 - [ 新冠肺炎(NCP)正确应对姿势:4](DM/200208-DM22-IMHO-NCP-4.md)
 - [ 新冠肺炎(NCP)正确应对姿势:5](DM/200208-DM23-IMHO-NCP-5.md)
@@ -14,9 +15,8 @@
 - [ DM17: 如何提高自己的专注力?](DM/200205-DM17-IMHO-devoted.md)
 - [ 新型冠状病毒(2019-nCoV)正确应对姿势:0](DM/200205-DM18-IMHO-2019-nCoV-0.md)
 - [ NC4:一次彻底的心智训练](NC/200202-NC4-what-is5py.md)
-- [ TS:08 为了部落,再搞 Windows](TS/200121-TS08-windows-demo-env.md)
 
-(auto index injected at 200215 1719 33.075) 
+(auto index injected at 200217 1005 15.322) 
 
 .::
 
