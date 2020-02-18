@@ -16,7 +16,7 @@
 - [ TS:7尝试小众模块 pysrc/fractal, 配置隔离环境](200110-TS07-pyenv4fractal.md)
 - [ TS:08 为了部落,再搞 Windows](200121-TS08-windows-demo-env.md)
 
-(auto index injected at 200218 0909 58.970) 
+(auto index injected at 200218 0911 17.091) 
 
 .::
 
