@@ -16,7 +16,7 @@
 - [ DM17: 如何提高自己的专注力?](DM/200205-DM17-IMHO-devoted.md)
 - [ 新型冠状病毒(2019-nCoV)正确应对姿势:0](DM/200205-DM18-IMHO-2019-nCoV-0.md)
 
-(auto index injected at 200218 0858 11.771) 
+(auto index injected at 200218 0909 58.970) 
 
 .::
 
