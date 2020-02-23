@@ -5,6 +5,7 @@
 
 ::.
 
+- [告/ 叕重新开始的大妈](DM/200223-ZoomQuiet42-ANN-0-aaaagin.md)
 - [ 如何应对,就是不愿意上班的心情? +1](DM/200217-DM27-IMHO-good-working.md)
 - [ 如何应对,就是不愿意上班的心情?](DM/200211-DM26-IMHO-anti-working.md)
 - [ 新冠肺炎(NCP)正确应对姿势:6](DM/200209-DM24-IMHO-NCP-6.md)
@@ -13,10 +14,8 @@
 - [ 新型冠状病毒(2019-nCoV)正确应对姿势:2](DM/200207-DM20-IMHO-2019-nCoV-2.md)
 - [ 新冠肺炎(NCP)正确应对姿势:3](DM/200207-DM21-IMHO-2019-nCoV-3.md)
 - [ 新型冠状病毒(2019-nCoV)正确应对姿势:1](DM/200206-DM19-IMHO-2019-nCoV-1.md)
-- [ DM17: 如何提高自己的专注力?](DM/200205-DM17-IMHO-devoted.md)
-- [ 新型冠状病毒(2019-nCoV)正确应对姿势:0](DM/200205-DM18-IMHO-2019-nCoV-0.md)
 
-(auto index injected at 200218 0911 17.092) 
+(auto index injected at 200223 2119 08.924) 
 
 .::
 
