@@ -33,9 +33,9 @@
 - [ 新冠肺炎(NCP)正确应对姿势:6](200209-DM24-IMHO-NCP-6.md)
 - [ 如何应对,就是不愿意上班的心情?](200211-DM26-IMHO-anti-working.md)
 - [ 如何应对,就是不愿意上班的心情? +1](200217-DM27-IMHO-good-working.md)
-- [告/ 叕重新开始的大妈](200223-ZoomQuiet42-ANN-0-aaaagin.md)
+- [ 公告/ 叕重新开始的大妈](200223-ZoomQuiet42-ANN-0-aaaagin.md)
 
-(auto index injected at 200223 2119 08.906) 
+(auto index injected at 200223 2119 35.450) 
 
 .::
 
