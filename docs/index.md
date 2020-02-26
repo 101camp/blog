@@ -5,6 +5,7 @@
 
 ::.
 
+- [是大妈在 **ZoomQuiet** 的第**004**篇原创](DM/200226-ZoomQuiet-OldTouch-CPUG.md)
 - [ 公告/ 叕重新开始的大妈](DM/200223-ZoomQuiet42-ANN-0-aaaagin.md)
 - [ 如何应对,就是不愿意上班的心情? +1](DM/200217-DM27-IMHO-good-working.md)
 - [ 如何应对,就是不愿意上班的心情?](DM/200211-DM26-IMHO-anti-working.md)
@@ -12,9 +13,8 @@
 - [ 新型冠状病毒(2019-nCoV)正确应对姿势:0](DM/200205-DM18-IMHO-2019-nCoV-0.md)
 - [ NC4:一次彻底的心智训练](NC/200202-NC4-what-is5py.md)
 - [ TS:08 为了部落,再搞 Windows](TS/200121-TS08-windows-demo-env.md)
-- [ TS:7尝试小众模块 pysrc/fractal, 配置隔离环境](TS/200110-TS07-pyenv4fractal.md)
 
-(auto index injected at 200226 1055 14.988) 
+(auto index injected at 200226 2015 52.591) 
 
 .::
 
