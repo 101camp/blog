@@ -14,7 +14,7 @@
 - [ NC4:一次彻底的心智训练](NC/200202-NC4-what-is5py.md)
 - [ TS:08 为了部落,再搞 Windows](TS/200121-TS08-windows-demo-env.md)
 
-(auto index injected at 200228 1010 25.497) 
+(auto index injected at 200229 0856 49.617) 
 
 .::
 
