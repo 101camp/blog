@@ -90,8 +90,7 @@ ANNS = {'inv':[
                 ]
         , 'fab':[
                 {'aim':'blog.zoomquiet.io',
-                    'trigger':0,
-                    'depoly':0,
+                    'depoly':'pub4trigger.sh',
                     'root':"zoomquiet.io/blog/"},
                 ]
         }
@@ -153,12 +152,31 @@ def pl(c, site):
 def ann(c):
     '''$ inv ann <- sync announce.html all sites
     '''
+    global CAMPROOT
+    global CSITES
+    global LOCSITES
     global ANNS
-    c.run('pwd')
+    _root = '%s/%s'%(CAMPROOT, CSITES['blog']['ori'])
+    print(_root)
+    #cd(c, _aim)
     
     pp(ANNS['fab'][0])
     _site = ANNS['fab'][0]
     print('sync =>', _site['aim'])
+    print('\t', _site['root'])
+    _aim = '%s/%s'%(LOCSITES, _site['root'])
+    print(_aim)
+    cd(c, _aim)
+    _deploy = '%s/%s'%(_aim, _site['depoly'])
+    print(_deploy)
+    #c.run('source ~/.bash_profile')
+    #c.run('python -V')
+    c.run(_deploy)
+    
+    cd(c, _root )
+    c.run('python -V')
+    #c.run('pwd')
+    return None
     #c.run('mkdocs  -q  build', hide=False, warn=True)
 
 @task 
