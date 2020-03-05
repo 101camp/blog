@@ -2,7 +2,7 @@
 '''inv matter for auto pub. 101.camp
 '''
 
-__version__ = 'blog101CAMP v.191115.0842'
+__version__ = 'blog101CAMP v.200306.2042'
 __author__ = 'Zoom.Quiet'
 __license__ = 'CC-by-nc-nd@2019-09'
 
@@ -70,6 +70,34 @@ _TRIP = '_trigger'
 _TOBJ = 'deploy.md'
 TRIGGER = 0
 
+LOCSITES = os.environ.get("LOCSITES")
+ANNS = {'inv':[
+                {'aim':'blog.101.camp',
+                    'trigger':1,
+                    'depoly':"root",
+                    'root':"101.camp/_running/blog"
+                    },
+                {'aim':'101.camp',
+                    'trigger':1,
+                    'depoly':"root",
+                    'root':"101.camp/_running/gl_101.camp"
+                    },
+                {'aim':'du.101.camp',
+                    'trigger':1,
+                    'depoly':"../br_DUW",
+                    'root':"DU.xmq/DUW/br_duw_pub"
+                    },
+                ]
+        , 'fab':[
+                {'aim':'blog.zoomquiet.io',
+                    'trigger':0,
+                    'depoly':0,
+                    'root':"zoomquiet.io/blog/"},
+                ]
+        }
+
+
+
 
 @task 
 def ver(c):
@@ -120,6 +148,18 @@ def pl(c, site):
     else:
         ver(c)
 
+
+@task 
+def ann(c):
+    '''$ inv ann <- sync announce.html all sites
+    '''
+    global ANNS
+    c.run('pwd')
+    
+    pp(ANNS['fab'][0])
+    _site = ANNS['fab'][0]
+    print('sync =>', _site['aim'])
+    #c.run('mkdocs  -q  build', hide=False, warn=True)
 
 @task 
 def bu(c, site):
@@ -341,7 +381,7 @@ def pub(c, site):
     global TRIGGER
     global CAMPROOT
     global CSITES
-    print(CAMPROOT)
+    #print(CAMPROOT)
     #pl(c, site)
     _crt = '%s/%s'%(CAMPROOT, CSITES[site]['ori'])
     cd(c, _crt)
