@@ -71,26 +71,24 @@ _TOBJ = 'deploy.md'
 TRIGGER = 0
 
 LOCSITES = os.environ.get("LOCSITES")
-ANNS = {'inv':[
-                {'aim':'blog.101.camp',
-                    'depoly':'pub4trigger.sh',
-                    'root':"101.camp/_running/blog"
-                    },
-                {'aim':'101.camp',
-                    'depoly':'pub4trigger.sh',
-                    'root':"101.camp/_running/gl_101.camp"
-                    },
-                {'aim':'du.101.camp',
-                    'depoly':'pub4trigger.sh',
-                    'root':"DU.xmq/DUW/br_duw_pub"
-                    },
-                ]
-        , 'fab':[
-                {'aim':'blog.zoomquiet.io',
-                    'depoly':'pub4trigger.sh',
-                    'root':"zoomquiet.io/blog/"},
-                ]
-        }
+ANNS = [
+            {'aim':'blog.101.camp',
+                'depoly':'pub4trigger.sh',
+                'root':"101.camp/_running/blog"
+                },
+            {'aim':'101.camp',
+                'depoly':'pub4trigger.sh',
+                'root':"101.camp/_running/gl_101.camp"
+                },
+            {'aim':'du.101.camp',
+                'depoly':'pub4trigger.sh',
+                'root':"DU.xmq/DUW/br_duw_pub"
+                },
+        #, 'fab':[
+            {'aim':'blog.zoomquiet.io',
+                'depoly':'pub4trigger.sh',
+                'root':"zoomquiet.io/blog/"},
+        ]
 
 
 
@@ -157,17 +155,13 @@ def ann(c):
     print(_root)
     #cd(c, _aim)
     
-    pp(ANNS['fab'][0])
-    _site = ANNS['fab'][0]
+    pp(ANNS[0])
+    _site = ANNS[0]
     print('sync =>', _site['aim'])
     print('\t', _site['root'])
-    _aim = '%s/%s'%(LOCSITES, _site['root'])
-    print(_aim)
-    cd(c, _aim)
-    _deploy = '%s/%s'%(_aim, _site['depoly'])
+    
+    _deploy = '%s/%s/%s'%(LOCSITES, _site['root'], _site['depoly'])
     print(_deploy)
-    #c.run('source ~/.bash_profile')
-    #c.run('python -V')
     c.run(_deploy)
     
     cd(c, _root )
