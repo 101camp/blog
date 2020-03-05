@@ -73,18 +73,15 @@ TRIGGER = 0
 LOCSITES = os.environ.get("LOCSITES")
 ANNS = {'inv':[
                 {'aim':'blog.101.camp',
-                    'trigger':1,
-                    'depoly':"root",
+                    'depoly':'pub4trigger.sh',
                     'root':"101.camp/_running/blog"
                     },
                 {'aim':'101.camp',
-                    'trigger':1,
-                    'depoly':"root",
+                    'depoly':'pub4trigger.sh',
                     'root':"101.camp/_running/gl_101.camp"
                     },
                 {'aim':'du.101.camp',
-                    'trigger':1,
-                    'depoly':"../br_DUW",
+                    'depoly':'pub4trigger.sh',
                     'root':"DU.xmq/DUW/br_duw_pub"
                     },
                 ]
