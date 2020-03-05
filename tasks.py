@@ -96,7 +96,7 @@ ANNS = [# MkDocs
         {'aim':'dj.101.camp',
             'depoly':'pub4trigger.sh',
             'root':"101.camp/_running/django",
-            'ann':"_theme/bootswatch/simplex",            
+            'ann':"_theme/bootswatch/simplex",
             },
         {'aim':'wr.101.camp',
             'depoly':'pub4trigger.sh',
@@ -119,12 +119,12 @@ ANNS = [# MkDocs
 
         {'aim':'fm.101.camp',
             'depoly':'pub4trigger.sh',
-            'root':"101.camp/_running/TM/tm",
+            'root':"101.camp/FM/fm",
             'ann':"_includes",
             },
         {'aim':'devrel.101.camp',
             'depoly':'pub4trigger.sh',
-            'root':"101.camp//101.camp/devrel.info",
+            'root':"101.camp/devrel.info",
             'ann':"_includes",
             },
             
@@ -148,12 +148,18 @@ ANNS = [# MkDocs
         {'aim':'blog.zoomquiet.io',
             'depoly':'pub4trigger.sh',
             'root':"zoomquiet.io/blog",
-            'ann':"_themes/pelican-bootstrap3/templates/includes/",
+            'ann':"_themes/pelican-bootstrap3/templates/includes",
             },
+        {'aim':'du.101.camp',
+            'depoly':'pub4trigger.sh',
+            'root':"DU.xmq/DUW/br_duw_pub",
+            'ann':"_theme/mkdocs_alabaster/inc",
+            },
+
         {'aim':'blog.PyChina.org',
             'depoly':'pub4trigger.sh',
             'root':"PyChina.org/blog",
-            'ann':"_themes/pelican-bootstrap3/templates/includes/",
+            'ann':"_themes/pelican-bootstrap3/templates/includes",
             },
         {'aim':'weekly.PyChina.org',
             'depoly':'pub4trigger.sh',
@@ -161,11 +167,6 @@ ANNS = [# MkDocs
             'ann':"_themes/pelican-bootstrap3/templates/includes",
             },
 
-        {'aim':'du.101.camp',
-            'depoly':'pub4trigger.sh',
-            'root':"DU.xmq/DUW/br_duw_pub",
-            'ann':"_theme/mkdocs_alabaster/inc",
-            },
 
 ]
 
@@ -241,8 +242,9 @@ def ann(c):
     print(_orig)
     
     for s in ANNS[1:]:
-        _upd = '%s/%s/%s'%(CAMPROOT, s['root'] , s['ann'])
-        print(s['aim'],_upd)
+        _upd = '%s/%s/%s'%(LOCSITES, s['root'] , s['ann'])
+        print('\n',s['aim'])
+        c.run('cp -v %s %s/ '%(_orig, _upd) )
     return None
     
     _site = ANNS[0]
