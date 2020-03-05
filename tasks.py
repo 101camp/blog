@@ -245,6 +245,13 @@ def ann(c):
         _upd = '%s/%s/%s'%(LOCSITES, s['root'] , s['ann'])
         print('\n',s['aim'])
         c.run('cp -v %s %s/ '%(_orig, _upd) )
+        _deploy = '%s/%s/%s'%(LOCSITES, s['root'], s['depoly'])
+        print(_deploy)
+        c.run(_deploy)
+        
+    cd(c, _root )
+    c.run('python -V')
+
     return None
     
     _site = ANNS[0]
