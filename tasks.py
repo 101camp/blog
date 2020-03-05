@@ -241,7 +241,7 @@ def ann(c):
     print(_orig)
     
     for s in ANNS[1:]:
-        _upd = '%s/%s'%(_root, s['ann'])
+        _upd = '%s/%s/%s'%(CAMPROOT, s['root'] , s['ann'])
         print(s['aim'],_upd)
     return None
     
