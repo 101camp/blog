@@ -13,7 +13,7 @@
 - [ NC3:看不懂 Python 代码陷入自我怀疑?有人却学得不亦乐乎?](191103-4py-how2joy-coding.md)
 - [ NC4:一次彻底的心智训练](200202-NC4-what-is5py.md)
 
-(auto index injected at 200305 2156 55.126) 
+(auto index injected at 200324 1856 49.281) 
 
 .::
 
