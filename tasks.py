@@ -103,6 +103,11 @@ ANNS = [# MkDocs
             'root':"101.camp/_running/writer",
             'ann':"_theme/bootswatch/simplex",
             },
+        {'aim':'mk.101.camp',
+            'depoly':'pub4trigger.sh',
+            'root':"101.camp/_running/mk",
+            'ann':"_theme/bootswatch/simplex",
+            },
 
         {'aim':'tm.101.camp',
             'depoly':'pub4trigger.sh',
