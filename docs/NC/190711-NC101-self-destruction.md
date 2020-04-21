@@ -268,9 +268,10 @@ ASP 当然无法运行在 Linux 中了, 那时至高组合是 `LAMP` :
 使用自学社区形式, 
 形成以 Python 为入口, 重获综合自学能力的课程:
 
-    伴你重新享受自学的乐趣
-        Reactivate Joy by Self-teach with You
-
+```
+伴你重新享受自学的乐趣
+    Reactivate Joy by Self-teching with You
+```
 
 
 https://py.101.camp/

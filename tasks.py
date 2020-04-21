@@ -116,7 +116,7 @@ ANNS = [# MkDocs
             },
 
     #, Jekyll
-        {'aim':'du.101.camp/duw',
+        {'aim':'du.101.camp',
             'depoly':'pub4trigger.sh',
             'root':"DU.xmq/debuguself.github.io",
             'ann':"_includes",
@@ -155,7 +155,7 @@ ANNS = [# MkDocs
             'root':"zoomquiet.io/blog",
             'ann':"_themes/pelican-bootstrap3/templates/includes",
             },
-        {'aim':'du.101.camp',
+        {'aim':'du.101.camp/duw',
             'depoly':'pub4trigger.sh',
             'root':"DU.xmq/DUW/br_duw_pub",
             'ann':"_theme/mkdocs_alabaster/inc",
