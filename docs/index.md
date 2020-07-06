@@ -5,6 +5,7 @@
 
 ::.
 
+- [ 什么是蟒营?](SS/200414-Shankai-5py-Whats101.md)
 - [ 钩陈/ CPUG故事](DM/200226-ZoomQuiet-OldTouch-CPUG.md)
 - [ 公告/ 叕重新开始的大妈](DM/200223-ZoomQuiet42-ANN-0-aaaagin.md)
 - [ 如何应对,就是不愿意上班的心情? +1](DM/200217-DM27-IMHO-good-working.md)
@@ -12,9 +13,8 @@
 - [ DM17: 如何提高自己的专注力?](DM/200205-DM17-IMHO-devoted.md)
 - [ 新型冠状病毒(2019-nCoV)正确应对姿势:0](DM/200205-DM18-IMHO-2019-nCoV-0.md)
 - [ NC4:一次彻底的心智训练](NC/200202-NC4-what-is5py.md)
-- [ TS:08 为了部落,再搞 Windows](TS/200121-TS08-windows-demo-env.md)
 
-(auto index injected at 200628 1717 49.580) 
+(auto index injected at 200706 1422 03.170) 
 
 .::
 

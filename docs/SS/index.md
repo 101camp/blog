@@ -22,9 +22,11 @@
 - [ SS14 | 从年轻到懂事的文科生](191115-SS14-datetime-from-young-2grownup.md)
 - [ SS15: 嘦问就能回答的了,神奇的学员...](191124-SS15-2py-py2-3-try.md)
 - [ SS16: 美术从业者问大妈几个问题](191210-SS16-2py-dama-ask.md)
+- [ 解读:蟒营™](191214-Shankai-4py-Whats101.md)
 - [ SS17:刻舟求剑怪 json?](191220-SS17-3py-cannot-find-sword-openIssueCount.md)
+- [ 什么是蟒营?](200414-Shankai-5py-Whats101.md)
 
-(auto index injected at 200628 1717 49.570) 
+(auto index injected at 200706 1422 03.163) 
 
 .::
 
