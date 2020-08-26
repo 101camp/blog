@@ -84,7 +84,8 @@ ANNS = [# MkDocs
             },
         {'aim':'py.101.camp',
             'depoly':'pub4trigger.sh',
-            'root':"101.camp/_running/gl_py.101.camp",
+            #'root':"101.camp/_running/gl_py.101.camp",
+            'root':"../../scm/srv/pol4du/_sites/gl_py.101.camp",
             'ann':"_theme/bootswatch/simplex",
             },
 
