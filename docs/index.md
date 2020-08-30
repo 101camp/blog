@@ -14,7 +14,7 @@
 - [ 新型冠状病毒(2019-nCoV)正确应对姿势:0](DM/200205-DM18-IMHO-2019-nCoV-0.md)
 - [ NC4:一次彻底的心智训练](NC/200202-NC4-what-is5py.md)
 
-(auto index injected at 200706 1422 03.170) 
+(auto index injected at 200830 2321 19.813) 
 
 .::
 

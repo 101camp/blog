@@ -26,7 +26,7 @@
 - [ SS17:刻舟求剑怪 json?](191220-SS17-3py-cannot-find-sword-openIssueCount.md)
 - [ 什么是蟒营?](200414-Shankai-5py-Whats101.md)
 
-(auto index injected at 200706 1422 03.163) 
+(auto index injected at 200830 2321 19.758) 
 
 .::
 
