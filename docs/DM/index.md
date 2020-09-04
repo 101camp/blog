@@ -53,7 +53,7 @@
 - [ 呢喃/ 别了和队平](200311-ZoomQuiet-MurMur-byby-peace-group.md)
 - [ 大妈和盗版的故事](200312-DAMA-fake-book.md)
 - [ 拙见/ 什么是自怼?](200331-ZoomQuiet-IMHO-whatis-debuguself.md)
-- [是大妈在 **ZoomQuiet** 的第**014**篇原创](200411-ZoomQuiet-IMHO-how2survive-alone.md)
+- [ 拙见/ 孤魂野狗如何在乱世生存?](200411-ZoomQuiet-IMHO-how2survive-alone.md)
 - [ 钩陈/ 什么是例怼周会?](200412-ZoomQuiet-IMHO-what-is-duweely-talk.md)
 - [ 拙见/ 什么是精神独立?](200412-ZoomQuiet-IMHO-what-is-solo.md)
 - [ 钩陈/ 抄经文具探](200416-ZoomQuiet-IMHO-KJV-life-penclis.md)
@@ -83,7 +83,7 @@
 - [ 拙见/ 学习学习](200829-ZoomQuiet-learn-learn.md)
 - [ 拙见/ 但得呢喃](200903-ZoomQuiet-need-murmur.md)
 
-(auto index injected at 200904 2114 38.938) 
+(auto index injected at 200904 2117 18.184) 
 
 .::
 

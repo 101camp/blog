@@ -37,7 +37,7 @@
 - [ 蟒营®/ 为什么编程思维不用学就有?](200811-ZoomQuiet-wtf-coding-mind.md)
 - [ 拙见/ 什么是网课?](200816-ZoomQuiet-wtf-online-course.md)
 
-(auto index injected at 200904 2114 38.992) 
+(auto index injected at 200904 2117 18.203) 
 
 .::
 
