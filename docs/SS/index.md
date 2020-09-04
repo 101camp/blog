@@ -25,8 +25,18 @@
 - [ 解读:蟒营™](191214-Shankai-4py-Whats101.md)
 - [ SS17:刻舟求剑怪 json?](191220-SS17-3py-cannot-find-sword-openIssueCount.md)
 - [ 什么是蟒营?](200414-Shankai-5py-Whats101.md)
+- [ 钩陈/ 如何发现拐点?](200429-ZoomQuiet-OldTouch-how4humm.md)
+- [ 钩陈/ 到底什么是蟒营™?](200429-ZoomQuiet-OldTouch-what101camp.md)
+- [ 钩陈/ 为什么会忍不住复训蟒营™](200429-ZoomQuiet-OldTouch-why-re101camp.md)
+- [ 钩陈/ 为什么会忍不住复训蟒营™+1](200429-ZoomQuiet-OldTouch-why-re101camp1.md)
+- [ 钩陈/ 为什么会忍不住复训蟒营™+2](200429-ZoomQuiet-OldTouch-why-re101camp2.md)
+- [ 钩陈/ 解读:提问的智慧](200503-ZoomQuiet-OldTouch-H2AQ.md)
+- [ 蟒营™/ CI/CD 像是在读侦探小说](200527-ZoomQuiet-7py-cicd.md)
+- [ 蟒营®/ 怎么把大象🐘放进冰箱?](200528-ZoomQuiet-7py-elephant.md)
+- [是大妈在 **ZoomQuiet** 的第**058**篇原创](200831-12py-how2ask.md)
+- [是大妈在 **ZoomQuiet** 的第**059**篇原创](200831-12py-how2search.md)
 
-(auto index injected at 200830 2321 19.758) 
+(auto index injected at 200904 2108 31.344) 
 
 .::
 
