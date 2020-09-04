@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>钩陈/ 看懂"看不懂" &mdash; 蟒营™ 怂怼录</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+
+
+<!--
+190916 ++tongji.baidu
+-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7b96768fb6a5e86ac53eae70bb5fd60b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="_1">钩陈/ 看懂"看不懂"<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>蟒营®大妈叕一断言...</p>
+</blockquote>
+<hr />
+<h2 id="_2">背景<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>参考: <a href="https://doc.101.camp/">蟒营®101.camp 开源网络课程框架</a>...</p>
+<p>大妈从99年开始自学各种技术,
+到05年开始主动参与技术社区筹备,
+隐隐发现自学的重要性;
+再到09年开始尝试培训,
+又9年各种尝试, 才敢在18年圣诞节正式上线 <code>蟒营®Python入门班</code> ,
+准备应该算是充分的...</p>
+<p>但是, 绞尽脑汁儿撰写的各种文案, 宣传课程是什么/为什么/要什么/...之类的阐述,
+却反复被指看不懂;</p>
+<hr />
+<h2 id="_3">现象<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p>比如, 有篇优秀学员的文章:<strong>什么是蟒营</strong></p>
+<p>@ysawybb:</p>
+<blockquote>
+<p>来蟒营一个月了,玩得有点开心丫. 作为一个编程小白,从一脸懵的状态到现在可以理解环境配置,敲出一些可运行的函数,并且还接触到了传说中的数据可视化,这些东西之前想想都头大,如今不知不觉已在探索,为什么蟒营可以做到呢?</p>
+</blockquote>
+<p><strong>蟒营---大型迷宫游戏真人版</strong></p>
+<ul>
+<li>课程设计了一些必要的线索,给你足够自由探索的空间. </li>
+<li>有难度吗?当然了. 但若没有过"山穷水尽疑无路"的困惑,又怎会有"柳暗花明又一村"的欣喜呢?</li>
+<li>绞尽脑汁找线索,搜资料,有所突破的那一刻,忍不住要给自己鼓鼓掌!</li>
+<li>记得在第三周时,需要从层层嵌套的列表和字典里提取一个值,看到一层层的括号,感到头晕,尝试几种方式都失败,不禁又开始怀疑自己是不是不适合学编程. </li>
+<li>这时候别熬夜太久,最好先休息. 第二天,找到了解决方法,成功运行那一瞬间,非常有成就感. </li>
+<li>学员们都是真人玩家,一路打怪升级,穿越迷宫. <code>git</code>妖,<code>pyenv</code>神兽,<code>json</code>怪,<code>api</code>大仙......它们张牙舞爪,虚张声势地瞪着你. </li>
+</ul>
+<p>...</p>
+<blockquote>
+<blockquote>
+<p>与其他编程网络课程区别</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>导师有强烈<code>促使学员切实进步</code>的愿望. </li>
+<li>以学员为中心,授之以渔,针对性互动. </li>
+<li>实战演练,积累编程自信. </li>
+<li>提倡聪明提问,事半功倍. </li>
+<li>团队PK,鼓励交流协作. </li>
+<li>层层关卡,趣味性和挑战性并存. </li>
+</ul>
+<p>所以, 这才是蟒营®课程的真实面貌:</p>
+<p><strong>蟒营---有意思的课程,吸引有意思的人</strong></p>
+<hr />
+<p>上述类似文字, 被各种潜在学员, 或是说没接触过程编程的普通人来说,
+很多都说看不懂.</p>
+<p>以至就此错过可能真正改变人生的蟒营®课程.</p>
+<hr />
+<h2 id="_4">分析<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>可是为什么呢?</p>
+</blockquote>
+<p>再比如, 招生海报中的内容不多:</p>
+<pre><code>蟒营®Python入门班第9期
+力争成为你最后一次网课
+
+你将获得
+    完整 软件工程实用经验
+    完备 软件工具编程经历
+    编程 自信解决软件问题
+    拥有 高效问题讨论习惯
+    融入 社区长久协作共创
+
+首席导师-&gt;大妈|ZoomQuiet
+CPyUG/PyChina联合创始人
+17+年技术社区管理经验
+'可爱的 Python'作者
+</code></pre>
+
+<p>更加看不懂, 主要原因是:</p>
+<p>没兴趣看, 现在铺天盖地的各种 Python 课程广告,
+<code>入门班</code> 三字, 简直看到吐.</p>
+<p>而, 真正硬着头皮扫一遍内容:</p>
+<ul>
+<li>软件工程</li>
+<li>完备</li>
+<li>软件问题</li>
+<li>讨论习惯</li>
+<li>协作</li>
+<li>共创</li>
+<li>...</li>
+</ul>
+<p>一大堆术语, 完全不知道在啍啍什么.</p>
+<p>而要证明导致资历时:</p>
+<ul>
+<li>CPyUG/PyChina ? 这都是什么东西?</li>
+<li>社区管理经验 ? 这和学员又有什么关系?</li>
+<li>'可爱的 Python'这书没听说过哪, 一看书名就很低幼吧?</li>
+</ul>
+<hr />
+<h2 id="_5">其实<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>得承认, 海报文案是个专业活儿...</p>
+</blockquote>
+<p>长期编程的大妈们, 对这个领域其实非常小白.</p>
+<p>但是, 另外一个方面:</p>
+<p>在真实的编程世界中, 大家使用的各种术语, 是广泛存在于各种场景中的;
+因为, 术语就是一组固定概念/软件/数据/常识的压缩,
+通过术语能提高交流效能;</p>
+<p>比如 git , 如果每次交流时, 不是用三个字母 git 来指代,
+而是用 <code>分布式版本仓库</code>,或是普遍人也许能看懂的 <code>github 使用的那个版本管理系统</code>,
+或是更加冗长但是直白的文字来指代对应配置对象,
+那么, 可想, 原本30秒就可以阐述完的一个想法,
+不用术语, 可能得3小时, 才能逐一在名词解释过程中完成阐述.</p>
+<p>这很明确是不可接受的;</p>
+<p>而在编程入门训练班课程中,
+寄期望课程能事先将各种术语翻译为通俗易懂的解释,
+从而能帮助学员快速进入角色,
+学到对应常识, 进而开始顺利的编程实践.</p>
+<p>这其实就是妄想了, 因为:
+这种解释, 也不过是一种偏见误解,
+远远没有对应技术社区官方权威文档定义的精确,
+而且, 如果真的记住了这些半残的弱化版解释,
+稍微探索出课程当前问题边界, 立即就撞到真实世界通用术语为主的 <strong>正常</strong> 技术资料,
+那么, 无论课程方怎么努力, 也是不可能穷尽真实世界无限<strong>正常</strong> 技术资料, 都给好心翻译为通俗版权文字的.</p>
+<p>所以, 看不懂的, 第一反应其实, 不是离开, 而是激发好奇心去弄懂;</p>
+<p>也就是说, 如果网络课程资料中所有文字你都看的明白,
+说明这课程可能没包含任何对你来说是新知的东西.</p>
+<p>其它课程可能只致力于一次性提供足够多<code>"原创资料"</code>, 让学员自行参悟;
+而蟒营®课程相反, 从一开始就尽可能引导向网络中原版 <strong>官方文档</strong>,
+而且配合随时的, 针对性的, 具体问题的回答/引导;
+力图在一次次真实主动探索过程中, 陪伴大家拥有看原文资料的自信.</p>
+<hr />
+<h2 id="_6">当然<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<p>也有另外专注装逼的课程, 
+所有内容都是从国外免费平台中搬运过来的, 
+在宣传中也尽可能多用自己也不明白的术语来提高自己的权威性,
+从而诱导付费.</p>
+<p>蟒营®课程本质上是伪装成入门班的高阶思维课程,
+其目标是, 学员通过课程练习, got 到核心信心后,
+一切实用技能都不是问题, 都能自主完成自学.</p>
+<p>那么这个目标如何达成的呢?</p>
+<p><img alt="背景" src="http://101.zoomquiet.top/res/3py/101camp3py-09-solarized.002.jpeg?imageView2/2/w/640" /></p>
+<p>首先, 学员得有足够的渴望, 或是吃过亏, 在其它课程中没学会编程;</p>
+<p><img alt="导师" src="http://101.zoomquiet.top/res/3py/101camp3py-09-solarized.003.jpeg?imageView2/2/w/640" /></p>
+<p>那么, 大妈丰富的过往经验, 才能有机会发挥,
+因为, 在编程学习中, 如果不真正开始编程探索,
+那么一切问题都是徦想问题, 根本无法指导.</p>
+<p><img alt="价值" src="http://101.zoomquiet.top/res/3py/101camp3py-09-solarized.004.jpeg?imageView2/2/w/640" /></p>
+<p>当前, 通过网络面对面, 实时或是异步交流(哈, 又有术语了);
+在蟒营®课程中交流场景是非常丰富的, 
+并不仅仅是传统的微信群中聊天儿, 
+在编程实践中, 因为涉及具体而且复杂的运行时背景数据,
+我们是无法利用 微信/QQ 来完成技术交流的,
+所以, 蟒营®专门配置了和真正软件团队完全一致的交流环境,
+全真式的在程序员日常交流场景中, 组织交流,
+从而, 从一开始就可以形成正确/有效/经典的软件开发习惯.</p>
+<p><img alt="内容" src="http://101.zoomquiet.top/res/3py/101camp3py-09-solarized.004.jpeg?imageView2/2/w/640" /></p>
+<p>课程节奏是这样的:</p>
+<ul>
+<li>每周日通过2小时左右 zoom 直播, 完成集体交流和讲解, 并布置周作业;</li>
+<li>每周三晚上有42分钟定长答疑, 来集中处理每周形成的新问题</li>
+<li>而其它时间, 通过项目环境, 所有人通过 git 和版本仓库, 进行代码/问题/文档的自由交流<ul>
+<li>共同尝试完成周作业中的编程任务</li>
+<li>如果有任何具体问题, 就立即内部公开讨论</li>
+<li>导师/助教/同学们, 都可以加入讨论, 分享经验, 指出问题所在</li>
+</ul>
+</li>
+<li>这样, 每周为一个阶段, 逐步以真实开发任务为线索<ul>
+<li>串接起来各种实用编程知识点和工具以及技能</li>
+<li>将以往课程中以编程技术为线索的知识点记忆</li>
+<li>变成以具体开发任务为场景的问题解决过程, 将每个知识点都配上一个有意义的场景</li>
+<li>这比光记忆概念, 要来的有用有趣和有效.</li>
+</ul>
+</li>
+<li>而且, 定期所有直播交流, 都有录音/录像内部提供下载, 支持永久复习.</li>
+</ul>
+<p><img alt="FAQ" src="http://101.zoomquiet.top/res/3py/101camp3py-09-solarized.005.jpeg?imageView2/2/w/640" /></p>
+<p>更多常见问题参见: <a href="https://py.101.camp/faq/">FAQ - 蟒营® Python 入门班第9期</a></p>
+<p><img alt="评价" src="http://101.zoomquiet.top/res/3py/101camp3py-09-solarized.006.jpeg?imageView2/2/w/640" /></p>
+<p>更多学员回顾参考:</p>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/prDI8o94z7RacvM6eKHrNw">到底什么是蟒营®?</a><ul>
+<li><a href="https://mp.weixin.qq.com/s/HkXerDX3p4wL7dsEPS8_Nw">钩陈/ 到底什么是蟒营®?+1</a></li>
+<li><a href="https://mp.weixin.qq.com/s/R8BBgXaVRU7Qml3gQGKtcw">钩陈/ 到底什么是蟒营®?+2</a></li>
+</ul>
+</li>
+<li><a href="https://mp.weixin.qq.com/s/KzlXTutigqj0XNyKlws38w">蟒营®/ 编程得在编程中学</a></li>
+<li><a href="https://mp.weixin.qq.com/s/rjTzSiXeClcpQuQfhcMMMA">钩陈/ 解读:提问的智慧</a></li>
+<li><a href="https://mp.weixin.qq.com/s/KzIlcpE8sUsLvlra5jnY7A">为什么会忍不住复训蟒营®</a><ul>
+<li><a href="https://mp.weixin.qq.com/s/NrUPMPfxw1tyxZRMsVoqoA">为什么会忍不住复训蟒营®+1</a></li>
+<li><a href="https://mp.weixin.qq.com/s/n1mG9JRSI9fJ8ZLYcyungg">为什么会忍不住复训蟒营®+2</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="_7">所以<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<pre><code>蟒营®:
+
+知道你认为自己不NB,
+但蟒营®认定你其实非常NB,
+  只是习惯了不NB而已,
+蟒营®愿带你遇见NB的那个你.
+
+</code></pre>
+
+<hr />
+<blockquote>
+<blockquote>
+<p>NN 4033</p>
+</blockquote>
+</blockquote>
+<p>好文笔,感叹号年度配额: <strong>1/3</strong></p>
+<p>投稿/反馈邮箱:</p>
+<pre><code>askdama@googlegroups.com
+</code></pre>
+<p>(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)</p>
+<hr />
+<p>ZoomQuiet/<strong><a href="https://mp.weixin.qq.com/s/N5TuRRbF485D4Q90XdDA7g">大妈</a></strong></p>
+<p>就是四处 <code>是也乎,(￣▽￣)</code> 的那个<a href="https://mp.weixin.qq.com/s/N5TuRRbF485D4Q90XdDA7g">大妈</a>:</p>
+<pre><code class="python">
+私自嗯哼: ZoomQuiet (订阅号: ZoomQuiet42)
+公开课程: 蟒营 (订阅号: Mainium)
+历史吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 核心组织者:
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+</code></pre>
+
+<hr />
+            
+<!--
+            
+
+-->
+
+            <!--190910 init. comments-->
+<hr/>
+            <script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<hr/>
+
+            <hr/>
+
+<h3>蟒营®编程思维提高班 Python版/<b>第11期</b> 正在报名</h3>
+<h4>精品小班/ 每期<42人</h4>
+
+<blockquote><p>
+    
+<ul>
+    <li>
+    开始报名: <b>2020.8.30</b> </li>
+    <li>
+    报名截止: <b>2020.9.21</b> </li>
+    <li>
+    正式开课: <b>2020.9.27</b> </li>
+    <li>
+    课程结束: <b>2020.11.8</b> </li>
+
+    <li>
+    介绍文章:  
+    <ul>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/vwcrt8q9UtNiyGcgdoDmcA">
+            拙见/ 唤醒自己的天命之女
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/kTtZSqypUG4M1bw9GPNq-A">
+            拙见/ 理解理解
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/HgZG2HKJ80Aj1TUADaZXVA">
+            拙见/ 学习学习
+        </a>
+        </li>
+
+    </ul>
+    </li>
+
+<!--
+    <li>
+    介绍文章:  
+    <ul>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/FbUYUtnSVPJseA6sBud5fQ">
+            我觉得潘石屹推广编程的姿势不对
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/_yMoR4pJJGlJx51DU8xGyg">
+            蟒营®/ 到底如何算"会编程"?
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/mSfEbGSgJAODtXC0BgMtDA">
+            蟒营®/ 到底改变了什么?
+        </a>
+        </li>
+    </ul>
+    </li>
+
+-->
+
+</ul>
+
+<b>扫描</b>报名:
+
+<img alt="101camp12py" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-08-26-200816-reg-zip.jpg"/>
+
+
+</p></blockquote>
+
+
+<h2>蟒营®式 原创课程</h2>
+<p>
+    伴你重享<b>学习</b>乐趣
+</p>
+
+<blockquote>
+<p>
+    官网: <b>
+    <a href="https://py.101.camp/">py.101.camp</a>
+    </b>
+</p>
+<p>
+    <i>
+    Reactivate Joy by Self-teching <b>with You</b>
+    </i>
+</p>
+</blockquote>
+
+
+<br/>
+任何问题可先进入知识星球<b>(免费)</b>咨询:
+<br/>
+<img alt="FAQ" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-02-28-FAQ101camp-qr.jpeg?imageView2/2/w/360"/>
+
+<p>关注公众号, 持续获得相关各种咨询:
+    <br/>
+<img alt="mainium" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-02-15-mainium-qr-barnner.jpg"/>
+</p>
+
+<hr/>
+
+<h4>追问</h4>
+<blockquote>
+<p>
+    任何问题, 随时邮件提问可也:
+<br/>
+    <i>
+    askdama@googlegroups.com
+    </i>
+</p>
+</blockquote>
+
+<hr/>
+
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <img class="logo" src="../../logo-owlook.png" title="蟒营™ 怂怼录">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#_2">背景</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_3">现象</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_4">分析</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">其实</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_6">当然</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_7">所以</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+      <!--
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
+      -->
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/DM/200602-ZoomQuiet-OldTouch-why-not-gotit.md">edit➔GitHub</a></li>
+
+      
+    </ul>
+  
+</nav>
+          
+            
+
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+
+        <!--190910 init. comments-->
+        <h3>Columns</h3>
+<ul>
+    <li><a href="/DM/">DM 大妈嗯哼</a></li>
+    <li><a href="/NC/">NC 嗯哼蟒营</a></li>
+    <li><a href="/SS/">SS 学员故事</a></li>
+    <li><a href="/TS/">TS 技术鳮汤</a></li>
+</ul>
+
+
+
+<h4>Powered by</h4>
+<ul>
+    <li>
+        <a href="https://101.camp/">蟒营®<br/>课程框架</a>
+<ul>
+    <li>
+        <a href="https://py.101.camp/">编程思维<br/>提高班</a>
+    </li>
+    <li>
+        <a href="https://github.com/101camp/comments/issues">评注</a>
+    </li>
+    <li>
+        <a href="https://io.101.camp/">图谱</a>
+    </li>
+    <li>
+        <a href="https://slides.101.camp/">幻灯</a>
+    </li>
+    <li>
+        <a href="https://wiki.101.camp/">维基</a>
+    </li>
+</ul>
+    </li>
+
+    <li>
+        <a href="https://du.101.camp/">自怼圈</a>
+    </li>
+    <li>
+        <a href="https://du.101.camp/duw/">怼周刊</a>
+    </li>
+
+    <li>
+        <a href="http://weekly.pychina.org/">蟒周刊</a>
+    </li>
+    <li>
+        <a href="https://blog.zhgdg.org/">珠海GDG</a>
+    </li>
+    <li>
+        <a href="http://zh.tfug.world/">TFUG珠海</a>
+    </li>
+    <li>
+        "大妈"们
+<ul>
+    <li>
+        <a href="https://yixuan.li/">Yixuan</a>
+    </li>
+
+    <li>
+        <a href="https://www.douban.com/people/Azeril/">Azeril</a>
+    </li>
+    <li>
+        <a href="https://zoomquiet.io/">Zoom.Quiet</a>
+    </li>
+    <li>
+        ...
+    </li>
+</ul>
+    <li>
+        <a href="http://mainium.icu">昧因科技®</a>
+    </li>
+    <li>
+        <a href="https://www.vultr.com/?ref=8333895">vultr</a>
+    </li>    
+</ul>
+
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; 蟒营™101camp
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+
+        <hr/>
+<a href="https://www.vultr.com/?ref=8333895"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
+<hr/>
+
+
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2020-09-04 13:08:35
+  -->
+</body>
+</html>

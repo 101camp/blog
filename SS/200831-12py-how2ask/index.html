@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>200831 12py how2ask &mdash; 蟒营™ 怂怼录</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+
+
+<!--
+190916 ++tongji.baidu
+-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7b96768fb6a5e86ac53eae70bb5fd60b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <p>这是大妈在 <strong>ZoomQuiet</strong> 的第<strong>058</strong>篇原创</p>
+<h1 id="_1">蟒营®/ 提问故事<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>How to ask</p>
+</blockquote>
+<hr />
+<h2 id="_2">背景<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>毎期学员, 进入课程,
+首先就会撞到一篇比较硬核的老文章,
+但是, 并不是所有学员第一时间可以 got 到文章精华.</p>
+<hr />
+<h2 id="_3">故事<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p>学员 @humiaom 在反复撞过墙后突然的感想:</p>
+<p>发布问题之前,有两个词得提前学习:</p>
+<pre><code class="python">
+RTFM
+    Read The Fucking Manual
+
+STFW
+    Search The Fucking Web
+</code></pre>
+
+<p>做完这两个准备,再开始提问:)</p>
+<hr />
+<h3 id="_4">预习过程中发生的故事<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>在预习ch0的过程中,我被<strong>单独clone分支</strong>的问题卡住,百度+CSDN的很多资料,提供的解决方案一致,但验证后发现并不准确. </p>
+<ul>
+<li>任务:单独clone分支<br/></li>
+<li>目标:使用 git branch -a验证,只显示自己的分支名<br/></li>
+<li>百度+CSDN给出的方法:git clone -b <branch_name> 或git checkout -b <branch_name> - 存在的问题:这两个命令做的是切换分支clone,从文件夹显示的文件来看,clone了单个文件,但使用 git branch -a 查看所有分支,显示所有,也就是任务执行失败</li>
+</ul>
+<p>怎么办... ..一筹莫展,在大妈的引导下,我开始重新分析任务:</p>
+<p>这个任务一定是有答案的(毕竟是作业嘛,而且看论坛描述,在git的一个仓库建数个分支记录版本很常见,那么clone单个分支也是刚需)</p>
+<p>答案可能很简单(毕竟是ch0的任务),推断可能是git clone + 某某关键词,只是我没有找到</p>
+<p>为什么找不到:问题表述不对,搜索渠道有问题,资料不准</p>
+<p>鉴于我搜索了多个关键词,百度和国内的CSDN基本上前5页涉及的都看了,没有找到答案,我把目光集中在官方git clone的说明文档,没有... ..很绝望...(后来发现是有的!是我看的不仔细,真的哭唧唧了)   </p>
+<p>也很偶然的,我浏览到了一个bolg,po主记录了所有git clone 指令和相关说明,我好奇这人哪儿来的这么全的说明,找到了$ git clone -help 命令,调取帮助文件,尝试了一下,在最后几行发现了一个字眼:<strong>single</strong>. </p>
+<p>嗯?这个看起来很合适,再细看说明:clone only one branch, HEAD or —branch ,这特么,不就是我要的吗!!!</p>
+<p>迅速尝试</p>
+<pre><code>$ git clone -b branch-name --single-branch + &lt;链接&gt;
+</code></pre>
+<p>,显示clone成功,再用git branch -a验证,只有自己的分支,成功!!!</p>
+<p>真是一把泪. 很想扇傻x的自己:)</p>
+<hr />
+<h3 id="_5">总结<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
+<p>结合How To Ask,以及我这两天的血泪史,抒发感想如下,遇到问题,先自检,解决不了,开始提问:</p>
+<blockquote>
+<p>1 ,提问的艺术</p>
+</blockquote>
+<p>再次强调,提问之前,复习一下RTFM &amp; STFW. </p>
+<p>看了How To Ask的提问方式引导,我觉得在IT圈子里,提问的方式挺有趣的,很像是一个结构文案描述的过程. </p>
+<p>文案圈有个大神级的文案:把1000首歌装进口袋. 基本上讲文案都绕不过这个经典案例. 提问就像重新结构这句文案,为什么能装1000首?因为你的内存够大吗?大到多大?大内存如何保持小体积?使用了什么方法?具体是... 以上,都请用具体的数据表明. </p>
+<p>我觉得这是IT圈子里的提问艺术:精确. </p>
+<blockquote>
+<p>2 ,好的渠道:google+stackoverflow+gitlab(wiki)</p>
+</blockquote>
+<p>看How To Ask还有前辈写google,有点好奇google真的这么牛吗,我找了工具翻墙试了下,真香啊. </p>
+<p>以我遇到的问题为例,搜索单独clone分支的方法,以关键词git clone branch为例,在百度搜索的结果,一致建议使用git clone -b 和git checkout,在csdn论坛中也是,看评论也没有人有异议. </p>
+<p>google一下,展示的是来自stackoverflow的结果,讨论的人好多,有一种七嘴八舌的热闹感觉(国外的程序员们这么热情的嘛... ),点开查看,高票回答就是我之前寻找的解决方法... ↓ 然后指出了官方文档出处</p>
+<p><a href="https://s1.ax1x.com/2020/08/24/dyQsyt.md.png">好热闹的社区</a></p>
+<p>很好!!!</p>
+<p>google 和stackoverflow,这俩锁死,钥匙我吞了!</p>
+<blockquote>
+<p>3,反馈:复盘+记录</p>
+</blockquote>
+<p>复盘的重要性这里就不赘述了. 说下记录吧. </p>
+<p>在解决问题的过程中,把思路写下来挺有帮助的,也是自己的沉淀,特别是有问题的时候,记录自己犯傻的过程,才能找到自己脑回路的坑. 总结总结自己,比以后被人总结有面子. </p>
+<p>最后再讲个身边的故事,再次重申RTFM的重要性:</p>
+<p>大约两年前吧,我们小区物业要填一块绿化带,造个停车场. 绿化附近的几幢居民不同意,组团和物业经理battle,经理拒不接受,理由有二:一是大部分居民都同意(除了几幢直接受影响的),二是物业的作为符合物业法. 这俩理由当场把维权团给团灭了. </p>
+<p>当然啦,事情不会就这么结束的,不然也不值得拿出来说. </p>
+<p>团灭当天,维权楼里的一个老爷子,80来岁吧,是我们本地一个大学的退休教授,据说教物理的,他跑书店买了本物业法,当晚就整理了相关条例发维权群里,告诉大家物业经理在骗人. 还有一个社交达人,求助了本地的媒体圈朋友,综合分析了类似案例之后,确认物业肯定是在忽悠. 然后,维权团又组织起来,把物业和支持这次填绿化行动的业主委员会都给干掉了. </p>
+<hr />
+<h2 id="_6">分析<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>提问谁不会? </p>
+</blockquote>
+<p>但是, 现实世界中, 能提出一个清晰明确有价值的问题太困难了.</p>
+<p>提问的过程其实就是对自己内省的过程;</p>
+<p>问题不清晰, 正是反映了自己当前思维的混乱.</p>
+<p>提问并不是丢出一个问题就好的.</p>
+<p>提问的目的, 并不是证明自己有发现问题, 而是想解决问题,
+提问如果无助问题解决, 那么只是种努力的表演.</p>
+<p>在编程学习中的提问,
+在具体到对应场景时,
+嘦达到一个效果就好:</p>
+<blockquote>
+<p>使其它人, 可以根据自己的提问,
+在本地复现问题.</p>
+</blockquote>
+<p>这样, 才可能收到足够精确的回复.</p>
+<p>否则, 光是要明确问题发生的上下文, 其它人都要付出过多精力/时间, 太无趣了..</p>
+<p>如何从正确提问开始, 快速掌握 Python ?
+说不得, 当然: <strong>蟒营®编程思维提高班 Python版/</strong></p>
+<hr />
+<blockquote>
+<p>本人公号所刊载原创内容之知识产权为本人所有,
+未经许可, 禁止进行转载/摘编/复制及建立镜像等任何使用.
+欢迎读者沟通交流, 请留言, 或通过邮件交流-&gt;</p>
+</blockquote>
+<p>投稿/反馈邮箱:</p>
+<pre><code>askdama@googlegroups.com
+</code></pre>
+<p>(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用订阅, 不用翻越...)</p>
+<hr />
+<p>ZoomQuiet/<strong><a href="https://mp.weixin.qq.com/s/N5TuRRbF485D4Q90XdDA7g">大妈</a></strong></p>
+<p>就是四处 <code>是也乎,(￣▽￣)</code> 的那个<a href="https://mp.weixin.qq.com/s/N5TuRRbF485D4Q90XdDA7g">大妈</a>:</p>
+<pre><code class="python">
+私自嗯哼: ZoomQuiet (订阅号: ZoomQuiet42)
+原创课程: 蟒营 (订阅号: Mainium)
+过往吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 核心组织者:
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+</code></pre>
+
+<hr />
+<p>好文笔,感叹号年度配额: <strong>1/3</strong></p>
+<blockquote>
+<p>NN 4122</p>
+</blockquote>
+            
+<!--
+            
+
+-->
+
+            <!--190910 init. comments-->
+<hr/>
+            <script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<hr/>
+
+            <hr/>
+
+<h3>蟒营®编程思维提高班 Python版/<b>第11期</b> 正在报名</h3>
+<h4>精品小班/ 每期<42人</h4>
+
+<blockquote><p>
+    
+<ul>
+    <li>
+    开始报名: <b>2020.8.30</b> </li>
+    <li>
+    报名截止: <b>2020.9.21</b> </li>
+    <li>
+    正式开课: <b>2020.9.27</b> </li>
+    <li>
+    课程结束: <b>2020.11.8</b> </li>
+
+    <li>
+    介绍文章:  
+    <ul>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/vwcrt8q9UtNiyGcgdoDmcA">
+            拙见/ 唤醒自己的天命之女
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/kTtZSqypUG4M1bw9GPNq-A">
+            拙见/ 理解理解
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/HgZG2HKJ80Aj1TUADaZXVA">
+            拙见/ 学习学习
+        </a>
+        </li>
+
+    </ul>
+    </li>
+
+<!--
+    <li>
+    介绍文章:  
+    <ul>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/FbUYUtnSVPJseA6sBud5fQ">
+            我觉得潘石屹推广编程的姿势不对
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/_yMoR4pJJGlJx51DU8xGyg">
+            蟒营®/ 到底如何算"会编程"?
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/mSfEbGSgJAODtXC0BgMtDA">
+            蟒营®/ 到底改变了什么?
+        </a>
+        </li>
+    </ul>
+    </li>
+
+-->
+
+</ul>
+
+<b>扫描</b>报名:
+
+<img alt="101camp12py" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-08-26-200816-reg-zip.jpg"/>
+
+
+</p></blockquote>
+
+
+<h2>蟒营®式 原创课程</h2>
+<p>
+    伴你重享<b>学习</b>乐趣
+</p>
+
+<blockquote>
+<p>
+    官网: <b>
+    <a href="https://py.101.camp/">py.101.camp</a>
+    </b>
+</p>
+<p>
+    <i>
+    Reactivate Joy by Self-teching <b>with You</b>
+    </i>
+</p>
+</blockquote>
+
+
+<br/>
+任何问题可先进入知识星球<b>(免费)</b>咨询:
+<br/>
+<img alt="FAQ" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-02-28-FAQ101camp-qr.jpeg?imageView2/2/w/360"/>
+
+<p>关注公众号, 持续获得相关各种咨询:
+    <br/>
+<img alt="mainium" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-02-15-mainium-qr-barnner.jpg"/>
+</p>
+
+<hr/>
+
+<h4>追问</h4>
+<blockquote>
+<p>
+    任何问题, 随时邮件提问可也:
+<br/>
+    <i>
+    askdama@googlegroups.com
+    </i>
+</p>
+</blockquote>
+
+<hr/>
+
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <img class="logo" src="../../logo-owlook.png" title="蟒营™ 怂怼录">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#_2">背景</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_3">故事</a></li>
+      <ul>
+    
+      <li><a href="#_4">预习过程中发生的故事</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">总结</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#_6">分析</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+      <!--
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
+      -->
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/SS/200831-12py-how2ask.md">edit➔GitHub</a></li>
+
+      
+    </ul>
+  
+</nav>
+          
+            
+
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+
+        <!--190910 init. comments-->
+        <h3>Columns</h3>
+<ul>
+    <li><a href="/DM/">DM 大妈嗯哼</a></li>
+    <li><a href="/NC/">NC 嗯哼蟒营</a></li>
+    <li><a href="/SS/">SS 学员故事</a></li>
+    <li><a href="/TS/">TS 技术鳮汤</a></li>
+</ul>
+
+
+
+<h4>Powered by</h4>
+<ul>
+    <li>
+        <a href="https://101.camp/">蟒营®<br/>课程框架</a>
+<ul>
+    <li>
+        <a href="https://py.101.camp/">编程思维<br/>提高班</a>
+    </li>
+    <li>
+        <a href="https://github.com/101camp/comments/issues">评注</a>
+    </li>
+    <li>
+        <a href="https://io.101.camp/">图谱</a>
+    </li>
+    <li>
+        <a href="https://slides.101.camp/">幻灯</a>
+    </li>
+    <li>
+        <a href="https://wiki.101.camp/">维基</a>
+    </li>
+</ul>
+    </li>
+
+    <li>
+        <a href="https://du.101.camp/">自怼圈</a>
+    </li>
+    <li>
+        <a href="https://du.101.camp/duw/">怼周刊</a>
+    </li>
+
+    <li>
+        <a href="http://weekly.pychina.org/">蟒周刊</a>
+    </li>
+    <li>
+        <a href="https://blog.zhgdg.org/">珠海GDG</a>
+    </li>
+    <li>
+        <a href="http://zh.tfug.world/">TFUG珠海</a>
+    </li>
+    <li>
+        "大妈"们
+<ul>
+    <li>
+        <a href="https://yixuan.li/">Yixuan</a>
+    </li>
+
+    <li>
+        <a href="https://www.douban.com/people/Azeril/">Azeril</a>
+    </li>
+    <li>
+        <a href="https://zoomquiet.io/">Zoom.Quiet</a>
+    </li>
+    <li>
+        ...
+    </li>
+</ul>
+    <li>
+        <a href="http://mainium.icu">昧因科技®</a>
+    </li>
+    <li>
+        <a href="https://www.vultr.com/?ref=8333895">vultr</a>
+    </li>    
+</ul>
+
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; 蟒营™101camp
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+
+        <hr/>
+<a href="https://www.vultr.com/?ref=8333895"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
+<hr/>
+
+
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2020-09-04 13:08:36
+  -->
+</body>
+</html>

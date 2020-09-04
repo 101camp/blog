@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>蟒营®/ 怎么把大象🐘放进冰箱? &mdash; 蟒营™ 怂怼录</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+
+
+<!--
+190916 ++tongji.baidu
+-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7b96768fb6a5e86ac53eae70bb5fd60b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="_1">蟒营®/ 怎么把大象🐘放进冰箱?<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>7py:学员故事...</p>
+</blockquote>
+<hr />
+<h2 id="_2">背景<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p>参考: <a href="https://doc.101.camp/">蟒营®101.camp 开源网络课程框架</a>...</p>
+<p>大妈从99年开始自学各种技术,
+到05年开始主动参与技术社区筹备,
+已经隐隐发现自学的重要性;
+再到09年开始尝试培训,
+又9年各种尝试, 才敢在18年圣诞节正式上线 <code>蟒营®Python入门班</code> ,
+准备应该算是充分的...</p>
+<hr />
+<h2 id="_3">现象<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p>但是, 绞尽脑汁儿设计的口号:</p>
+<pre><code>蟒营® 101.camp: 
+    伴你重享自学乐趣
+    Reactivate Joy by Self-teching with You
+
+</code></pre>
+
+<p>却反复被指看不懂;
+毕竟, 这是门网络课程, 强调自学, 不就等于说明, 课程本身没用?</p>
+<hr />
+<h2 id="_4">分析<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>可是为什么呢?</p>
+</blockquote>
+<p>其实, 就是大妈所有的解说, 都是从课程设计者角度来陈述的, 当然令学习者触动不能.</p>
+<p>所以, 看看学员的感受?</p>
+<hr />
+<h2 id="_5">怎么把大象🐘放进冰箱?<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>乐豆派@sunnyseed: CI续集...</p>
+</blockquote>
+<p>上集讲到,CI太高冷,只对commit事件才有反应,不如Webhook平易近人,于是乐豆派@葵花籽先生追求Webhook去了. 回头一看,发现团队笔记网站的自动发布,还得靠CI. </p>
+<ul>
+<li>Webhook触发后,想用脚本自动git push到gitlab,失败概率好高,10个try也架不住,遂放弃</li>
+<li>研究CI : 代码变更后 -&gt; 触发 -&gt; 自动启动一个管道,去完成某些任务</li>
+<li>在这里 = 手工push上传md文件 -&gt;触发-&gt; <ol>
+<li>把md  Build成 gitbook</li>
+<li>再发布到public目录</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>看着就是真命天子😍</p>
+</blockquote>
+<hr />
+<h3 id="1-ci-mvp">1. CI 的 MVP<a class="headerlink" href="#1-ci-mvp" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>过程看[[Ask] CI 的第一次尝试:成功,但public里没有文件&lt;解决了,网站缓存问题😭&gt;]
+,简单说就是在master根目录下加入一个<strong>.gitlab-ci.yml</strong></p>
+</blockquote>
+<pre><code class="yaml">#使用的docker镜像
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+  # 命令
+  - cp ./sunnyseed/web/*.html ./public/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+
+</code></pre>
+
+<p>关键有两句</p>
+<ol>
+<li>
+<p><code>cp ./sunnyseed/web/*.html ./public/</code>,这句就是命令行,把html文件拷贝进发布目录</p>
+</li>
+<li>
+<p><code>image: alpine:latest</code>,用这个docker镜像,来运行上面这句语句. </p>
+</li>
+</ol>
+<blockquote>
+<p>什么?可以直接用docker运行cli,甚至能运行python?这跨度太大,我跟不上</p>
+</blockquote>
+<hr />
+<h3 id="2-gitbook-mvp">2. Gitbook 的 MVP<a class="headerlink" href="#2-gitbook-mvp" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>这个更简单粗暴,但真好用</p>
+<p>2个文件 + 2句命令搞定,具体看网上的介绍吧</p>
+</blockquote>
+<pre><code>gitbook init
+gitbook build
+</code></pre>
+
+<hr />
+<h3 id="3">3. 拼装<a class="headerlink" href="#3" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>这个逻辑看着挺简单的,就是👇</p>
+</blockquote>
+<p>没用CI前</p>
+<p><img alt="CI前" src="http://ydlj.zoomquiet.top/ipic/2020-05-28-7py-sunnyseed-cd-0.jpg" /></p>
+<p>使用CI后</p>
+<p><img alt="CI后" src="http://ydlj.zoomquiet.top/ipic/2020-05-28-7py-sunnyseed-cd-1.jpg" /></p>
+<blockquote>
+<p>可以看出就是用CI,做了手工做的事情</p>
+</blockquote>
+<ul>
+<li>
+<ol>
+<li>build</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>copy</li>
+</ol>
+</li>
+</ul>
+<p>但要把写完的脚本用上却不容易,总是遇到cancel或者pending,不起作业,也没有报错信息</p>
+<hr />
+<h3 id="_6">报错信息在哪里?<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>遍寻网络,尝试修改了五六种不同脚本,包括官网的例子之后. 终于遇到一个正确能用的:</p>
+</blockquote>
+<pre><code class="yaml"># requiring the environment of NodeJS 10
+image: node:10
+
+# add 'node_modules' to cache for speeding up builds
+cache:
+  paths:
+    - node_modules/ # Node modules and dependencies
+
+before_script:
+  - npm install gitbook-cli -g # install gitbook
+  - gitbook fetch 3.2.3 # fetch final stable version
+  - gitbook install # add any requested plugins in book.json
+
+
+# the 'pages' job will deploy and build your site to the 'public' path
+pages:
+  stage: deploy
+  script:
+    - gitbook build ./sunnyseed/book public # build to public path
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+  only:
+    - master # this job will affect only the 'master' branch
+
+</code></pre>
+
+<blockquote>
+<p>终于看到 passed ,激动. </p>
+</blockquote>
+<p><img alt="passed" src="http://ydlj.zoomquiet.top/ipic/2020-05-28-7py-sunnyseed-cd-2.jpg" /></p>
+<hr />
+<h3 id="_7">使用手册<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>怎么把大象放进冰箱?</p>
+</blockquote>
+<ul>
+<li>
+<ol>
+<li>知道大象能放进冰箱</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>找到冰箱</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>学会开门的方法</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>实践它</li>
+</ol>
+</li>
+<li>
+<p>Playground, master分支,sunnyseed/book目录,按照gitbook格式放入md文件,修改目录</p>
+<ul>
+<li>git push</li>
+</ul>
+</li>
+<li>就可以看到结果 ～ <a href="https://101camp.gitlab.io/7py/playground/">乐豆派主页</a></li>
+</ul>
+<hr />
+<h3 id="refer">refer<a class="headerlink" href="#refer" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>过程中参考过的重要文章/图书/模块/代码/...</p>
+</blockquote>
+<ol>
+<li><a href="https://zhuanlan.zhihu.com/p/42286143">什么是持续集成(CI)/持续部署(CD)? - 知乎</a> </li>
+<li><a href="https://juejin.im/post/5e1965375188252695366f8b">Gitlab-CI使用教程 - 掘金</a> </li>
+<li><a href="https://about.gitlab.com/blog/2016/08/26/ci-deployment-and-environments/">GitLab CI: Deployment &amp; Environments | GitLab</a> </li>
+<li><a href="https://docs.gitlab.com/ee/user/project/integrations/webhooks.html">Webhooks | GitLab</a> </li>
+<li><a href="https://www.jianshu.com/p/0b909759ccb3">Python3.6创建虚拟环境并安装Flask框架 - 简书</a></li>
+<li><a href="https://blog.coding.net/blog/GitHook-for-delivery-and-deployment">利用 GitHook 构建持续交付和部署 - CODING 博客</a> </li>
+<li><a href="https://stackoverflow.com/questions/60912657/python-pandas-cannot-import-quote-minimal">Python Pandas Cannot import QUOTE_MINIMAL - Stack Overflow</a> </li>
+</ol>
+<p>永远的: <a href="https://github.com/DebugUself/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md">提问的智慧</a></p>
+<hr />
+<h3 id="_8">结语<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<p>学员@sunnyseed, 算是0基础进入蟒营®的,</p>
+<p>但是, 经过4周报名期间预习,4次周任务驱动自学,
+自然进入最后两周小组原创作品自组织开发;</p>
+<p>过程中, 没有出现拐点, 平滑完成了入门,
+而且写出这么有趣的记要来.</p>
+<p>实在超乎大妈想象;
+毕竟当初撞见 CI/CD 概念时,自己也纠结了几个月,
+才慢慢上手的.</p>
+<p>可见, 蟒营®Python 入门班本质上并不是单纯的 Python 编程知识入门,
+而是更加高阶的编程思维入门班了.</p>
+<hr />
+<h2 id="_9">所以<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
+<pre><code>蟒营®:
+
+知道你认为自己不NB,
+但蟒营®认定你其实非常NB,
+  只是习惯了不NB而已,
+蟒营®愿带你遇见NB的那个你.
+
+</code></pre>
+
+<hr />
+<blockquote>
+<blockquote>
+<p>NN 4027</p>
+</blockquote>
+</blockquote>
+<p>好文笔,感叹号年度配额: <strong>1/3</strong></p>
+<p>投稿/反馈邮箱:</p>
+<pre><code>askdama@googlegroups.com
+</code></pre>
+<p>(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)</p>
+<hr />
+<p>ZoomQuiet/<strong><a href="https://mp.weixin.qq.com/s/N5TuRRbF485D4Q90XdDA7g">大妈</a></strong></p>
+<p>就是四处 <code>是也乎,(￣▽￣)</code> 的那个<a href="https://mp.weixin.qq.com/s/N5TuRRbF485D4Q90XdDA7g">大妈</a>:</p>
+<pre><code class="python">
+私自嗯哼: ZoomQuiet (订阅号: ZoomQuiet42)
+公开课程: 蟒营 (订阅号: Mainium)
+历史吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 核心组织者:
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+</code></pre>
+
+<hr />
+            
+<!--
+            
+
+-->
+
+            <!--190910 init. comments-->
+<hr/>
+            <script src="https://utteranc.es/client.js"
+        repo="101camp/comments"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<hr/>
+
+            <hr/>
+
+<h3>蟒营®编程思维提高班 Python版/<b>第11期</b> 正在报名</h3>
+<h4>精品小班/ 每期<42人</h4>
+
+<blockquote><p>
+    
+<ul>
+    <li>
+    开始报名: <b>2020.8.30</b> </li>
+    <li>
+    报名截止: <b>2020.9.21</b> </li>
+    <li>
+    正式开课: <b>2020.9.27</b> </li>
+    <li>
+    课程结束: <b>2020.11.8</b> </li>
+
+    <li>
+    介绍文章:  
+    <ul>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/vwcrt8q9UtNiyGcgdoDmcA">
+            拙见/ 唤醒自己的天命之女
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/kTtZSqypUG4M1bw9GPNq-A">
+            拙见/ 理解理解
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/HgZG2HKJ80Aj1TUADaZXVA">
+            拙见/ 学习学习
+        </a>
+        </li>
+
+    </ul>
+    </li>
+
+<!--
+    <li>
+    介绍文章:  
+    <ul>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/FbUYUtnSVPJseA6sBud5fQ">
+            我觉得潘石屹推广编程的姿势不对
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/_yMoR4pJJGlJx51DU8xGyg">
+            蟒营®/ 到底如何算"会编程"?
+        </a>
+        </li>
+        <li>
+        <a href="https://mp.weixin.qq.com/s/mSfEbGSgJAODtXC0BgMtDA">
+            蟒营®/ 到底改变了什么?
+        </a>
+        </li>
+    </ul>
+    </li>
+
+-->
+
+</ul>
+
+<b>扫描</b>报名:
+
+<img alt="101camp12py" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-08-26-200816-reg-zip.jpg"/>
+
+
+</p></blockquote>
+
+
+<h2>蟒营®式 原创课程</h2>
+<p>
+    伴你重享<b>学习</b>乐趣
+</p>
+
+<blockquote>
+<p>
+    官网: <b>
+    <a href="https://py.101.camp/">py.101.camp</a>
+    </b>
+</p>
+<p>
+    <i>
+    Reactivate Joy by Self-teching <b>with You</b>
+    </i>
+</p>
+</blockquote>
+
+
+<br/>
+任何问题可先进入知识星球<b>(免费)</b>咨询:
+<br/>
+<img alt="FAQ" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-02-28-FAQ101camp-qr.jpeg?imageView2/2/w/360"/>
+
+<p>关注公众号, 持续获得相关各种咨询:
+    <br/>
+<img alt="mainium" 
+    src="http://ydlj.zoomquiet.top/ipic/2020-02-15-mainium-qr-barnner.jpg"/>
+</p>
+
+<hr/>
+
+<h4>追问</h4>
+<blockquote>
+<p>
+    任何问题, 随时邮件提问可也:
+<br/>
+    <i>
+    askdama@googlegroups.com
+    </i>
+</p>
+</blockquote>
+
+<hr/>
+
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <img class="logo" src="../../logo-owlook.png" title="蟒营™ 怂怼录">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#_2">背景</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_3">现象</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_4">分析</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">怎么把大象🐘放进冰箱?</a></li>
+      <ul>
+    
+      <li><a href="#1-ci-mvp">1. CI 的 MVP</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#2-gitbook-mvp">2. Gitbook 的 MVP</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#3">3. 拼装</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_6">报错信息在哪里?</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_7">使用手册</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#refer">refer</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_8">结语</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#_9">所以</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+      <!--
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog">edit➔GitHub</a></li>
+      -->
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/SS/200528-ZoomQuiet-7py-elephant.md">edit➔GitHub</a></li>
+
+      
+    </ul>
+  
+</nav>
+          
+            
+
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+
+        <!--190910 init. comments-->
+        <h3>Columns</h3>
+<ul>
+    <li><a href="/DM/">DM 大妈嗯哼</a></li>
+    <li><a href="/NC/">NC 嗯哼蟒营</a></li>
+    <li><a href="/SS/">SS 学员故事</a></li>
+    <li><a href="/TS/">TS 技术鳮汤</a></li>
+</ul>
+
+
+
+<h4>Powered by</h4>
+<ul>
+    <li>
+        <a href="https://101.camp/">蟒营®<br/>课程框架</a>
+<ul>
+    <li>
+        <a href="https://py.101.camp/">编程思维<br/>提高班</a>
+    </li>
+    <li>
+        <a href="https://github.com/101camp/comments/issues">评注</a>
+    </li>
+    <li>
+        <a href="https://io.101.camp/">图谱</a>
+    </li>
+    <li>
+        <a href="https://slides.101.camp/">幻灯</a>
+    </li>
+    <li>
+        <a href="https://wiki.101.camp/">维基</a>
+    </li>
+</ul>
+    </li>
+
+    <li>
+        <a href="https://du.101.camp/">自怼圈</a>
+    </li>
+    <li>
+        <a href="https://du.101.camp/duw/">怼周刊</a>
+    </li>
+
+    <li>
+        <a href="http://weekly.pychina.org/">蟒周刊</a>
+    </li>
+    <li>
+        <a href="https://blog.zhgdg.org/">珠海GDG</a>
+    </li>
+    <li>
+        <a href="http://zh.tfug.world/">TFUG珠海</a>
+    </li>
+    <li>
+        "大妈"们
+<ul>
+    <li>
+        <a href="https://yixuan.li/">Yixuan</a>
+    </li>
+
+    <li>
+        <a href="https://www.douban.com/people/Azeril/">Azeril</a>
+    </li>
+    <li>
+        <a href="https://zoomquiet.io/">Zoom.Quiet</a>
+    </li>
+    <li>
+        ...
+    </li>
+</ul>
+    <li>
+        <a href="http://mainium.icu">昧因科技®</a>
+    </li>
+    <li>
+        <a href="https://www.vultr.com/?ref=8333895">vultr</a>
+    </li>    
+</ul>
+
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; 蟒营™101camp
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+
+        <hr/>
+<a href="https://www.vultr.com/?ref=8333895"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
+<hr/>
+
+
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2020-09-04 13:08:36
+  -->
+</body>
+</html>
