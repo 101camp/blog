@@ -15,9 +15,9 @@
 - [ TS6: 记要也是计划](191220-TS06-logging-as-plannin.md)
 - [ TS:7尝试小众模块 pysrc/fractal, 配置隔离环境](200110-TS07-pyenv4fractal.md)
 - [ TS:08 为了部落,再搞 Windows](200121-TS08-windows-demo-env.md)
-- [是大妈在 **ZoomQuiet** 的第**061**篇原创](200904-ZoomQuiet-stop-NMB.md)
+- [ 呢喃/ NMB无法终止](200904-ZoomQuiet-stop-NMB.md)
 
-(auto index injected at 200904 2108 31.350) 
+(auto index injected at 200904 2114 39.069) 
 
 .::
 

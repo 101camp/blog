@@ -33,10 +33,10 @@
 - [ 钩陈/ 解读:提问的智慧](200503-ZoomQuiet-OldTouch-H2AQ.md)
 - [ 蟒营™/ CI/CD 像是在读侦探小说](200527-ZoomQuiet-7py-cicd.md)
 - [ 蟒营®/ 怎么把大象🐘放进冰箱?](200528-ZoomQuiet-7py-elephant.md)
-- [是大妈在 **ZoomQuiet** 的第**058**篇原创](200831-12py-how2ask.md)
-- [是大妈在 **ZoomQuiet** 的第**059**篇原创](200831-12py-how2search.md)
+- [ 蟒营®/ 提问故事](200831-12py-how2ask.md)
+- [ 蟒营®/ 搜索故事](200831-12py-how2search.md)
 
-(auto index injected at 200904 2108 31.344) 
+(auto index injected at 200904 2114 39.006) 
 
 .::
 

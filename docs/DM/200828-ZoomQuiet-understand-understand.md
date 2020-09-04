@@ -1,7 +1,8 @@
-这是大妈在 **ZoomQuiet** 的第**056**篇原创
-
 # 拙见/ 理解理解
 > Understanding Understand
+
+这是大妈在 **ZoomQuiet** 的第**056**篇原创
+
 
 -------------
 ## 背景
