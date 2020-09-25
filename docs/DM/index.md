@@ -82,11 +82,11 @@
 - [ 拙见/ 理解理解](200828-ZoomQuiet-understand-understand.md)
 - [ 拙见/ 学习学习](200829-ZoomQuiet-learn-learn.md)
 - [ 拙见/ 但得呢喃](200903-ZoomQuiet-need-murmur.md)
-- [是大妈在 **ZoomQuiet** 的第**063**篇原创](200905-ZoomQuiet-check-check.md)
-- [是大妈在 **ZoomQuiet** 的第**062**篇原创](200905-ZoomQuiet-review-review.md)
-- [是大妈在 **ZoomQuiet** 的第**068**篇原创](200919-ZoomQuiet-w2w-braving.md)
+- [ 拙见/ 检验检验](200905-ZoomQuiet-check-check.md)
+- [ 拙见/ 复盘复盘](200905-ZoomQuiet-review-review.md)
+- [ 拙见/ 为什么勇敢?](200919-ZoomQuiet-w2w-braving.md)
 
-(auto index injected at 200925 1604 34.841) 
+(auto index injected at 200925 1606 09.091) 
 
 .::
 

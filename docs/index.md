@@ -5,16 +5,16 @@
 
 ::.
 
-- [##########################################################](TS/200926-zoomquiet-How2NEVER-use-lambdas.md)
-- [是大妈在 **ZoomQuiet** 的第**068**篇原创](DM/200919-ZoomQuiet-w2w-braving.md)
-- [是大妈在 **ZoomQuiet** 的第**067**篇原创](NC/200918-ZoomQuiet-3not-learn.md)
-- [是大妈在 **ZoomQuiet** 的第**066**篇原创](NC/200917-ZoomQuiet-3not-ask.md)
-- [是大妈在 **ZoomQuiet** 的第**065**篇原创](NC/200915-ZoomQuiet-3not-see.md)
-- [是大妈在 **ZoomQuiet** 的第**064**篇原创](NC/200908-ZoomQuiet-fake-learnning.md)
-- [是大妈在 **ZoomQuiet** 的第**063**篇原创](DM/200905-ZoomQuiet-check-check.md)
-- [是大妈在 **ZoomQuiet** 的第**062**篇原创](DM/200905-ZoomQuiet-review-review.md)
+- [ 拙见/ 为什么勇敢?](DM/200919-ZoomQuiet-w2w-braving.md)
+- [ 蟒营®/ 思而不学](NC/200918-ZoomQuiet-3not-learn.md)
+- [ 蟒营®/ 惑而不问](NC/200917-ZoomQuiet-3not-ask.md)
+- [ 蟒营®/ 视而不见](NC/200915-ZoomQuiet-3not-see.md)
+- [ 蟒营®/ 伪编程学习](NC/200908-ZoomQuiet-fake-learnning.md)
+- [ 拙见/ 检验检验](DM/200905-ZoomQuiet-check-check.md)
+- [ 拙见/ 复盘复盘](DM/200905-ZoomQuiet-review-review.md)
+- [ 呢喃/ NMB无法终止](TS/200904-ZoomQuiet-stop-NMB.md)
 
-(auto index injected at 200925 1604 35.032) 
+(auto index injected at 200925 1606 09.226) 
 
 .::
 

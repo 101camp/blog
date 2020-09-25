@@ -36,12 +36,12 @@
 - [ 钩沉/ 如何在蟒营®中坚持住?](200801-ZoomQuiet-10py-wtfc-8.md)
 - [ 蟒营®/ 为什么编程思维不用学就有?](200811-ZoomQuiet-wtf-coding-mind.md)
 - [ 拙见/ 什么是网课?](200816-ZoomQuiet-wtf-online-course.md)
-- [是大妈在 **ZoomQuiet** 的第**064**篇原创](200908-ZoomQuiet-fake-learnning.md)
-- [是大妈在 **ZoomQuiet** 的第**065**篇原创](200915-ZoomQuiet-3not-see.md)
-- [是大妈在 **ZoomQuiet** 的第**066**篇原创](200917-ZoomQuiet-3not-ask.md)
-- [是大妈在 **ZoomQuiet** 的第**067**篇原创](200918-ZoomQuiet-3not-learn.md)
+- [ 蟒营®/ 伪编程学习](200908-ZoomQuiet-fake-learnning.md)
+- [ 蟒营®/ 视而不见](200915-ZoomQuiet-3not-see.md)
+- [ 蟒营®/ 惑而不问](200917-ZoomQuiet-3not-ask.md)
+- [ 蟒营®/ 思而不学](200918-ZoomQuiet-3not-learn.md)
 
-(auto index injected at 200925 1604 34.879) 
+(auto index injected at 200925 1606 09.130) 
 
 .::
 
