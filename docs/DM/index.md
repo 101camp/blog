@@ -86,7 +86,7 @@
 - [ 拙见/ 复盘复盘](200905-ZoomQuiet-review-review.md)
 - [ 拙见/ 为什么勇敢?](200919-ZoomQuiet-w2w-braving.md)
 
-(auto index injected at 200925 1610 10.833) 
+(auto index injected at 201022 1358 16.763) 
 
 .::
 
