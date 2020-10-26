@@ -36,7 +36,7 @@
 - [ 蟒营®/ 提问故事](200831-12py-how2ask.md)
 - [ 蟒营®/ 搜索故事](200831-12py-how2search.md)
 
-(auto index injected at 201022 1358 16.812) 
+(auto index injected at 201026 2134 11.126) 
 
 .::
 
