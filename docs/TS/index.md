@@ -6,6 +6,7 @@
 
 ::.
 
+- [ 如何持证 (SSL) 开车](190130-jump-into-ssl.md)
 - [ TS0: Python 初学者常见 5 种错误](190725-TS0-5-beginner-mistakes-py.md)
 - [ TS1: 老令公今天70了](190814-EKR-70th-birthday.md)
 - [ TS2: 细数我与 Linux 这十三年](190815-tinylab-falcon-and-linux.md)
@@ -17,7 +18,7 @@
 - [ TS:08 为了部落,再搞 Windows](200121-TS08-windows-demo-env.md)
 - [ 呢喃/ NMB无法终止](200904-ZoomQuiet-stop-NMB.md)
 
-(auto index injected at 210303 1905 15.903) 
+(auto index injected at 210304 0911 08.569) 
 
 .::
 
