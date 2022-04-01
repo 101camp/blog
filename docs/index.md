@@ -10,11 +10,11 @@
 - [ 蟒营®/ 惑而不问](NC/200917-ZoomQuiet-3not-ask.md)
 - [ 蟒营®/ 视而不见](NC/200915-ZoomQuiet-3not-see.md)
 - [ 蟒营®/ 伪编程学习](NC/200908-ZoomQuiet-fake-learnning.md)
-- [ 拙见/ 检验检验](DM/200905-ZoomQuiet-check-check.md)
 - [ 拙见/ 复盘复盘](DM/200905-ZoomQuiet-review-review.md)
+- [ 拙见/ 检验检验](DM/200905-ZoomQuiet-check-check.md)
 - [ 呢喃/ NMB无法终止](TS/200904-ZoomQuiet-stop-NMB.md)
 
-(auto index injected at 210720 1051 44.341) 
+(auto index injected at 220401 0947 56.744) 
 
 .::
 
