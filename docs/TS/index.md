@@ -18,7 +18,7 @@
 - [ TS:08 为了部落,再搞 Windows](200121-TS08-windows-demo-env.md)
 - [ TS1: 老令公今天70了](190814-EKR-70th-birthday.md)
 
-(auto index injected at 220401 0947 56.727) 
+(auto index injected at 220526 2145 24.084) 
 
 .::
 
