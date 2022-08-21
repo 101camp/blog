@@ -133,7 +133,7 @@ ANNS = [# MkDocs
             'root':"101.camp/devrel.info",
             'ann':"_includes",
             },
-            
+
         {'aim':'blog.zhgdg.org',
             'depoly':'pub4trigger.sh',
             'root':"org.zhgdg/blog",

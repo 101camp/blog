@@ -4,7 +4,14 @@
 设计走心,品质精良的 **T裇** 才是一次成功技术大会最悠长的余韵
 
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido2007GDD.jpg)
+
+
+
+
+
+
+
+![](https://ipic.zoomquiet.top/2022-08-21-guido2007GDD.jpg)
 
 当年, 第一次直面 老爹时, 只有 **[CPUG](https://wiki.woodpecker.org.cn/moin/CPUG)** 的 logo , 而没有对应的Tee...
 
@@ -17,14 +24,15 @@
 
 比如 __出没__ 款:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2006zeuux-py-b.jpg)
-
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2006zeuux-py-f.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2006zeuux-py-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2006zeuux-py-f.jpg)
 
 
 一开始, 纯英文内容的卖的好, 因为大家感觉, 中国人穿都是中字的文化衫很傻,
 结果:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007-1010-zeuux-fashion-guido.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2007-1010-zeuux-fashion-guido.jpg)
+
 
 这照片一公开, 立即 `苦短衫` 就买断了货,
 但是, 当初公开承诺这是唯一一批绝版原创, 不追加制作;
@@ -35,37 +43,50 @@
 ## 出没
 > 为了和老爹精神上接近, 首款 苦短衫 就开始了长年四处展示
 
-在 SINA 内部:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007lshort-zq.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2008lshort-zpug-1.JPG)
 
+
+在 SINA 内部:
+![](https://ipic.zoomquiet.top/2022-08-21-2007lshort-zq-1.jpg)
 
 在 ECUG2007con(CN Erliunge II):
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007lshort-ecug-yufeng.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2007lshort-ecug-yufeng-1.jpg)
+
 (注意, 后面那个小胡子, 就是现在的 `褚霸` 当年看完了 Menisa 源代码来分享 Erlang 进程锁奇观的)
 
 是的, Erlang 中国用户组(后来升级为 **实效云用户组**)最初人肉 LOGO 中隐藏着 Python...
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007lshort-ecug.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2007lshort-ecug-1.jpg)
 
 
 2008 在北京大学和 RMS:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2008lshort+rms.JPG)
+![](https://ipic.zoomquiet.top/2022-08-21-2008lshort-rms-1.JPG!/fw/420)
 
 以及所有和家领导公开场合时:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2008lshort16-nwan.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2008lshort16-nwan.jpg)
+
 
 2010 应邀去上海盛大创新院分享时:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2010lshort-isnda.JPG)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2010lshort-isnda.JPG)
+
 
 - 对应幻灯: [我的工具箱](http://s5.zoomquiet.top/131113-MyTools/index.html)
 - 现场录音: [100930_125M_mytools.MP3](http://org.up.zoomquiet.top/ztapes/wav4zoomq/100930-snda-mytools/100930_125M_mytools.MP3)
 
 
 2013 参加 GDG Summit 时:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013lshort-gdg.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2013lshort-gdg.jpg)
+
 
 同年参加 Google IO 时:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013lshort-google.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2013lshort-google.jpg)
+
 
 ## PyCon
 > 转脸, 到了 2011 年...
@@ -76,12 +97,12 @@
 
 结果,还是上海 Pythonista 给力, 不声不响就办起来了:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2011pyconchina.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2011pyconchina.jpg)
 
 是的, 后来一直使用的 `毛毛虫双龙` logo, 就是首届 **PyCon中国大会** 出现的;
 设计师, 也是纪念 Tee 的设计者, 来自新加坡一位Python工程师的老婆.
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2011pyconchina-tee.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2011pyconchina-tee.jpg)
 
 这款 Tee 用料异常扎实, 久穿不烂, 可是胸前图案太复杂, 用的又是整体烫印, 
 没出一年就发皱起泡皴裂了....
@@ -89,9 +110,9 @@
 
 不过, 出镜也很多:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2012pyconchina-tee.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2012pyconchina-tee.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2012pyconcn-linux.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2012pyconcn-linux.jpg)
 
 
 ### PyCon2012China
@@ -99,17 +120,16 @@
 
 上海方面继续请头年纪念衫设计师升级了设计:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2012pyconcn-tee-sh.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2012pyconcn-tee-sh.jpg)
 
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2012pyconcn-bj.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2012pyconcn-bj.jpg)
 
 北京方面, 联合豆瓣设计师进行了重构:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2012pyconcn-tee-bj-f.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2012pyconcn-tee-bj-f.jpg)
 
-
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2012pyconcn-tee-bj-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2012pyconcn-tee-bj-b.jpg)
 
 而且在豆厂举行了:[首届Pythonic Hackathon 竞赛!_豆瓣](https://www.douban.com/event/17299206/)
 
@@ -122,14 +142,15 @@
 ### PyCon2013China
 > 珠海场 全新开设
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013pyconcn-zh.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2013pyconcn-zh.jpg)
 
 
 这年, 回到主场, 就放飞了:
 
 
 有帽子:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013pyconcn-hat.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2013pyconcn-hat.jpg)
 
 - 红色 -> 观众
 - 黑色 -> 讲师
@@ -138,33 +159,35 @@
 
 有自己翻译出版的书:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013pyconcn-book.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2013pyconcn-book.jpg)
 
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido130923-twitter.jpg)
+
+
+![](https://ipic.zoomquiet.top/2022-08-21-guido130923-twitter.jpg)
 
 刚好, 老爹在街上被目击还在穿多年前获赠的 `苦短衫` :
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido2013-twitter.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-guido2013-twitter.jpg)
 
 
 再次独立设计,当然蹭 `苦短衫` 热点:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013lshort-tee-design.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2013lshort-tee-design.jpg)
+
 
 并首次在衣脚追加设计师信息:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013lshort-tee-author.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2013lshort-tee-author.jpg)
 
 而最出彩的, 反而是现场**北理工珠海校区**的志愿者们:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013pyconcn-vol.jpg)
-
+![](https://ipic.zoomquiet.top/2022-08-21-2013pyconcn-vol.jpg)
 
 > 由于工艺问题, 设计师铭牌一样快速起泡破碎了...
 
 另外一个重要原因, 令这款 `苦短衫` 没流行起来的原因:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido140107-twitter.png)
+![](https://ipic.zoomquiet.top/2022-08-21-guido140107-twitter.png)
 
 
 即便 老爹在 twitter 上都晒过, 可自己也没好意思穿, 
@@ -174,11 +197,11 @@
 不过, 也四处出没了不少地方:
 
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014lshort-tw.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2014lshort-tw.jpg)
 
 > 台湾十分车站
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014lshort-tw-tangfeng.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2014lshort-tw-tangfeng.jpg)
 
 > 在 COSCUP 和 Perl 社区神人唐凤
 
@@ -188,7 +211,8 @@
 > 珠海场 认真嗯哼
 
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-zh.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2014pyconcn-zh.jpg)
+
 
 总结以往经验, 这次事先公开征集 `苦短衫` 文案:
 **[Pythonic口号的Pivot](http://blog.pychina.org/imho/140916-pycon-slogen.html)**
@@ -196,90 +220,100 @@
 
 并最终找珠海本地厂商完成制作:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014lshort-f.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2014lshort-f.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014lshort-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2014lshort-b.jpg)
+
 
 立即出没在各种神奇的场景中:
 
-
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014lshort-gopher-poser.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2014lshort-gopher-poser.jpg)
 
 而且和著名人士也合了影:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014lshort-gopher.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2014lshort-gopher.jpg)
 
 在珠海场, 还尝试了:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-cup.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2014pyconcn-cup.jpg)
 
 是当年 gitcafe 赞助的:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-gitcafe.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2014pyconcn-gitcafe.jpg)
 
 
 海报文案, 也是自己嗯哼的:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-post.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2014pyconcn-post.jpg)
 
 贴纸:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-stick.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2014pyconcn-stick.jpg)
 
 只是现场发现隔壁社区的周边, 还是瞬间被了比下去:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-ubuntu.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2014pyconcn-ubuntu.jpg)
 
 只是因为珠海连续两年, 都有这种全国大会分场, 名校也出没了:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-zh-pku.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2014pyconcn-zh-pku.jpg)
 
 
 当然最 shinning 的, 还是来自学校的志愿者:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2014pyconcn-zh-vol.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2014pyconcn-zh-vol.jpg)
 
 
 自然的, 这款 `苦短衫` 也出没了很多大会:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2015lshort-OSTC-solo.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2015lshort-OSTC-solo.jpg)
 
 和名人合影:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2015lshort-OSTC-bird.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2015lshort-OSTC-bird.jpg)
 
 
 老爹也收到了:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido2014.jpg)
-
+![](https://ipic.zoomquiet.top/2022-08-21-guido2014.jpg)
 
 ### PyCon2015China
 > 认真设计
 
 老爹也表示满意:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido150928-twitter.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-guido150928-twitter.jpg)
+
 
 并真高兴的在户外展示:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido2015lshort.PNG)
+
+![](https://ipic.zoomquiet.top/2022-08-21-guido2015lshort.PNG)
 
 
 这次可以设计的空间更小了, 但是, 也挖掘出了更大效果:
 
 观众的深灰:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2015lshort-f.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2015lshort-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2015lshort-f.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2015lshort-b.jpg)
 
 讲师的纯黑:
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2015lshort-f-black.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2015lshort-b-black.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2015lshort-f-black.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2015lshort-b-black.jpg)
+
 
 
 成熟的设计, 讨巧的文案, 令这款 `苦短衫` 真的流行了起来:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2015lshort-wx.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2015lshort-wx.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2015pyconcn-gz.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2015pyconcn-gz.jpg)
+
 
 > 全球一共发行 3000 件.
 
@@ -293,13 +327,15 @@
 
 这就是法语的 `人生苦短`, 然后就变成:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2016tpyconcn-vie-f.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2016tpyconcn-vie-f.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2016tpyconcn-vie-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2016tpyconcn-vie-b.jpg)
+
+
 
 也人肉扛给了老爹, 只是, 看起来不怎么满意:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/guido2014gao.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-guido2014gao.jpg)
 
 
 ### PyConChina17/18/...
@@ -309,22 +345,22 @@
 2017 设计稿出的太晚, 以至检验不及, 生产出来才发现有错字, 
 只好打补丁:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2017tpyconcn-with-f.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2017tpyconcn-with-f.jpg)
+
 
 背后也空白:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2017tpyconcn-with-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2017tpyconcn-with-b.jpg)
 
 
 2018 设计出了很多, 以致一直没决心用哪个, 最后还是选择了最不象虫子的:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2018pyconcn-import-f.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2018pyconcn-import-f.jpg)
 
 背后也空白:
 
-
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2018pyconcn-import-b.jpg)
-
+![](https://ipic.zoomquiet.top/2022-08-21-2018pyconcn-import-b.jpg)
 
 那么, 今年的设计是什么呢?
 
@@ -344,39 +380,41 @@
 
 俺特别喜欢的:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007zeuux-gnu-f.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2007zeuux-gnu-f-1.jpg)
+
 
 2007 冬季款长袖 **GNU** 衫;
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2007zeuux-gnu-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2007zeuux-gnu-b-1.jpg)
 
 > 主要是这个 logo 太帅了, 而且是正版授权的
 
+![](https://ipic.zoomquiet.top/2022-08-21-techparty-f.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/techparty-f.jpg)
 
 低调的奢华...
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/techparty-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-techparty-b.jpg)
 
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/qpython-f.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-qpython-f.jpg)
 
 精巧的logo 设计...
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/qpython-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-qpython-b.jpg)
 
 
+![](https://ipic.zoomquiet.top/2022-08-21-cnodejs-tee.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/cnodejs-tee.jpg)
 
 肆意又精确的传达
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/cnodejs-tee-designer.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-cnodejs-tee-designer.jpg)
 
 设计师
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/cnodejs-tee-betacafe.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-cnodejs-tee-betacafe.jpg)
 
 当时北京活动现场的自得....
 
@@ -393,26 +431,28 @@
 
 无论哪个摊位, Tee 都来自这个厂:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/aa-tee-io.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-aa-tee-io.jpg)
 
+![](https://ipic.zoomquiet.top/2022-08-21-angular-js-f.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/angular-js-f.jpg)
 
 无论是社区的...
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/angular-js-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-angular-js-b.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/dart-f.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-dart-f.jpg)
 
 还是 Google 自家的...
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/dart-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-dart-b.jpg)
+
 
 
 特别是 duolingo 的无手感半透染工艺, 非常喜欢:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2013io-duoligo-i.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2013io-duoligo-i.jpg)
 
+![](https://ipic.zoomquiet.top/2022-08-21-2013io-duoligo.jpg)
 
 ### 蟒营™101camp
 > 2018 圣诞节试运营原型班
@@ -420,36 +460,41 @@
 为了替代毕业证, 将以往积累的 **纪念衫** 制作经验都用上了:
 
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2019lshort101camp-design.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2019lshort101camp-design.jpg)
 
 
 也才知道那个工艺在中国叫 `水印` , 对材质/颜色都有要求;
 幸好中国制造不是浪得虚名, 多方拜访, 还是找到愿意生产的厂商:
 
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2019lshort101camp-material-f1.jpg)
+
+![](https://ipic.zoomquiet.top/2022-08-21-2019lshort101camp-material-f1.jpg)
 
 > 正面细节, 无手感
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2019lshort101camp-material-i.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2019lshort101camp-material-i.jpg)
 
 > 内部透光
 
+![](https://ipic.zoomquiet.top/2022-08-21-2019lshort101camp-material-f.jpg)
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2019lshort101camp-f.jpg)
+
+> 成品效果:
+
+![](https://ipic.zoomquiet.top/2022-08-21-2019lshort101camp-f.jpg)
 
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2019lshort101camp-b.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-2019lshort101camp-b.jpg)
+
 
 
 请动了 2015 手书 PyCon中国 纪念衫大字的书法家, 来写的:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/2019lshort101camp-hwrite.jpg)
-
+![](https://ipic.zoomquiet.top/2022-08-21-2019lshort101camp-hwrite.jpg)
 
 特别的是, 人家是小姐姐:
 
-![](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/teeshirts/wyt-lshort-hwriter.jpg)
+![](https://ipic.zoomquiet.top/2022-08-21-wyt-lshort-hwriter.jpg)
 
 
 ### 经验
@@ -515,6 +560,7 @@
 - 价格...
     + 看良心了...
     + 这么多要求下来, 光是设计师,得给多少?
+
 
 
 
