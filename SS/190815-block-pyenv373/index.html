@@ -139,29 +139,23 @@ Python 3.6.5
     $ echo 'eval &quot;$(pyenv virtualenv-init -)&quot;' &gt;&gt; ~/.zshrc
     $ source ~/.zshrc
 </code></pre>
-
 <p>但是在进行最后一行命令source ~/.zshrc时,提示错误为:</p>
 <pre><code>    pyenv: no such command `virtualenv-init'
 </code></pre>
-
 <p>在google上查阅后发现是pyenv-virtualenv没有安装,所以需要执行如下命令:</p>
 <pre><code>    $ brew upgrade --HEAD pyenv-virtualenv
 </code></pre>
-
 <p>先用上面这个命令更新一下,如果提示没有安装就换下面这个命令</p>
 <pre><code>    $ brew install --HEAD pyenv-virtualenv
 </code></pre>
-
 <p>之后再进行source ~/.zshrc顺利完成. pyenv安装好后,接下来就是使用它来安装最新python 3.7.3,所以执行下列命令</p>
 <pre><code>    $ pyenv install 3.7.3
 </code></pre>
-
 <p>,发现3.7.3的安装包在国外,下载十分缓慢,至少等待了30分钟(我洗了个澡),我决定让终端也能翻墙,去墙外下载. 
 我使用的是socks5代理,所以终端翻墙较为复杂,先下载最新版本的 Shadowsocks-NG,配置好服务器后,之后在终端执行:</p>
 <pre><code>     $ export http_proxy=http://127.0.0.1:1087
      $ export https_proxy=http://127.0.0.1:1087
 </code></pre>
-
 <p>然后继续使用pyenv来下载python 3.7.3,又遇到了问题:</p>
 <pre><code>    $ pyenv install 3.7.3
     BUILD FAILED (OS X 10.14.2 using python-build 20180424)
@@ -169,11 +163,9 @@ Python 3.6.5
     Results logged to /var/folders/gf/_4hphmvs5lnfz7_sg4l1d3y00000gn/T/python-build.20190410094358.7234.log
     ...
 </code></pre>
-
 <p>查阅后,需要进行如下配置,(It works for me but I don't know why)</p>
 <pre><code>    $ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 </code></pre>
-
 <p>具体内容来源为</p>
 <blockquote>
 <p>macOS Mojave Pyenv install multi-version build failed solution</p>
@@ -187,7 +179,6 @@ Python 3.6.5
       3.7.3
 
 </code></pre>
-
 <p>到此,就完成配置了!</p>
 <h2 id="_5">是也乎:<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
 <p>这就是蟒营哪, 正如隔壁队长说的:</p>
@@ -267,12 +258,11 @@ Reactivate Joy by Self-teach with You
 
 <hr/>
 
-            <hr/>
+            <hr />
 
 <h4>自怼圈/年度番新</h4>
-<img alt="DU22.4" 
-    src="https://ipic.zoomquiet.top/2022-03-31-220331DU6y_zip.jpg!/fw/420"/>
-<br/>
+<img alt="DU22.8" src="https://ipic.zoomquiet.top/2022-08-19-220819DU22.8.jpeg!/fw/420" />
+<br />
 <a href="https://du.101.camp/about/">关于 ~ DebugUself with DAMA ;-)</a>
 
 
@@ -373,26 +363,30 @@ Reactivate Joy by Self-teach with You
 -->
 
 
-<hr/>
+<hr />
 点击注册~> 获得 <b>100$</b> 体验券:
-<a href="https://www.digitalocean.com/?refcode=e7b7cdc66376&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" /></a>
+<a
+    href="https://www.digitalocean.com/?refcode=e7b7cdc66376&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img
+        src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg"
+        alt="DigitalOcean Referral Badge" /></a>
 
-<hr/>
+<hr />
 
 
 <p>订阅 substack 体验古早写作:
-    <br/>
+    <br />
 
-<iframe src="https://zoomquiet.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://zoomquiet.substack.com/embed" width="480" height="320"
+        style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 </p>
 
-<hr/>
+<hr />
 
 <p>关注公众号, 持续获得相关各种嗯哼:
-    <br/>
-<img alt="zoomquiet" 
-    src="https://ipic.zoomquiet.top/2021-12-27-zoomquiet-%E6%A0%87%E5%87%86%E8%89%B2%E7%89%88580.jpg"/>
+    <br />
+    <img alt="zoomquiet"
+        src="https://ipic.zoomquiet.top/2021-12-27-zoomquiet-%E6%A0%87%E5%87%86%E8%89%B2%E7%89%88580.jpg!/fw/420" />
 </p>
 
 
@@ -441,37 +435,35 @@ Reactivate Joy by Self-teach with You
 -->
 
 
-<hr/>
+<hr />
 <h3>蟒营®编程思维提高班Python版</h3>
 **2021.01.11** 因大妈再次创业暂停定期开设, 转换为预约触发:
 
-<!--
 <ul>
     <li>
-+ 扫描预约入群, 学员每满 42 人即启动新一期训练营 ;-)
+        + 扫描预约入群, 学员每满 42 人即启动新一期训练营 ;-)
     </li>
 
     <li>
-<img alt="101camp21.7" 
-    src="http://ydlj.zoomquiet.top/ipic/2021-07-20-210704camp-pre-order_zip.jpg"/>
+        <img alt="101camp22.7" src="https://ipic.zoomquiet.top/2022-08-19-220819pre101camp.jpeg!/fw/420" />
     </li>
     <li>
-+  任何问题, 随时邮件提问可也:<pre>askdama@googlegroups.com</pre>
+        + 任何问题, 随时邮件提问可也:
+        <pre>askdama@googlegroups.com</pre>
     </li>
 </ul>
-
--->
-
+<!--
 <h4>追问</h4>
 <blockquote>
-<p>
-    任何问题, 随时邮件提问可也:
-<br/>
-    <i>
-    askdama@googlegroups.com
-    </i>
-</p>
+    <p>
+        任何问题, 随时邮件提问可也:
+        <br />
+        <i>
+            askdama@googlegroups.com
+        </i>
+    </p>
 </blockquote>
+-->
 
           
         </div>
@@ -682,7 +674,7 @@ Reactivate Joy by Self-teach with You
       
       
         |
-        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.3.0</a>
         &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
 
         <hr/>
@@ -696,8 +688,8 @@ Reactivate Joy by Self-teach with You
   
 
   <!--
-  MkDocs version      : 1.0.4
-  Docs Build Date UTC : 2022-05-26 13:45:27
+  MkDocs version      : 1.3.0
+  Docs Build Date UTC : 2022-08-21 13:01:59.504425+00:00
   -->
 </body>
 </html>
